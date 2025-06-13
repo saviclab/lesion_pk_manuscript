@@ -1,0 +1,874 @@
+---
+title: "Lesion Manuscript - Rabbit Model VPCs for All Drugs"
+date: "11-21-23"
+author: "Anu"
+output: html_document
+---
+
+> Switched IDV for DLM caseum VPC to TIME instead of TAD (named as _v2)
+> Switched IDV for RBT caseum VPC to TIME
+> Switched IDV for RZL lung, cell, and caseum VPCs to TIME
+
+########### FOR LZD and 223, NEED TO USE NATASHA'S ORIGINAL MODELS WITH LESIONS DIVIDED UP ############
+
+# Set Up
+```{r setup, include=FALSE}
+library(vpc)
+library(xpose)
+library(xpose4)
+library(grid)
+library(gridExtra)
+library(ggplot2)
+library(reshape)
+
+# master path
+WD <- "/Volumes/savic/translational_team/aebustion/lesion_vpcs/"
+```
+
+# Plasma VPCs (no metabolite)
+> BTZ-043, CFZ, DLM, GSK-286, GSK-656 (GFB), GTX, INH, mCLB-073 (TBD-11), MXF, OPC-167832 (QBD), PMD, PZA, RBT, RIF, RPT
+
+## Gather info for loop
+```{r}
+drugs <- c("BTZ-043", "CFZ", "GSK-286", "GFB", 
+           "GTX", "INH", "TBD-11", 
+           "MXF", "QBD", "PMD", "PZA", 
+           "RIF", "RPT")
+wd_values <- c("BTZ043/Plasma/", "CFZ/Plasma/", "GSK286/Plasma/", "GSK656/Plasma/", 
+               "GTX/Plasma/", "INH/Plasma/", "mCLB073/Plasma/",
+               "MXF/Plasma/", "OPC167832/Plasma/", "PMD/Plasma/", "PZA/Plasma/",
+               "RIF/Plasma/", "RPT/Plasma/")
+runno_values <- c("004c", "11b", "30", "100", 
+                  "121_CLint", "07",  "20",
+                  "31", "9", "13", "04",
+                  "02", "6")
+```
+
+## Run VPCs
+```{r}
+p_plasma_plot_list <- list() # create an empty list to store the plots
+
+for (i in seq_along(drugs)) { # to access corresponding elements of each list for each loop
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno <- runno_values[i]
+  
+options(repr.plot.width = 6, repr.plot.height = 4)
+p_plasma <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                             wd,
+                                            'run', 
+                                             runno, 
+                                            'vpc-idv'),
+                         obs_cols = list(idv = "TAD"),
+                         sim_cols = list(idv = "TAD"),
+                         bins = "pretty",
+                         pred_corr = F,
+                       # logy = T,
+                         show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+# scale_y_log10() +
+  labs(title = drug, subtitle = "Plasma",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/L)")
+
+p_plasma_plot_list[[i]] <- p_plasma # store each plot in the list
+}
+
+for (i in seq_along(p_plasma_plot_list)) { # display each plot
+  print(p_plasma_plot_list[[i]])
+}
+```
+
+### DLM, RBT, RZL
+```{r}
+drugs <- c("DLM", "RBT", "RZL")
+wd_values <- c("DLM/Plasma/", "RBT/Plasma/", "RZL/Plasma/")
+runnos <- c("29", "15", "46")
+
+p_plasma_dlm_rbt_rzl_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno <- runnos[i]
+  
+p_plasma_dlm_rbt_rzl <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                                         wd,
+                                                        'run', 
+                                                         runno, 
+                                                        'vpc-idv'),
+                         obs_cols = list(idv = "TAD"),
+                         sim_cols = list(idv = "TAD"),
+                         bins = "pretty",
+                         pred_corr = F,
+                       # logy = T,
+                         show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+# scale_y_log10() +
+  labs(title = drug, subtitle = "Plasma",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/L)")
+
+p_plasma_dlm_rbt_rzl_list[[i]] <- p_plasma_dlm_rbt_rzl
+}
+
+for (i in seq_along(p_plasma_dlm_rbt_rzl_list)) {
+  print(p_plasma_dlm_rbt_rzl_list[[i]])
+}
+```
+
+# Lesion VPCs (no metabolite)
+> BTZ-043, CFZ, DLM, GSK-286, GSK-656 (GFB), GTX, INH, mCLB-073 (TBD-11), MXF, OPC-167832 (QBD), PMD, PZA, RBT, RIF, RPT, RZL
+
+## Gather info for loop
+```{r}
+drugs <- c("BTZ-043", "CFZ", "GSK-286", "GFB", 
+           "GTX", "INH", "TBD-11", 
+           "MXF", "QBD", "PMD", "PZA", 
+           "RIF", "RPT")
+wd_values <- c("BTZ043/", "CFZ/", "GSK286/", "GSK656/", 
+               "GTX/", "INH/", "mCLB073/", 
+               "MXF/", "OPC167832/", "PMD/", "PZA/", 
+               "RIF/", "RPT/")
+runnos_lung <- c("L01p_004c", "L01b", "L14", "L01c", 
+                 "121_1a_linear_error", "L01", "L08", 
+                 "54b_p",  "L02_pfix", "L01", "L10",
+                 "46_02", "11")
+runnos_cell <- c("L02p_004c", "L02b", "L13", "L02d", 
+                 "121_2a_linear_error", "L02", "L07", 
+                 "64", "L01_pfix", "L02a", "L13", 
+                 "52_02", "18")
+runnos_case <- c("L04m3pfix_004c_2", "L06g", "L11", "L03d", 
+                 "121_3a_linear_error", "L08d_a", "L03", 
+                 "84", "L03_p", "L03b", "L17", 
+                 "53_02", "19")
+```
+
+## Run Lung VPCs
+```{r}
+p_lung_plot_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno_lung <- runnos_lung[i]
+  
+options(repr.plot.width = 6, repr.plot.height = 4)
+p_lung <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                           wd,
+                                          'Lung/',
+                                          'vpc_',
+                                          'run', 
+                                           runno_lung),
+                       obs_cols = list(idv = "TAD"),
+                       sim_cols = list(idv = "TAD"),
+                       bins = "pretty",
+                       pred_corr = F,
+                       show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+  labs(title = "", subtitle = "Lung",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/kg)")
+
+p_lung_plot_list[[i]] <- p_lung
+}
+
+for (i in seq_along(p_lung_plot_list)) {
+  print(p_lung_plot_list[[i]])
+}
+```
+
+### DLM, RBT
+```{r}
+drugs <- c("DLM", "RBT")
+wd_values <- c("DLM/Lung/", "RBT/Lung/")
+runnos_lung <- c("L01b", "L01")
+
+p_lung_dlm_rbt_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno_lung <- runnos_lung[i]
+  
+p_lung_dlm_rbt <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                                   wd,
+                                                   'vpc_',
+                                                   'run', 
+                                                   runno_lung),
+                           obs_cols = list(idv = "TAD"),
+                           sim_cols = list(idv = "TAD"),
+                           bins = "pretty",
+                           pred_corr = F,
+                           show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+  labs(title = "", subtitle = "Lung",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/kg)")
+
+p_lung_dlm_rbt_list[[i]] <- p_lung_dlm_rbt
+}
+
+for (i in seq_along(p_lung_dlm_rbt_list)) {
+  print(p_lung_dlm_rbt_list[[i]])
+}
+```
+
+### RZL (using TIME instead of TAD)
+```{r}
+drugs <- c("RZL")
+wd_values <- c("RZL/Lung/")
+runnos_lung <- c("L22")
+
+p_lung_rzl_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno_lung <- runnos_lung[i]
+  
+p_lung_rzl <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                               wd,
+                                               'vpc_',
+                                               'run', 
+                                               runno_lung),
+                           obs_cols = list(idv = "TIME"),
+                           sim_cols = list(idv = "TIME"),
+                           bins = "pretty",
+                           pred_corr = F,
+                           show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(24,168,48)) +
+  labs(title = "", subtitle = "Lung",
+       x = "Time (h)",
+       y = "Concentration (mg/kg)")
+
+p_lung_rzl_list[[i]] <- p_lung_rzl
+}
+
+for (i in seq_along(p_lung_rzl_list)) {
+  print(p_lung_rzl_list[[i]])
+}
+```
+
+```{r}
+drugs <- c("BTZ-043", "CFZ", "GSK-286", "GFB", 
+           "GTX", "INH", "TBD-11", 
+           "MXF", "QBD", "PMD", "PZA", 
+           "RIF", "RPT")
+wd_values <- c("BTZ043/", "CFZ/", "GSK286/", "GSK656/", 
+               "GTX/", "INH/", "mCLB073/", 
+               "MXF/", "OPC167832/", "PMD/", "PZA/", 
+               "RIF/", "RPT/")
+runnos_cell <- c("L02p_004c", "L02b", "L13", "L02d", 
+                 "121_2a_linear_error", "L02", "L07", 
+                 "64", "L01_pfix", "L02a", "L13", 
+                 "52_02", "18")
+```
+
+## Run Cell VPCs
+```{r}
+#### need to re-run original drug and run list names first before code below can run
+
+p_cell_plot_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno_cell <- runnos_cell[i]
+  
+options(repr.plot.width = 6, repr.plot.height = 4)
+p_cell <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                           wd,
+                                           'Cell/',
+                                           'vpc_',
+                                           'run', 
+                                            runno_cell),
+                       obs_cols = list(idv = "TAD"),
+                       sim_cols = list(idv = "TAD"),
+                       bins = "pretty",
+                       pred_corr = F,
+                       show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+  labs(title = "", subtitle = "Cellular Lesion",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/kg)")
+
+p_cell_plot_list[[i]] <- p_cell
+}
+
+for (i in seq_along(p_cell_plot_list)) {
+  print(p_cell_plot_list[[i]])
+}
+```
+
+### DLM, RBT
+```{r}
+drugs <- c("DLM", "RBT")
+wd_values <- c("DLM/Cell/", "RBT/Cell/")
+runnos_cell <- c("L02g", "L02")
+
+p_cell_dlm_rbt_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno_cell <- runnos_cell[i]
+  
+p_cell_dlm_rbt <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                                   wd,
+                                                   'vpc_',
+                                                   'run', 
+                                                   runno_cell),
+                         obs_cols = list(idv = "TAD"),
+                         sim_cols = list(idv = "TAD"),
+                         bins = "pretty",
+                         pred_corr = F,
+                       # logy = T,
+                         show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+# scale_y_log10() +
+  labs(title = "", subtitle = "Cellular Lesion",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/L)")
+
+p_cell_dlm_rbt_list[[i]] <- p_cell_dlm_rbt
+}
+
+for (i in seq_along(p_cell_dlm_rbt_list)) {
+  print(p_cell_dlm_rbt_list[[i]])
+}
+```
+
+### RZL (using TIME instead of TAD)
+```{r}
+drugs <- c("RZL")
+wd_values <- c("RZL/Cell/")
+runnos_cell <- c("L23")
+
+p_cell_rzl_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno_cell <- runnos_cell[i]
+  
+p_cell_rzl <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                               wd,
+                                               'vpc_',
+                                               'run', 
+                                               runno_cell),
+                         obs_cols = list(idv = "TIME"),
+                         sim_cols = list(idv = "TIME"),
+                         bins = "pretty",
+                         pred_corr = F,
+                       # logy = T,
+                         show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(24,168,48)) +
+# scale_y_log10() +
+  labs(title = "", subtitle = "Cell",
+       x = "Time (h)",
+       y = "Concentration (mg/L)")
+
+p_cell_rzl_list[[i]] <- p_cell_rzl
+}
+
+for (i in seq_along(p_cell_rzl_list)) {
+  print(p_cell_rzl_list[[i]])
+}
+```
+
+```{r}
+drugs <- c("BTZ-043", "CFZ", "GSK-286", "GFB", 
+           "GTX", "INH", "TBD-11", 
+           "MXF", "QBD", "PMD", "PZA", 
+           "RIF", "RPT")
+wd_values <- c("BTZ043/", "CFZ/", "GSK286/", "GSK656/", 
+               "GTX/", "INH/", "mCLB073/", 
+               "MXF/", "OPC167832/", "PMD/", "PZA/", 
+               "RIF/", "RPT/")
+runnos_case <- c("L04m3pfix_004c_2", "L06g", "L11", "L03d", 
+                 "121_3a_linear_error", "L08d_a", "L03", 
+                 "84", "L03_p", "L03b", "L17", 
+                 "53_02", "19")
+```
+
+## Run Caseum VPCs
+```{r}
+#### need to re-run original drug and run list names first before code below can run
+
+p_case_plot_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno_case <- runnos_case[i]
+  
+options(repr.plot.width = 6, repr.plot.height = 4)
+p_case <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                           wd,
+                                           'Caseum/',
+                                           'vpc_',
+                                           'run', 
+                                           runno_case),
+                       obs_cols = list(idv = "TAD"),
+                       sim_cols = list(idv = "TAD"),
+                       bins = ifelse(drug == "DLM", "none", "pretty"), ## only one bin for DLM
+                       pred_corr = F,
+                       show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+  labs(title = "", subtitle = "Caseum",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/kg)")
+
+p_case_plot_list[[i]] <- p_case
+}
+
+for (i in seq_along(p_case_plot_list)) {
+  print(p_case_plot_list[[i]])
+}
+```
+
+### DLM, RBT, RZL (using TIME instead of TAD)
+```{r}
+drugs <- c("DLM", "RBT", "RZL")
+wd_values <- c("DLM/Caseum/", "RBT/Caseum/", "RZL/Caseum/")
+runnos_case <- c("L03c_v2", "L03_v2", "L24")
+
+p_case_dlm_rbt_rzl_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno_case <- runnos_case[i]
+  
+p_case_dlm_rbt_rzl <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                                       wd,
+                                                      'vpc_',
+                                                      'run', 
+                                                       runno_case),
+                         obs_cols = list(idv = "TIME"),
+                         sim_cols = list(idv = "TIME"),
+                         bins = "pretty",
+                         pred_corr = F,
+                       # logy = T,
+                         show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(24,168,48)) +
+# scale_y_log10() +
+  labs(title = "", subtitle = "Caseum",
+       x = "Time (h)",
+       y = "Concentration (mg/L)")
+
+p_case_dlm_rbt_rzl_list[[i]] <- p_case_dlm_rbt_rzl
+}
+
+for (i in seq_along(p_case_dlm_rbt_rzl_list)) {
+  print(p_case_dlm_rbt_rzl_list[[i]])
+}
+```
+
+# :: Arrange plots
+```{r}
+a <- grid.arrange(p_plasma_plot_list[[1]], p_lung_plot_list[[1]], p_cell_plot_list[[1]], p_case_plot_list[[1]],
+                  p_plasma_plot_list[[2]], p_lung_plot_list[[2]], p_cell_plot_list[[2]], p_case_plot_list[[2]],
+                  p_plasma_dlm_rbt_rzl_list[[1]], p_lung_dlm_rbt_list[[1]], p_cell_dlm_rbt_list[[1]], p_case_dlm_rbt_rzl_list[[1]], 
+                  p_plasma_plot_list[[3]], p_lung_plot_list[[3]], p_cell_plot_list[[3]], p_case_plot_list[[3]],
+                  ncol = 4)
+ggsave(paste0(WD, 'Plots/', "btz_cfz_dlm_286.png"), plot = a, width = 15, height = 12)
+
+b <- grid.arrange(p_plasma_plot_list[[4]], p_lung_plot_list[[4]], p_cell_plot_list[[4]], p_case_plot_list[[4]],
+                  p_plasma_plot_list[[5]], p_lung_plot_list[[5]], p_cell_plot_list[[5]], p_case_plot_list[[5]],
+                  p_plasma_plot_list[[6]], p_lung_plot_list[[6]], p_cell_plot_list[[6]], p_case_plot_list[[6]],
+                  p_plasma_plot_list[[7]], p_lung_plot_list[[7]], p_cell_plot_list[[7]], p_case_plot_list[[7]],
+                  ncol = 4)
+ggsave(paste0(WD, 'Plots/', "gfb_gtx_inh_tbd.png"), plot = b, width = 15, height = 12)
+
+c <- grid.arrange(p_plasma_plot_list[[8]], p_lung_plot_list[[8]], p_cell_plot_list[[8]], p_case_plot_list[[8]],
+                  p_plasma_plot_list[[9]], p_lung_plot_list[[9]], p_cell_plot_list[[9]], p_case_plot_list[[9]],
+                  p_plasma_plot_list[[10]], p_lung_plot_list[[10]], p_cell_plot_list[[10]], p_case_plot_list[[10]],
+                  p_plasma_plot_list[[11]], p_lung_plot_list[[11]], p_cell_plot_list[[11]], p_case_plot_list[[11]],
+                  ncol = 4)
+ggsave(paste0(WD, 'Plots/', "mxf_qbd_pmd_pza.png"), plot = c, width = 15, height = 12)
+
+d <- grid.arrange(p_plasma_dlm_rbt_rzl_list[[2]], p_lung_dlm_rbt_list[[2]], p_cell_dlm_rbt_list[[2]], p_case_dlm_rbt_rzl_list[[2]],
+                  p_plasma_plot_list[[12]], p_lung_plot_list[[12]], p_cell_plot_list[[12]], p_case_plot_list[[12]],
+                  p_plasma_plot_list[[13]], p_lung_plot_list[[13]], p_cell_plot_list[[13]], p_case_plot_list[[13]],
+                  p_plasma_dlm_rbt_rzl_list[[3]], p_lung_rzl_list[[1]], p_cell_rzl_list[[1]], p_case_dlm_rbt_rzl_list[[3]],
+                  ncol = 4)
+ggsave(paste0(WD, 'Plots/', "rbt_rif_rpt_rzl.png"), plot = d, width = 15, height = 12)
+```
+
+# Plasma VPCs (with metabolite)
+> BDQ, SZD, TBAJ-587, TBAJ-876
+
+## Gather info for loop
+```{r}
+drugs <- c("BDQ", "BDQ-M2", "SZD", "SZD-M1", "TBAJ-587", "TBAJ-587-M3", "TBAJ-876", "TBAJ-876-M3")
+wd_values <- c("BDQ/Plasma/", "SZD/Plasma/", "TBAJ587/Plasma/", "TBAJ876/Plasma/")
+runno_values <- c("59", "73", "61", "134")
+```
+
+## Adjust data for cohesion
+```{r}
+obs_bdq <- read_nm_table(paste0(WD, wd_values[1], 'run', runno_values[1], 'vpc-idv', '/m1/vpc_original.npctab.dta')) %>% filter(METAB==0)
+obs_bdq_m2 <- read_nm_table(paste0(WD, wd_values[1], 'run', runno_values[1], 'vpc-idv', '/m1/vpc_original.npctab.dta')) %>% filter(METAB==1)
+obs_szd <- read_nm_table(paste0(WD, wd_values[2], 'run', runno_values[2], 'vpc-idv', '/m1/vpc_original.npctab.dta')) %>% filter(METAB==1)
+obs_szd_m1 <- read_nm_table(paste0(WD, wd_values[2], 'run', runno_values[2], 'vpc-idv', '/m1/vpc_original.npctab.dta')) %>% filter(METAB==2)
+obs_587 <- read_nm_table(paste0(WD, wd_values[3], 'run', runno_values[3], 'vpc-idv', '/m1/vpc_original.npctab.dta')) %>% filter(METAB==0)
+obs_587_m3 <- read_nm_table(paste0(WD, wd_values[3], 'run', runno_values[3], 'vpc-idv', '/m1/vpc_original.npctab.dta')) %>% filter(METAB==1)
+obs_876 <- read_nm_table(paste0(WD, wd_values[4], 'run', runno_values[4], 'vpc-idv', '/m1/vpc_original.npctab.dta')) %>% filter(CMPD==1)
+obs_876_m3 <- read_nm_table(paste0(WD, wd_values[4], 'run', runno_values[4], 'vpc-idv', '/m1/vpc_original.npctab.dta')) %>% filter(CMPD==2)
+
+sim_bdq <- read_nm_table(paste0(WD, wd_values[1], 'run', runno_values[1], 'vpc-idv', '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==0)
+sim_bdq_m2 <- read_nm_table(paste0(WD, wd_values[1], 'run', runno_values[1], 'vpc-idv', '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==1)
+sim_szd <- read_nm_table(paste0(WD, wd_values[2], 'run', runno_values[2], 'vpc-idv', '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==1)
+sim_szd_m1 <- read_nm_table(paste0(WD, wd_values[2], 'run', runno_values[2], 'vpc-idv', '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==2)
+sim_587 <- read_nm_table(paste0(WD, wd_values[3], 'run', runno_values[3], 'vpc-idv', '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==0)
+sim_587_m3 <- read_nm_table(paste0(WD, wd_values[3], 'run', runno_values[3], 'vpc-idv', '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==1)
+sim_876 <- read_nm_table(paste0(WD, wd_values[4], 'run', runno_values[4], 'vpc-idv', '/m1/vpc_simulation.1.npctab.dta')) %>% filter(CMPD==1)
+sim_876_m3 <- read_nm_table(paste0(WD, wd_values[4], 'run', runno_values[4], 'vpc-idv', '/m1/vpc_simulation.1.npctab.dta')) %>% filter(CMPD==2)
+
+obs <- list(obs_bdq, obs_bdq_m2, obs_szd, obs_szd_m1, obs_587, obs_587_m3, obs_876, obs_876_m3)
+sim <- list(sim_bdq, sim_bdq_m2, sim_szd, sim_szd_m1, sim_587, sim_587_m3, sim_876, sim_876_m3)
+```
+
+## Run VPCs
+```{r}
+pm_plasma_plot_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  
+options(repr.plot.width = 6, repr.plot.height = 4)
+pm_plasma <- vpc::vpc_vpc(obs = obs[[i]],
+                          sim = sim[[i]],
+                          obs_cols = list(idv = "TAD"),
+                          sim_cols = list(idv = "TAD"),
+                          bins = "pretty",
+                          pred_corr = F,
+                          show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+  labs(title = drug, subtitle = "Plasma",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/L)")
+pm_plasma_plot_list[[i]] <- pm_plasma
+}
+
+for (i in seq_along(pm_plasma_plot_list)) {
+  print(pm_plasma_plot_list[[i]])
+}
+```
+
+# Lesion VPCs (with metabolite)
+> BDQ, SZD, TBAJ-587, TBAJ-876
+
+# **Jointly modeled
+
+### Gather info for loop
+```{r}
+drugs <- c("SZD", "SZD-M1", "TBAJ-876", "TBAJ-876-M3")
+wd_values <- c("SZD/", "TBAJ876/")
+runnos_lung <- c("27", "L33")
+runnos_cell <- c("30", "L32")
+runnos_case <- c("31", "L31")
+```
+
+### Adjust data for cohesion
+```{r}
+obs_szd <- read_nm_table(paste0(WD, wd_values[1], 'Lung/vpc_run', runnos_lung[1], '/m1/vpc_original.npctab.dta')) %>% filter(METAB==1)
+obs_szd_m1 <- read_nm_table(paste0(WD, wd_values[1], 'Lung/vpc_run', runnos_lung[1], '/m1/vpc_original.npctab.dta')) %>% filter(METAB==2)
+obs_876 <- read_nm_table(paste0(WD, wd_values[2], 'Lung/vpc_run', runnos_lung[2], '/m1/vpc_original.npctab.dta')) %>% filter(CMPD==1)
+obs_876_m3 <- read_nm_table(paste0(WD, wd_values[2], 'Lung/vpc_run', runnos_lung[2], '/m1/vpc_original.npctab.dta')) %>% filter(CMPD==2)
+
+sim_szd <- read_nm_table(paste0(WD, wd_values[1], 'Lung/vpc_run', runnos_lung[1], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==1)
+sim_szd_m1 <- read_nm_table(paste0(WD, wd_values[1], 'Lung/vpc_run', runnos_lung[1], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==2)
+sim_876 <- read_nm_table(paste0(WD, wd_values[2], 'Lung/vpc_run', runnos_lung[2], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(CMPD==1)
+sim_876_m3 <- read_nm_table(paste0(WD, wd_values[2], 'Lung/vpc_run', runnos_lung[2], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(CMPD==2)
+
+obs <- list(obs_szd, obs_szd_m1, obs_876, obs_876_m3)
+sim <- list(sim_szd, sim_szd_m1, sim_876, sim_876_m3)
+```
+
+#### Run Lung VPCs
+```{r}
+pm_lung_plot_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+
+options(repr.plot.width = 6, repr.plot.height = 4)
+pm_lung <- vpc::vpc_vpc(obs = obs[[i]],
+                        sim = sim[[i]],
+                        obs_cols = list(idv = "TAD"),
+                        sim_cols = list(idv = "TAD"),
+                        bins = "pretty",
+                        pred_corr = F,
+                        show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+  labs(title = "", subtitle = "Lung",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/kg)")
+
+pm_lung_plot_list[[i]] <- pm_lung
+}
+
+for (i in seq_along(pm_lung_plot_list)) {
+  print(pm_lung_plot_list[[i]])
+}
+```
+
+### Adjust data for cohesion
+```{r}
+obs_szd <- read_nm_table(paste0(WD, wd_values[1], 'Cell/vpc_run', runnos_cell[1], '/m1/vpc_original.npctab.dta')) %>% filter(METAB==1)
+obs_szd_m1 <- read_nm_table(paste0(WD, wd_values[1], 'Cell/vpc_run', runnos_cell[1], '/m1/vpc_original.npctab.dta')) %>% filter(METAB==2)
+obs_876 <- read_nm_table(paste0(WD, wd_values[2], 'Cell/vpc_run', runnos_cell[2], '/m1/vpc_original.npctab.dta')) %>% filter(CMPD==1)
+obs_876_m3 <- read_nm_table(paste0(WD, wd_values[2], 'Cell/vpc_run', runnos_cell[2], '/m1/vpc_original.npctab.dta')) %>% filter(CMPD==2)
+
+sim_szd <- read_nm_table(paste0(WD, wd_values[1], 'Cell/vpc_run', runnos_cell[1], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==1)
+sim_szd_m1 <- read_nm_table(paste0(WD, wd_values[1], 'Cell/vpc_run', runnos_cell[1], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==2)
+sim_876 <- read_nm_table(paste0(WD, wd_values[2], 'Cell/vpc_run', runnos_cell[2], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(CMPD==1)
+sim_876_m3 <- read_nm_table(paste0(WD, wd_values[2], 'Cell/vpc_run', runnos_cell[2], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(CMPD==2)
+
+obs <- list(obs_szd, obs_szd_m1, obs_876, obs_876_m3)
+sim <- list(sim_szd, sim_szd_m1, sim_876, sim_876_m3)
+```
+
+#### Run Cell VPCs
+```{r}
+pm_cell_plot_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  
+options(repr.plot.width = 6, repr.plot.height = 4)
+pm_cell <- vpc::vpc_vpc(obs = obs[[i]],
+                        sim = sim[[i]],
+                        obs_cols = list(idv = "TAD"),
+                        sim_cols = list(idv = "TAD"),
+                        bins = "pretty",
+                        pred_corr = F,
+                        show = list(obs_dv =T, obs_ci = F,pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+  labs(title = "", subtitle = "Cellular Lesion",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/kg)")
+
+pm_cell_plot_list[[i]] <- pm_cell
+}
+
+for (i in seq_along(pm_cell_plot_list)) {
+  print(pm_cell_plot_list[[i]])
+}
+```
+
+### Adjust data for cohesion
+```{r}
+obs_szd <- read_nm_table(paste0(WD, wd_values[1], 'Caseum/vpc_run', runnos_case[1], '/m1/vpc_original.npctab.dta')) %>% filter(METAB==1)
+obs_szd_m1 <- read_nm_table(paste0(WD, wd_values[1], 'Caseum/vpc_run', runnos_case[1], '/m1/vpc_original.npctab.dta')) %>% filter(METAB==2)
+obs_876 <- read_nm_table(paste0(WD, wd_values[2], 'Caseum/vpc_run', runnos_case[2], '/m1/vpc_original.npctab.dta')) %>% filter(CMPD==1)
+obs_876_m3 <- read_nm_table(paste0(WD, wd_values[2], 'Caseum/vpc_run', runnos_case[2], '/m1/vpc_original.npctab.dta')) %>% filter(CMPD==2)
+
+sim_szd <- read_nm_table(paste0(WD, wd_values[1], 'Caseum/vpc_run', runnos_case[1], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==1)
+sim_szd_m1 <- read_nm_table(paste0(WD, wd_values[1], 'Caseum/vpc_run', runnos_case[1], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(METAB==2)
+sim_876 <- read_nm_table(paste0(WD, wd_values[2], 'Caseum/vpc_run', runnos_case[2], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(CMPD==1)
+sim_876_m3 <- read_nm_table(paste0(WD, wd_values[2], 'Caseum/vpc_run', runnos_case[2], '/m1/vpc_simulation.1.npctab.dta')) %>% filter(CMPD==2)
+
+obs <- list(obs_szd, obs_szd_m1, obs_876, obs_876_m3)
+sim <- list(sim_szd, sim_szd_m1, sim_876, sim_876_m3)
+```
+
+#### Run Caseum VPCs
+```{r}
+pm_case_plot_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  
+options(repr.plot.width = 6, repr.plot.height = 4)
+pm_case <- vpc::vpc_vpc(obs = obs[[i]],
+                        sim = sim[[i]],
+                        obs_cols = list(idv = "TAD"),
+                        sim_cols = list(idv = "TAD"),
+                        bins = "pretty",
+                        pred_corr = F,
+                        show = list(obs_dv =T, obs_ci = F,pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+  labs(title = "", subtitle = "Caseum",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/kg)")
+
+pm_case_plot_list[[i]] <- pm_case
+}
+
+for (i in seq_along(pm_case_plot_list)) {
+  print(pm_case_plot_list[[i]])
+}
+```
+
+# :: Arrange plots
+```{r}
+# plasma plot #s match szd, szd-m1, 876, and 876-m3
+g <- grid.arrange(pm_plasma_plot_list[[3]], pm_lung_plot_list[[1]], pm_cell_plot_list[[1]], pm_case_plot_list[[1]],
+                  pm_plasma_plot_list[[4]], pm_lung_plot_list[[2]], pm_cell_plot_list[[2]], pm_case_plot_list[[2]],
+                  pm_plasma_plot_list[[7]], pm_lung_plot_list[[3]], pm_cell_plot_list[[3]], pm_case_plot_list[[3]],
+                  pm_plasma_plot_list[[8]], pm_lung_plot_list[[4]], pm_cell_plot_list[[4]], pm_case_plot_list[[4]],
+                  ncol = 4)
+ggsave(paste0(WD, 'Plots/', "szd_876_plus_metab.png"), plot = g, width = 15, height = 12)
+```
+
+# ** Separately modeled
+
+### Gather info for loop
+```{r}
+drugs <- c("BDQ", "BDQ-M2", "TBAJ-587", "TBAJ-587-M3")
+wd_values <- c("BDQ/Parent/", "BDQ/Metab/", "TBAJ587/Parent/", "TBAJ587/Metab/")
+runnos_lung <- c("L01d", "L01e", "L06", "L06b")
+runnos_cell <- c("L02a", "L02b", "L04b", "L04e")
+runnos_case <- c("L05b", "L06a", "L02b4", "L07")
+```
+
+### Run Lung VPCs
+```{r}
+pms_lung_plot_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno_lung <- runnos_lung[i]
+  
+options(repr.plot.width = 6, repr.plot.height = 4)
+pms_lung <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                             wd,
+                                             'Lung/',
+                                             'vpc_',
+                                             'run', 
+                                             runno_lung),
+                       obs_cols = list(idv = "TAD"),
+                       sim_cols = list(idv = "TAD"),
+                       bins = "pretty",
+                       pred_corr = F,
+                       show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+  labs(title = "", subtitle = "Lung",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/kg)")
+
+pms_lung_plot_list[[i]] <- pms_lung
+}
+
+for (i in seq_along(pms_lung_plot_list)) {
+  print(pms_lung_plot_list[[i]])
+}
+```
+
+### Run Cell VPCs
+```{r}
+pms_cell_plot_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno_cell <- runnos_cell[i]
+  
+options(repr.plot.width = 6, repr.plot.height = 4)
+pms_cell <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                             wd,
+                                             'Cell/',
+                                             'vpc_',
+                                             'run', 
+                                             runno_cell),
+                       obs_cols = list(idv = "TAD"),
+                       sim_cols = list(idv = "TAD"),
+                       bins = "pretty",
+                       pred_corr = F,
+                       show = list(obs_dv = T, obs_ci = F, pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+  labs(title = "", subtitle = "Cellular Lesion",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/kg)")
+
+pms_cell_plot_list[[i]] <- pms_cell
+}
+
+for (i in seq_along(pms_cell_plot_list)) {
+  print(pms_cell_plot_list[[i]])
+}
+```
+
+### Run Caseum VPCs
+```{r}
+pms_case_plot_list <- list()
+
+for (i in seq_along(drugs)) {
+  drug <- drugs[i]
+  wd <- wd_values[i]
+  runno_case <- runnos_case[i]
+  
+options(repr.plot.width = 6, repr.plot.height = 4)
+pms_case <- vpc::vpc_vpc(psn_folder = paste0(WD, 
+                                             wd,
+                                             'Caseum/',
+                                             'vpc_',
+                                             'run', 
+                                             runno_case),
+                       obs_cols = list(idv = "TAD"),
+                       sim_cols = list(idv = "TAD"),
+                       bins = "pretty",
+                       pred_corr = F,
+                       show = list(obs_dv = T, obs_ci = F,pi = T, pi_as_area = T)) +
+  theme_bw(base_size = 16) +
+  theme(panel.grid = element_blank()) +
+  scale_x_continuous(breaks = seq(0,120,12)) +
+  labs(title = "", subtitle = "Caseum",
+       x = "Time after dose (h)",
+       y = "Concentration (mg/kg)")
+
+pms_case_plot_list[[i]] <- pms_case
+}
+
+for (i in seq_along(pms_case_plot_list)) {
+  print(pms_case_plot_list[[i]])
+}
+```
+
+# :: Arrange plots
+```{r}
+# plasma plot #s match bdq, bdq-m2, 587, and 587-m3
+h <- grid.arrange(pm_plasma_plot_list[[1]], pms_lung_plot_list[[1]], pms_cell_plot_list[[1]], pms_case_plot_list[[1]],
+                  pm_plasma_plot_list[[2]], pms_lung_plot_list[[2]], pms_cell_plot_list[[2]], pms_case_plot_list[[2]],
+                  pm_plasma_plot_list[[5]], pms_lung_plot_list[[3]], pms_cell_plot_list[[3]], pms_case_plot_list[[3]],
+                  pm_plasma_plot_list[[6]], pms_lung_plot_list[[4]], pms_cell_plot_list[[4]], pms_case_plot_list[[4]],
+                  ncol = 4)
+ggsave(paste0(WD, 'Plots/', "bdq_587_plus_metab.png"), plot = h, width = 15, height = 12)
+```
