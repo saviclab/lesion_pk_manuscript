@@ -1,0 +1,13 @@
+﻿Data Description: Clinical lesion PK data from NCT00816426,
+,
+Column Name,Description
+DRUG,Drug name abbreviation
+SAMPLE.ID,Original subject ID 
+CID,Internal ID
+TIME,Time in hours
+TAD,Time after previous dose in hours
+DV,Concentration in mg/L
+NDOSES,Number of doses received
+LESIONNAME,Name of lesion
+METHOD,Drug quantitation method (LCMS or LCM)
+BLQ,"Below Limit of Quantification Flag (0: No, 1: Yes)"
