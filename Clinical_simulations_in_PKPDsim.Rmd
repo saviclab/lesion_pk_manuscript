@@ -1,0 +1,763 @@
+---
+title: "Clinical_simulations_in_PKPDsim"
+output: pdf_document
+date: "2023-06-09"
+---
+
+# Setup
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, 
+                      message = F, 
+                      warning = F, 
+                      fig.height = 3.75, 
+                      fig.width = 6.5, 
+                      fig.pos = "H",
+                      out.extra = "")
+
+options(ggplot2.discrete.colour= c("#00AFBB", "#E7B800", "#FC4E07", "grey"),
+        ggplot2.discrete.fill= c("#00AFBB", "#E7B800", "#FC4E07", "grey"))
+
+set.seed(3)
+
+# setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+library(tidyverse)
+library(xpose)
+library(xpose4)
+library(ggpubr)
+library(gridExtra)
+library(grid)
+library(readxl)
+library(ggsci)
+library(PKPDsim)
+
+theme_set(theme_bw(base_size=12)+theme(legend.title=element_blank()))
+
+WD <- "~/Dropbox/TB_translation/Projects/Rabbit_lesion_PK/"
+wd_hum <- "Clinical_validation/Validation_set_human/"
+wd_rab <- "Clinical_validation/Validation_set_rabbit/"
+wd_fig <- "manuscript/figures/clinical_sim_figs/"
+
+`%notin%` <- Negate(`%in%`)
+
+#x <- read.csv(paste0(WD, "/data/", "20240822_clinical_lesion_parameters.csv"))
+
+```
+
+# Simulation 
+- Simulate plasma and lesion compartments for various drug/dose scenarios 
+- Using lesion parameters estimated from human data, rabbit data, or rabbit corrected using rabbit-clinical relationship
+- Migrated from clinical_lesion_simulation_gates.R
+```{r}
+
+x <- x %>% filter(drug!= "BDQ_slow")
+
+x <- x %>% mutate(NDOSES = ifelse(drug %in% c("BDQ", "BDQ-M2", 
+                                              "TBAJ-876", "TBAJ-876-M3",
+                                              "TBAJ-587", "TBAJ-587-M3"), 28*4, 28)) # simulate longer for DARQs
+
+x <- x %>% 
+  # below is simulate slow BDQ at 400 mg at the start of tx
+  # use Annamarie's final BDQ gradient model for caseum lesion parameters
+  bind_rows(., x %>% 
+              filter(drug == "BDQ" & dose_mg == 400) %>% 
+              mutate(drug = "BDQ_slow") %>% # make a copy of BDQ row 
+              mutate(rab_KPL_caseum = 0.001622,
+                     rab_PC_caseum  = exp(8.011)/500**1.094 ) %>% # use 1,000 micrometers of depth
+              mutate(calc_KPL_caseum = rab_KPL_caseum,
+                     calc_PC_caseum  = 10 ** (final_intercept + (log10(rab_PC_caseum) * final_slope)) ) # intercept=-0.1634133, slope=0.5669489
+              )
+
+# set up for `Clinical_simulations_in_PKPDsim.Rmd
+lesion_parameters <- x %>% 
+  select(drug,contains("KPL"), contains("PC")) %>% # check number of columns before gather
+  unique() %>% #avoid repeats per drug
+  gather(key = "parameter", value = "value", 2:31) %>% 
+  mutate(value = ifelse(grepl("KPL", parameter) & is.na(value), 10, value)) %>% # if the paramter is a rate and NA, make it equal to 10
+  replace_na(list(parameter = "unknown", value = 0)) %>% # if the parameter is a ratio and NA, make it equal to 0
+  mutate(SPECIES = case_when(grepl("hu", parameter) ~ "Human",
+                             grepl("rab", parameter) ~ "Rabbit",
+                             grepl("calc", parameter) ~ "Corrected \nRabbit"),
+         LESIONNAME = case_when(grepl("lung", parameter) ~ "Lung",
+                                grepl("cell", parameter) ~ "Cellular lesion",
+                                grepl("cavity", parameter) ~ "Cavity wall",
+                                grepl("caseous", parameter) ~ "Caseous lesion",
+                                grepl("caseum", parameter) ~ "Caseum"))
+
+x$row_id <- paste(x$drug, x$dose_mg, "mg", x$II, sep="_") #row id to incorporate dose-ranging sims instead of id based on drug name
+x$drug_name <- x$drug
+
+#### 1. Model ####
+
+simulation_collect <- data.frame()
+simulation_collect_all_drugs <- data.frame()
+
+for (i in 1:dim(x)[1]) {
+  
+  scen <- x[i,]
+  
+  drug_name_id <- scen$drug
+  drug_name <- scen$drug_name
+
+  if(scen$model_structure == "depot_1_cmt")  { 
+     
+     # 1 cmt, first order
+      
+      my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = - KA*A[1] 
+                            dAdt[2] = KA*A[1] - CL/V*A[2]
+                            dAdt[3] = A[2]/V
+                            CP = A[2]/V
+                            dAdt[4] = KPL * (PC*A[2]/V - A[4])
+                            CLESION = A[4]
+                            dAdt[5] = A[4]
+                            AUC = A[3]
+                            AUCL = A[5]
+                            ",
+                                     obs = list(cmt = 2, scale = "V"),
+                                     dose = list(cmt = 1),
+                                     lagtime = "ALAG",
+                                     declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+      
+      my_model_oral
+      
+    } else if (scen$model_structure == "depot_1_cmt_1_transit") {
+      
+      # 1 cmt, transit
+      
+      my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = -KTR*A[1] 
+                            dAdt[2] = KA*A[3] - CL/V*A[2] 
+                            dAdt[3] = KTR*A[1] - KA*A[3]
+                            CP = A[2]/V
+                            dAdt[4] = KPL * (PC*A[2]/V - A[4])
+                            CLESION = A[4]
+                            dAdt[5] = A[2]/V
+                            dAdt[6] = A[4]
+                            AUC = A[5]
+                            AUCL = A[6]
+                            ",
+                                     obs = list(cmt = 2, scale = "V"),
+                                     dose = list(cmt = 1),
+                                     lagtime = "ALAG",
+                                     declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+      
+      my_model_oral
+      
+    } else if (scen$model_structure == "depot_1_cmt_2_transit") {
+      
+      # 1 cmt, 2 transit
+      
+      my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = -KTR*A[1] 
+                            dAdt[2] = KA*A[4] - CL/V*A[2] 
+                            dAdt[3] = KTR*A[1] - KTR*A[3]
+                            dAdt[4] = KTR*A[3] - KA*A[4]
+                            CP = A[2]/V
+                            dAdt[5] = KPL * (PC*A[2]/V - A[5])
+                            CLESION = A[5]
+                            dAdt[6] = A[2]/V
+                            dAdt[7] = A[5]
+                            AUC = A[6]
+                            AUCL = A[7]
+                            ",
+                                     obs = list(cmt = 2, scale = "V"),
+                                     dose = list(cmt = 1),
+                                     lagtime = "ALAG",
+                                     declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+      
+      my_model_oral
+      
+    } else if (scen$model_structure == "depot_1_cmt_4_transit") {
+      
+      # 1 cmt, 4 transit
+      
+      my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = -KTR*A[1] 
+                            dAdt[2] = KA*A[6] - CL/V*A[2] 
+                            dAdt[3] = KTR*A[1] - KTR*A[3]
+                            dAdt[4] = KTR*A[3] - KTR*A[4]
+                            dAdt[5] = KTR*A[4] - KTR*A[5]
+                            dAdt[6] = KTR*A[5] - KA*A[6]
+                            CP = A[2]/V
+                            dAdt[7] = KPL * (PC*A[2]/V - A[7])
+                            CLESION = A[7]
+                            dAdt[8] = A[2]/V
+                            dAdt[9] = A[7]
+                            AUC = A[8]
+                            AUCL = A[9]
+                            ",
+                                     obs = list(cmt = 2, scale = "V"),
+                                     dose = list(cmt = 1),
+                                     lagtime = "ALAG",
+                                     declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+      
+      my_model_oral
+    
+    } else if (scen$model_structure == "depot_1_cmt_MM_elim_savic_transit") {
+      
+      # 1 cmt, MM elim, savic transit
+      
+      my_model_oral <- new_ode_model(
+                              code = "
+                              tad = t - t_prv_dose
+                              N = (KTR * MTT) - 1
+                              LNFAC= log(2.506628)+(N+0.5)*log(N)-N
+                              dAdt[1] = exp(log(prv_dose) + log(KTR) + N*log(KTR * tad) - KTR * tad - LNFAC) - KA*A[1]
+                              dAdt[2] = KA*A[1] - VMAX * A[2]/V / (KM + A[2]/V)
+                              CP      = A[2]/V
+                              dAdt[3] = A[2]/V
+                              AUC     = A[3]
+                              dAdt[4] = KPL * (PC * A[2]/V - A[4])
+                              dAdt[5] = A[4]
+                              CLESION = A[4]
+                              AUCL    = A[5]
+                            ",
+                              declare_variables = c("LNFAC", "N", "tad", "AUC", "AUCL", "CLESION", "CP"),
+                              #parameters = my_parameters,
+                              dose = list(cmt = 1, bioav = 0),
+                              obs = list(cmt = 2, scale = "V")
+                            )
+      
+      my_model_oral
+      
+    } else if (scen$model_structure == "depot_2_cmt") {
+
+      # 2 cmt. first order
+      
+      my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = - KA*A[1] 
+                            dAdt[2] = KA*A[1] - CL/V*A[2] - Q*A[2]/V + Q*A[3]/V2
+                            dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                            CP = A[2]/V
+                            dAdt[4] = KPL * (PC*A[2]/V - A[4])
+                            CLESION = A[4]
+                            dAdt[5] = A[2]/V
+                            dAdt[6] = A[4]
+                            AUC = A[5]
+                            AUCL = A[6]
+                            ",
+                                     obs = list(cmt = 2, scale = "V"),
+                                     dose = list(cmt = 1),
+                                     lagtime = "ALAG",
+                                     declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+      
+      my_model_oral
+      
+    } else if (scen$model_structure == "depot_2_cmt_1_transit") {
+
+      # 2 cmt. 1 transit
+      
+      my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = - KTR*A[1] 
+                            dAdt[2] = KA*A[4] - CL/V*A[2] - Q*A[2]/V + Q*A[3]/V2
+                            dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                            dAdt[4] = KTR*A[1] - KA*A[4]
+                            CP = A[2]/V
+                            dAdt[5] = KPL * (PC*A[2]/V - A[5])
+                            CLESION = A[5]
+                            dAdt[6] = A[2]/V
+                            dAdt[7] = A[5]
+                            AUC = A[6]
+                            AUCL = A[7]
+                            ",
+                                     obs = list(cmt = 2, scale = "V"),
+                                     dose = list(cmt = 1),
+                                     lagtime = "ALAG",
+                                     declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+      
+      my_model_oral    
+      
+  } else if (scen$model_structure == "depot_2_cmt_2_transit") {
+
+      # 2 cmt. 2 transit
+      
+      my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = - KTR*A[1] 
+                            dAdt[2] = KTR*A[5] - CL/V*A[2] - Q*A[2]/V + Q*A[3]/V2
+                            dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                            dAdt[4] = KTR*A[1] - KTR*A[4]
+                            dAdt[5] = KTR*A[4] - KTR*A[5]
+                            CP = A[2]/V
+                            dAdt[6] = KPL * (PC*A[2]/V - A[6])
+                            CLESION = A[6]
+                            dAdt[7] = A[2]/V
+                            dAdt[8] = A[6]
+                            AUC = A[7]
+                            AUCL = A[8]
+                            ",
+                                     obs = list(cmt = 2, scale = "V"),
+                                     dose = list(cmt = 1),
+                                     lagtime = "ALAG",
+                                     declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+      
+      my_model_oral    
+      
+  } else if (scen$model_structure == "depot_2_cmt_savic_transit") {
+
+      # 2 cmt. savic transit
+      
+      my_model_oral <- new_ode_model(code = "
+                              tad = t - t_prv_dose
+                              N = (KTR * MTT) - 1
+                              LNFAC= log(2.506628)+(N+0.5)*log(N)-N
+                              dAdt[1] = exp(log(prv_dose) + log(KTR) + N*log(KTR * tad) - KTR * tad - LNFAC) - KA*A[1]
+                              dAdt[2] = KA*A[1] - CL/V*A[2] - Q*A[2]/V + Q*A[3]/V2
+                              dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                              CP      = A[2]/V
+                              dAdt[4] = A[2]/V
+                              AUC     = A[4]
+                              dAdt[5] = KPL * (PC * A[2]/V - A[5])
+                              dAdt[6] = A[5]
+                              CLESION = A[5]
+                              AUCL    = A[6]
+                            ",
+                                     obs = list(cmt = 2, scale = "V"),
+                                     dose = list(cmt = 1, bioav = 0),
+                                     declare_variables = c("LNFAC", "N", "tad", "AUC", "AUCL", "CLESION", "CP"))
+      
+      my_model_oral    
+      
+  } else if (scen$model_structure == "depot_3_cmt") {
+    
+    # 3 compartment, first order
+    
+    my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = - KA*A[1] 
+                            dAdt[2] = KA*A[1] - CL/V*A[2] - Q*A[2]/V + Q*A[3]/V2 - Q2*A[2]/V + Q2*A[4]/V3
+                            dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                            dAdt[4] = Q2*A[2]/V - Q2*A[4]/V3
+                            CP = A[2]/V
+                            dAdt[5] = KPL * (PC*A[2]/V - A[5])
+                            CLESION = A[5]
+                            dAdt[6] = A[2]/V
+                            dAdt[7] = A[5]
+                            AUC = A[6]
+                            AUCL = A[7]
+                            ",
+                                   obs = list(cmt = 2, scale = "V"),
+                                   lagtime = "ALAG",
+                                   declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+    
+    my_model_oral
+  
+  } else if (scen$model_structure == "metab_depot_3_cmt") {
+    
+    # 3 compartment, first order +metab
+    
+    my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = - KA*A[1] 
+                            dAdt[2] = KA*A[1] - CL/V*A[2] - Q*A[2]/V + Q*A[3]/V2 - Q2*A[2]/V + Q2*A[4]/V3
+                            dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                            dAdt[4] = Q2*A[2]/V - Q2*A[4]/V3
+                            dAdt[5] = CL/V*A[2] - CLM/VM2*A[5]
+                            CP = A[2]/V
+                            dAdt[6] = KPL * (PC*A[2]/V - A[6])
+                            CLESION = A[6]
+                            dAdt[7] = A[2]/V
+                            dAdt[8] = A[6]
+                            AUC = A[7]
+                            AUCL = A[8]
+                            ",
+                                   obs = list(cmt = 2, scale = "V"),
+                                   lagtime = "ALAG",
+                                   declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+    
+    my_model_oral
+  
+  } else if (scen$model_structure == "depot_3_cmt_1_transit") {
+    
+    # 3 compartment, 1 transit
+    
+    my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = - KTR*A[1] 
+                            dAdt[2] = KTR*A[5] - CL/V*A[2] - Q*A[2]/V + Q*A[3]/V2 - Q2*A[2]/V + Q2*A[4]/V3
+                            dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                            dAdt[4] = Q2*A[2]/V - Q2*A[4]/V3
+                            dAdt[5] = KTR*A[1] - KTR*A[5]
+                            CP = A[2]/V
+                            dAdt[6] = KPL * (PC*A[2]/V - A[6])
+                            CLESION = A[6]
+                            dAdt[7] = A[2]/V
+                            dAdt[8] = A[6]
+                            AUC = A[7]
+                            AUCL = A[8]
+                            ",
+                                   obs = list(cmt = 2, scale = "V"),
+                                   lagtime = "ALAG",
+                                   declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+    
+    my_model_oral  
+  
+  } else if(scen$model_structure == "depot_3_cmt_2_transit") {
+    
+    # 3 compartment, 2 transit
+    
+    my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = - KTR*A[1] 
+                            dAdt[2] = KA*A[6] - CL/V*A[2] - Q*A[2]/V + Q*A[3]/V2 - Q2*A[2]/V + Q2*A[4]/V3
+                            dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                            dAdt[4] = Q2*A[2]/V - Q2*A[4]/V3
+                            dAdt[5] = KTR*A[1] - KTR*A[5]
+                            dAdt[6] = KTR*A[5] - KA*A[6]
+                            CP = A[2]/V
+                            dAdt[7] = KPL * (PC*A[2]/V - A[7])
+                            CLESION = A[7]
+                            dAdt[8] = A[2]/V
+                            dAdt[9] = A[7]
+                            AUC = A[8]
+                            AUCL = A[9]
+                            ",
+                                   obs = list(cmt = 2, scale = "V"),
+                                   lagtime = "ALAG",
+                                   declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+    
+    my_model_oral  
+  
+  } else if (scen$model_structure == "depot_3_cmt_savic_transit") {
+
+      # 2 cmt. savic transit
+      
+      my_model_oral <- new_ode_model(code = "
+                              tad = t - t_prv_dose
+                              N = (KTR * MTT) - 1
+                              LNFAC= log(2.506628)+(N+0.5)*log(N)-N
+                              dAdt[1] = exp(log(prv_dose) + log(KTR) + N*log(KTR * tad) - KTR * tad - LNFAC) - KA*A[1]
+                              dAdt[2] = KA*A[1] - CL/V*A[2] - Q*A[2]/V + Q*A[3]/V2 - Q2*A[2]/V - Q*A[4]/V3
+                              dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                              dAdt[4] = Q2*A[2]/V - Q*A[4]/V3
+                              CP      = A[2]/V
+                              dAdt[5] = A[2]/V
+                              AUC     = A[4]
+                              dAdt[6] = KPL * (PC * A[2]/V - A[6])
+                              dAdt[7] = A[6]
+                              CLESION = A[6]
+                              AUCL    = A[7]
+                            ",
+                                     obs = list(cmt = 2, scale = "V"),
+                                     dose = list(cmt = 1, bioav = 0),
+                                     declare_variables = c("LNFAC", "N", "tad", "AUC", "AUCL", "CLESION", "CP"))
+      
+      my_model_oral    
+      
+  } else if (scen$model_structure == "metab2_depot_3_cmt_1_transit") {
+    
+    # 3 compartment, 1 transit
+    
+    my_model_oral <- new_ode_model(code = "
+                            dAdt[1] = - KTR*A[1] 
+                            dAdt[2] = KTR*A[5] - CL/V*A[2] - Q*A[2]/V + Q*A[3]/V2 - Q2*A[2]/V + Q2*A[4]/V3
+                            dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                            dAdt[4] = Q2*A[2]/V - Q2*A[4]/V3
+                            dAdt[5] = KTR*A[1] - KTR*A[5]
+                            dAdt[6] = CL/V*A[2] - CLM/VM*A[6] - QM/VM2*A[6] + QM/VM2*A[7] - QM2/VM3*A[6] + QM2/VM3*A[8]
+                            dAdt[7] = QM/VM2*A[6] - QM/VM2*A[7]
+                            dAdt[8] = QM2/VM3*A[6] - QM2/VM3*A[8]
+                            CP = A[2]/V
+                            dAdt[9] = KPL * (PC*A[2]/V - A[9])
+                            CLESION  = A[9]
+                            AUC = 0
+                            AUCL = 0
+                            ",
+                                   obs = list(cmt = 2, scale = "V"),
+                                   lagtime = "ALAG",
+                                   declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+    
+    my_model_oral      
+      
+  } else if (scen$model_structure == "depot_2_cmt_MM_elim") {
+  
+    # 2 cmt mm elim
+  
+    my_model_oral <- new_ode_model(code = "
+                              dAdt[1] = - KA*A[1] 
+                              dAdt[2] = KA*A[1] - VMAX*A[2]/V / (KM + A[2]/V) - Q*A[2]/V + Q*A[3]/V2
+                              dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                              CP = A[2]/V
+                              dAdt[4] = KPL * (PC*A[2]/V - A[4])
+                              CLESION = A[4]
+                              dAdt[5] = A[2]/V
+                              dAdt[6] = A[4]
+                              AUC = A[5]
+                              AUCL = A[6]
+                              ",
+                                   obs = list(cmt = 2, scale = "V"),
+                                   lagtime = "ALAG",
+                                   declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+    
+    my_model_oral
+    
+  } else if (scen$model_structure == "metab_depot_2_cmt_MM_elim") {
+  
+    # 2 cmt mm elim metab only
+    # For METAB, CP is actually the METAB conc (need this for `add_plasma_to_CLESION`)
+    my_model_oral <- new_ode_model(code = "
+                              dAdt[1] = - KA*A[1] 
+                              dAdt[2] = KA*A[1] - VMAX*A[2]/V / (KM + A[2]/V) - Q*A[2]/V + Q*A[3]/V2
+                              dAdt[3] = Q*A[2]/V - Q*A[3]/V2
+                              dAdt[4] = VMAX*A[2]/V / (KM + A[2]/V) - CLM/VM * A[4]
+                              CP = A[4]/VM
+                              dAdt[5] = KPL * (PC*A[4]/VM - A[5])
+                              CLESION = A[5]
+                              dAdt[6] = A[4]/VM
+                              dAdt[7] = A[5]
+                              AUC = A[6]
+                              AUCL = A[7]
+                              ",
+                                   obs = list(cmt = 2, scale = "V"),
+                                   lagtime = "ALAG",
+                                   declare_variables = c("CP","CLESION", "AUC", "AUCL"))
+    
+    my_model_oral
+    
+  } 
+  
+
+#### 2. Parameters ####
+
+  
+F1 = scen$F1 # bioavailability
+V  = scen$V   # Central volume (L)
+CL = scen$CL # Clearance (L/h)
+KA = scen$KA # Rate of absorption (1/h)
+KA = ifelse(is.na(KA) & !is.na(scen$KTR), scen$KTR, KA) # if KA not available for transit compartment, use KTR
+ALAG1 = ifelse(!is.na(scen$ALAG1), scen$ALAG1, 0 ) # ALAG1 (h)
+KTR   = ifelse(!is.na(scen$KTR), scen$KTR, 0 ) # Transit rate (1/h)
+MTT   = ifelse(!is.na(scen$KTR), scen$MTT, 0 ) # Transit rate (1/h)
+
+Q = ifelse(!is.na(scen$Q),  scen$Q, 0) # Intercompartmental clearance (1/h)
+V2 = ifelse(!is.na( scen$V2 ),  scen$V2, 0) # Peripheral volume (L)
+
+Q2 = ifelse(!is.na( scen$Q2 ),  scen$Q2, 0) # Intercompartmental clearance 2 ( 1/h)
+V3 = ifelse(!is.na( scen$V3 ),  scen$V3, 0) # Peripheral volume 2 (L)
+
+VMAX = ifelse(is.na( scen$VMAX) & is.na( scen$CLINT), 0, 
+              ifelse(!is.na(scen$CLINT), scen$CLINT * scen$KM,
+                     ifelse(!is.na(scen$VMAX), scen$VMAX, NA))) # Vmax (mg/h)
+
+KM = ifelse(!is.na( scen$KM ), scen$KM , 0) # Km (mg/L)
+CLINT = ifelse(!is.na( scen$CLINT), scen$CLINT , 0) # Clearance Intrinsic (L/h)
+
+FM = ifelse(!is.na(scen$FM),  scen$FM, 0) # Fraction of parent formed to metabolite
+CLM = ifelse(!is.na(scen$CLM), scen$CLM, 0) # Metabolite Clearance (L/h)
+VM = ifelse(!is.na(scen$VM),  scen$VM, 0) # Metabolite Volume (L)
+
+QM = ifelse(!is.na(scen$QM),  scen$QM, 0) # Metabolite Intercompartmental clearance (1/h)
+VM2 = ifelse(!is.na(scen$VM2),  scen$VM2, 0) # Metabolite Volume 2 (L)
+
+QM2 = ifelse(!is.na(scen$QM2),  scen$QM2, 0) # Metabolite Clearance 2 (L/h)
+VM3 = ifelse(!is.na(scen$VM3),  scen$VM3, 0) # Metabolite Volume 3 (L)
+
+KPL_vector = lesion_parameters$value[lesion_parameters$drug==drug_name & grepl("KPL",lesion_parameters$parameter)] # Rate 
+PC_vector = lesion_parameters$value[lesion_parameters$drug==drug_name & grepl("PC",lesion_parameters$parameter)] # Ratio
+
+KPL_par_vector = lesion_parameters$parameter[lesion_parameters$drug==drug_name & grepl("KPL",lesion_parameters$parameter)] # Rate names
+PC_par_vector = lesion_parameters$parameter[lesion_parameters$drug==drug_name & grepl("PC",lesion_parameters$parameter)] # Ratio names
+
+lesionname_vector = lesion_parameters$LESIONNAME[lesion_parameters$drug==drug_name & grepl("KPL",lesion_parameters$parameter)]  # lesion names
+species_vector = lesion_parameters$SPECIES[lesion_parameters$drug==drug_name & grepl("KPL",lesion_parameters$parameter)] # how lesion estimate was calc'd
+
+simulation_collect <- data.frame()
+
+for (j in 1:length(KPL_vector)) {
+# j <- 1
+# We'll store these in a list that PKPDsim can read
+my_parameters_oral <- list("V"  = V,
+                           "CL" = CL,
+                           "KA" = KA,
+                           "KTR" = KTR,
+                           "MTT" = MTT,
+                           "CLINT" = CLINT,
+                           "Q" = Q,
+                           "V2" = V2,
+                           "ALAG" = ALAG1,
+                           "F1" = F1,
+                           "VMAX" = VMAX,
+                           "KM" = KM,
+                           "Q2" = Q2,
+                           "V3" = V3,
+                           "FM" = FM,
+                           "CLM" = CLM,
+                           "VM" = VM,
+                           "QM" = QM,
+                           "VM2" = VM2,
+                           "QM2" = QM2,
+                           "VM3" = VM3,
+                           "KPL" = KPL_vector[j],
+                           "PC" = PC_vector[j]
+                           )
+
+#### 3. Regimen ####
+
+amt = scen$dose_mg
+if(scen$drug=="TBAJ-587" & scen$model_structure=="depot_3_cmt_savic_transit") amt = scen$dose_mg / 614.5 * 1000 * 1000 # mg * mmol/mg * umol/mmol * nmol/mmol = nmol 
+
+my_regimen <- new_regimen(amt =  scen$dose_mg ,
+                          interval =  scen$II , 
+                          n = scen$NDOSES) 
+
+
+#### 4. Simulate ####
+
+my_simulated_df_oral <- sim(ode = my_model_oral,
+                            regimen = my_regimen,
+                            parameters = my_parameters_oral,
+                            only_obs = T,
+                            output_include = list(variables=T),
+                            t_obs = seq(0,12*24)
+                            ) %>% 
+                        mutate(ROW_ID = scen$row_id,
+                               DRUG = scen$drug_name ,
+                               DOSE = scen$dose_mg ,
+                               II = ifelse(scen$II ==24, "QD", "BID"),
+                               #CP = ifelse(grepl("metab", scen$model_structure), CP, y), 
+                               TIME = t,
+                               SPECIES = species_vector[j],
+                               LESIONNAME = lesionname_vector[j]
+                               ) %>% 
+                        select(ROW_ID, DRUG, DOSE, II, SPECIES, LESIONNAME, TIME, CP, CLESION, AUC, AUCL)
+  
+names(my_simulated_df_oral)
+
+simulation_collect <- rbind(simulation_collect, my_simulated_df_oral)
+} # end for loop for each lesion of one drug
+
+df_to_plot <- simulation_collect %>% 
+  filter(TIME >= max(TIME)-24) %>% 
+  mutate(TAD = TIME - (max(TIME)-24)) %>% 
+  filter(CLESION != 0)
+
+add_plasma_to_CLESION <- df_to_plot %>% 
+  filter(LESIONNAME == "Lung") %>% 
+  mutate(CLESION = CP,
+         AUCL = AUC) %>% 
+  mutate(LESIONNAME = "Plasma")
+
+df_to_plot <- rbind(df_to_plot, add_plasma_to_CLESION)
+
+lesion_level <- c("Plasma","Lung", "Cellular lesion", "Caseum", "Cavity wall", "Caseous lesion")
+df_to_plot$LESIONNAME <- factor(df_to_plot$LESIONNAME, levels = lesion_level)
+
+simulation_collect_all_drugs <- rbind(simulation_collect_all_drugs, df_to_plot)
+
+### pk plots by compartment #### 
+
+title_drug <- df_to_plot$DRUG %>% unique()
+title_dose <- df_to_plot$DOSE %>% unique()
+title_ii   <- df_to_plot$II %>% unique()
+
+ggplot(df_to_plot, mapping=aes(x=TAD,y=CLESION,group=SPECIES, color=SPECIES))+
+  geom_line(size=1)+
+  facet_grid(~LESIONNAME) + 
+  labs(y = "Concentration (mg/L)", x= "Time (hours)", title = paste(title_drug, title_dose, "mg", title_ii, sep=" "))+
+  scale_x_continuous(breaks=seq(0,24,4))+
+  scale_color_manual(values=c("#00A1D5FF","#374E55FF","#DF8F44FF"), name = "Lesion \nparameter \n estimate")+
+  theme_classic()
+
+ggsave(plot = last_plot(), file = paste0(WD,"manuscript/figures/clin_sim_figures/PK_", scen$row_id,"_",format(Sys.time(), "%Y%m%d"),"_rabbit_rates.png", sep=""), width = 12, height = 3)
+
+### coverage plots by compartment ####
+
+coverage_df_to_plot <- df_to_plot %>% 
+  left_join(drug_potency2) %>% 
+  mutate(MRT = case_when(LESIONNAME == "Plasma" ~ MIC_mgL,
+                         LESIONNAME == "Lung" ~ macIC90_mgL,
+                         LESIONNAME == "Cellular lesion" ~ macIC90_mgL,
+                         LESIONNAME == "Cavity wall" ~ macIC90_mgL,
+                         LESIONNAME == "Caseous lesion" ~ macIC90_mgL,
+                         LESIONNAME == "Caseum" ~ casMBC90_mgL)) %>% 
+  mutate(coverage_above_MRT = ifelse(CLESION > MRT, 1, 0))
+
+# need to fix this ggplot (if no MRT ==0 in dataset, then results are incorrect)
+ggplot(coverage_df_to_plot, mapping = aes(x = TAD, y = DRUG, fill = factor(coverage_above_MRT)))+
+  geom_point(shape = 22, size = 3)+
+  theme_classic()+
+  scale_x_continuous(breaks = seq(0,24))+
+  facet_wrap(~LESIONNAME)+
+  labs(subtitle = paste0(coverage_df_to_plot$SPECIES %>% unique(), " lesion parameters"),
+       title = paste(title_drug, title_dose, "mg", title_ii, sep=" "),
+       y = "Drug",
+       x = "Time after dose (hours)")+
+  scale_fill_manual(values=c("white","navy"), name="",
+                    labels=c("below target","above target"))
+
+ggsave(plot = last_plot(), file = paste0(WD,"manuscript/figures/clin_sim_figures/Coverage_", scen$row_id,"_",format(Sys.time(), "%Y%m%d"),"_rabbit_rates.png", sep=""), width = 12, height = 3)
+
+print(paste(scen$drug, "using", scen$model_structure, "with regimen", scen$dose_mg, "mg every", scen$II, "hours"))
+} # end for loop for all drugs
+
+
+#### coverage plots for all drugs by compartment per each species estimate ####
+
+coverage_all_drugs <- simulation_collect_all_drugs %>% 
+  left_join(drug_potency2) %>% 
+  mutate(MRT = case_when(LESIONNAME == "Plasma" ~ MIC_mgL,
+                         LESIONNAME == "Lung" ~ macIC90_mgL,
+                         LESIONNAME == "Cellular lesion" ~ macIC90_mgL,
+                         LESIONNAME == "Cavity wall" ~ macIC90_mgL,
+                         LESIONNAME == "Caseous lesion" ~ macIC90_mgL,
+                         LESIONNAME == "Caseum" ~ casMBC90_mgL)) %>% 
+  mutate(coverage_above_MRT = ifelse(CLESION > MRT, 1, 0)) 
+
+species_levels <- c("Human", "Rabbit", "Corrected \nRabbit")
+
+for (i in 1:length(species_levels)) {
+  
+  coverage_all_drugs_to_plot <- coverage_all_drugs %>% 
+    filter(SPECIES == species_levels[i])
+  
+  p <- ggplot(coverage_all_drugs_to_plot, mapping = aes(x = TAD, y = paste(DRUG,",", DOSE, "mg", II, sep=""), fill= factor(coverage_above_MRT)))+
+    geom_point(shape = 22, size = 3)+
+    theme_classic()+
+    scale_x_continuous(breaks = seq(0,24))+
+    facet_wrap(~LESIONNAME)+
+    labs(title = paste0(coverage_all_drugs_to_plot$SPECIES %>% unique(), " lesion parameters"),
+         y = "",
+         x = "Time after dose (hours)")+
+    scale_fill_manual(values=c("white","navy"), name="",
+                      labels=c("below target","above target"))
+  
+  print(p)
+  
+  ggsave(plot = p, file = paste0(WD,"manuscript/figures/clin_sim_figures/Coverage_all_drugs_", species_levels[i],"_",format(Sys.time(), "%Y%m%d"),".png", sep=""), width = 12, height = 6)
+
+}
+
+# # Save multiple objects
+save(simulation_collect_all_drugs, coverage_all_drugs, 
+     file = paste0(format(Sys.time(), "%Y%m%d"),"_simulated_data.RData"))
+# # To load the data again
+# load("simulated_data.RData")
+
+
+
+```
+
+```{r}
+time_range <- simulation_collect_all_drugs$TIME %>% range()
+
+simulation_collect_all_drugs %>% 
+  filter(SPECIES == "Corrected \nRabbit") %>% 
+  group_by(DRUG, DOSE, LESIONNAME) %>% 
+  filter(CLESION == max(CLESION)) %>% 
+  mutate(Cmax = round(CLESION,2),
+         Tmax = TAD) %>% 
+  left_join(., simulation_collect_all_drugs %>% 
+                filter(SPECIES == "Corrected \nRabbit") %>% 
+                group_by(DRUG, DOSE, LESIONNAME) %>% 
+                filter(TIME %in% time_range) %>% 
+                mutate(AUCss_0_24 = round(AUCL - lag(AUCL),2)) %>% 
+                drop_na(),
+            by = c("DRUG", "DOSE", "LESIONNAME")) %>% 
+  left_join(., simulation_collect_all_drugs %>% 
+              filter(SPECIES == "Corrected \nRabbit") %>%
+              group_by(DRUG, DOSE, LESIONNAME) %>% 
+              filter(TIME == 288) %>% # predose 
+              mutate(Cmin = round(CLESION,2)),
+          by = c("DRUG", "DOSE", "LESIONNAME")) %>% 
+  select(DRUG, DOSE, LESIONNAME, Cmax, Tmax, AUCss_0_24, Cmin) %>% 
+  arrange(DRUG) %>% 
+  filter(DRUG=="TBAJ-876") %>% 
+  filter(LESIONNAME=="Plasma")
+```
+
