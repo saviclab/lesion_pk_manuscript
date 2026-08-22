@@ -1,0 +1,2867 @@
+DRUG,CID,TAD,TIME,DV,METHOD,LESIONNAME,LESIONGROUP,BLQ
+CFZ,1,5,5,0.299,LCMS,Plasma,Plasma,0
+CFZ,1,10.5,10.5,0.41,LCMS,Plasma,Plasma,0
+CFZ,1,26,26,0.238,LCMS,Plasma,Plasma,0
+CFZ,1,26,26,2.3306,LCMS,Lung,Lung,0
+CFZ,1,26,26,6.1585,LCMS,Lung,Lung,0
+CFZ,1,26,26,2.8745,LCMS,Lung,Lung,0
+CFZ,1,26,26,1.07,LCMS,Lung,Lung,0
+CFZ,1,26,26,4.76,LCMS,Lung,Lung,0
+CFZ,1,26,26,2.56,LCMS,Lung,Lung,0
+CFZ,1,26,26,1.08,LCMS,Small nodule,Cellular,0
+CFZ,1,26,26,2.06,LCMS,Small nodule,Cellular,0
+CFZ,1,26,26,2.12,LCMS,Small nodule,Cellular,0
+CFZ,1,26,26,4.46,LCMS,Small nodule,Cellular,0
+CFZ,1,26,26,6.5,LCMS,Small nodule,Cellular,0
+CFZ,1,26,26,3.07,LCMS,Small nodule,Cellular,0
+CFZ,1,26,26,3.39,LCMS,Cavity wall,Cavity,0
+CFZ,1,26,26,0.312,LCMS,Caseum from cavity,Caseum,0
+CFZ,1,26,26,0.561,LCMS,Caseum from cavity,Caseum,0
+CFZ,1,26,26,0.21,LCMS,Caseum from cavity,Caseum,0
+CFZ,1,26,26,0.283,LCMS,Caseum from cavity,Caseum,0
+CFZ,1,26,26,0.947,LCMS,Caseum from cavity,Caseum,0
+CFZ,1,26,26,2.01,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+CFZ,1,26,26,5.02,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+CFZ,1,26,26,3.35,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+CFZ,1,26,26,4,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+CFZ,1,26,26,3.98,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+CFZ,1,26,26,4.81,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+CFZ,4,17.15,17.15,0.515,LCMS,Plasma,Plasma,0
+CFZ,4,19.32,19.32,0.403,LCMS,Plasma,Plasma,0
+CFZ,4,22.05,22.05,0.497,LCMS,Plasma,Plasma,0
+CFZ,4,22.25,22.25,0.45,LCMS,Plasma,Plasma,0
+CFZ,4,22.25,22.25,9.167363636,LCMS,Lung,Lung,0
+CFZ,4,22.25,22.25,10.9,LCMS,Lung,Lung,0
+CFZ,4,22.25,22.25,5.10705,LCMS,Lung,Lung,0
+CFZ,4,22.25,22.25,8.7,LCMS,Small nodule,Cellular,0
+CFZ,4,22.25,22.25,7.116830918,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+CFZ,4,22.25,22.25,2.817486826,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+CFZ,4,22.25,22.25,14.2,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+CFZ,4,22.25,22.25,3.723638182,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+CFZ,4,22.25,22.25,2.473801418,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+CFZ,4,22.25,22.25,0.839241,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+CFZ,4,22.25,22.25,1.769526,LCMS,Unknown,Misc,0
+CFZ,6,8.15,8.15,0.407,LCMS,Plasma,Plasma,0
+CFZ,6,10.15,10.15,0.405,LCMS,Plasma,Plasma,0
+CFZ,6,14.15,14.15,0.335,LCMS,Plasma,Plasma,0
+CFZ,6,19.15,19.15,0.31,LCMS,Plasma,Plasma,0
+CFZ,6,20.75,20.75,0.295,LCMS,Plasma,Plasma,0
+CFZ,6,22.75,22.75,5.84,LCMS,Lung,Lung,0
+CFZ,6,22.75,22.75,4.27,LCMS,Lung,Lung,0
+CFZ,6,22.75,22.75,0.0435,LCMS,Small nodule,Cellular,0
+CFZ,6,22.75,22.75,1.03,LCMS,Small nodule,Cellular,0
+CFZ,6,22.75,22.75,6.15,LCMS,Fibrotic tissue,NA,0
+CFZ,6,22.75,22.75,2.92,LCMS,Cavity wall,Cavity,0
+CFZ,6,22.75,22.75,0.0516,LCMS,Caseum from cavity,Caseum,0
+CFZ,6,22.75,22.75,0.283,LCMS,Caseum from cavity,Caseum,0
+CFZ,6,22.75,22.75,1.78,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+CFZ,6,22.75,22.75,4.4,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,1,0,0,0,LCMS,Plasma,Plasma,1
+INH,1,27,27,0,LCMS,Lung,Lung,1
+INH,1,27,27,0,LCMS,Lung,Lung,1
+INH,1,27,27,0,LCMS,Lung,Lung,1
+INH,1,27,27,0,LCMS,Lung,Lung,1
+INH,1,27,27,0,LCMS,Lung,Lung,1
+INH,2,0,0,0,LCMS,Plasma,Plasma,1
+INH,2,2,2,0.0202,LCMS,Plasma,Plasma,0
+INH,2,2,2,0.00999,LCMS,Plasma,Plasma,0
+INH,2,6.17,6.17,0.0197,LCMS,Plasma,Plasma,0
+INH,2,6.17,6.17,0.00621,LCMS,Plasma,Plasma,0
+INH,2,24,24,0.462,LCMS,Plasma,Plasma,0
+INH,2,24,24,1.65,LCMS,Plasma,Plasma,0
+INH,2,25.3,25.3,0.0944,LCMS,Plasma,Plasma,0
+INH,2,25.3,25.3,0.0726,LCMS,Lung,Lung,0
+INH,2,25.3,25.3,0.0104,LCMS,Lung,Lung,0
+INH,2,25.3,25.3,0.0981,LCMS,Lung,Lung,0
+INH,2,25.3,25.3,0.00901,LCMS,Lung,Lung,0
+INH,2,25.3,25.3,0.0817,LCMS,Lung,Lung,0
+INH,2,25.3,25.3,0.0788,LCMS,Lung,Lung,0
+INH,2,25.3,25.3,0.0883,LCMS,Lung,Lung,0
+INH,2,25.3,25.3,0.0949,LCMS,Lung,Lung,0
+INH,2,25.3,25.3,0.163,LCMS,Lung,Lung,0
+INH,2,25.3,25.3,0.0823,LCMS,Lung,Lung,0
+INH,2,25.3,25.3,0.0244,LCMS,Lung,Lung,0
+INH,2,25.3,25.3,0.325,LCMS,Small nodule,Cellular,0
+INH,2,25.3,25.3,0.109,LCMS,Small nodule,Cellular,0
+INH,2,25.3,25.3,0,LCMS,Small nodule,Cellular,1
+INH,2,25.3,25.3,0.39,LCMS,Small nodule,Cellular,0
+INH,2,25.3,25.3,0,LCMS,Small nodule,Cellular,1
+INH,2,25.3,25.3,0.0829,LCMS,Small nodule,Cellular,0
+INH,2,25.3,25.3,0.119,LCMS,Small nodule,Cellular,0
+INH,2,25.3,25.3,0.0356,LCMS,Small nodule,Cellular,0
+INH,2,25.3,25.3,0,LCMS,Small nodule,Cellular,1
+INH,2,25.3,25.3,0.0353,LCMS,Small nodule,Cellular,0
+INH,2,25.3,25.3,0.288,LCMS,Small nodule,Cellular,0
+INH,2,25.3,25.3,0.0267,LCMS,Small nodule,Cellular,0
+INH,2,25.3,25.3,0.0552,LCMS,Small nodule,Cellular,0
+INH,2,25.3,25.3,0.0944,LCMS,Cavity wall,Cavity,0
+INH,2,25.3,25.3,0.136,LCMS,Cavity wall,Cavity,0
+INH,2,25.3,25.3,0.23,LCMS,Cavity wall,Cavity,0
+INH,2,25.3,25.3,0.102,LCMS,Cavity wall,Cavity,0
+INH,2,25.3,25.3,0.113,LCMS,Cavity wall,Cavity,0
+INH,2,25.3,25.3,0.022,LCMS,Cavity wall,Cavity,0
+INH,2,25.3,25.3,0.0985,LCMS,Cavity wall,Cavity,0
+INH,2,25.3,25.3,0.12,LCMS,Cavity wall,Cavity,0
+INH,2,25.3,25.3,0.0848,LCMS,Cavity wall,Cavity,0
+INH,2,25.3,25.3,0.178,LCMS,Cavity wall,Cavity,0
+INH,2,25.3,25.3,0.344,LCMS,Cavity wall,Cavity,0
+INH,2,25.3,25.3,0,LCMS,Caseum from cavity,Caseum,1
+INH,2,25.3,25.3,0.0611,LCMS,Caseum from cavity,Caseum,0
+INH,2,25.3,25.3,0,LCMS,Caseum from cavity,Caseum,1
+INH,2,25.3,25.3,0,LCMS,Caseum from cavity,Caseum,1
+INH,2,25.3,25.3,0,LCMS,Caseum from cavity,Caseum,1
+INH,3,0,0,0,LCMS,Plasma,Plasma,1
+INH,3,2.13,2.13,0.503,LCMS,Plasma,Plasma,0
+INH,3,2.13,2.13,0.0959,LCMS,Plasma,Plasma,0
+INH,3,6,6,0.331,LCMS,Plasma,Plasma,0
+INH,3,6,6,0.0496,LCMS,Plasma,Plasma,0
+INH,3,8.5,8.5,0.887,LCMS,Plasma,Plasma,0
+INH,3,8.5,8.5,1.31,LCMS,Plasma,Plasma,0
+INH,3,11.2,11.2,0.403,LCMS,Plasma,Plasma,0
+INH,3,11.2,11.2,0.191,LCMS,Plasma,Plasma,0
+INH,3,11.2,11.2,0.608,LCMS,Lung,Lung,0
+INH,3,11.2,11.2,0.0221,LCMS,Lung,Lung,0
+INH,3,11.2,11.2,0.389,LCMS,Lung,Lung,0
+INH,3,11.2,11.2,0,LCMS,Lung,Lung,1
+INH,3,11.2,11.2,0.244,LCMS,Lung,Lung,0
+INH,3,11.2,11.2,0,LCMS,Lung,Lung,1
+INH,3,11.2,11.2,0.641,LCMS,Lung,Lung,0
+INH,3,11.2,11.2,0.0384,LCMS,Lung,Lung,0
+INH,3,11.2,11.2,0.831,LCMS,Fibrotic tissue,NA,0
+INH,3,11.2,11.2,0.0236,LCMS,Fibrotic tissue,NA,0
+INH,3,11.2,11.2,0.993,LCMS,Fibrotic tissue,NA,0
+INH,3,11.2,11.2,0.0324,LCMS,Fibrotic tissue,NA,0
+INH,3,11.2,11.2,0.969,LCMS,Fibrotic tissue,NA,0
+INH,3,11.2,11.2,0.0324,LCMS,Fibrotic tissue,NA,0
+INH,3,11.2,11.2,0.699,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.025,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.975,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.0324,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.461,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.0152,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.32,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.299,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.0224,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,1.4,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.0568,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.75,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.0338,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.807,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.0352,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.831,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.0307,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.785,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.0204,LCMS,Cavity wall,Cavity,0
+INH,3,11.2,11.2,0.312,LCMS,Caseum from cavity,Caseum,0
+INH,3,11.2,11.2,0,LCMS,Caseum from cavity,Caseum,1
+INH,3,11.2,11.2,0.574,LCMS,Caseum from cavity,Caseum,0
+INH,3,11.2,11.2,0.0384,LCMS,Caseum from cavity,Caseum,0
+INH,3,11.2,11.2,0.363,LCMS,Caseum from cavity,Caseum,0
+INH,3,11.2,11.2,0.0216,LCMS,Caseum from cavity,Caseum,0
+INH,3,11.2,11.2,0.291,LCMS,Caseum from cavity,Caseum,0
+INH,3,11.2,11.2,0,LCMS,Caseum from cavity,Caseum,1
+INH,3,11.2,11.2,0,LCMS,Caseum from cavity,Caseum,1
+INH,3,11.2,11.2,0.781,LCMS,Caseum from cavity,Caseum,0
+INH,3,11.2,11.2,0.0257,LCMS,Caseum from cavity,Caseum,0
+INH,3,11.2,11.2,0,LCMS,Closed nodule caseum,Caseum,1
+INH,3,11.2,11.2,0,LCMS,Closed nodule caseum,Caseum,1
+INH,3,11.2,11.2,0.224,LCMS,Closed nodule caseum,Caseum,0
+INH,3,11.2,11.2,0,LCMS,Closed nodule caseum,Caseum,1
+INH,4,0,0,0,LCMS,Plasma,Plasma,1
+INH,4,2.17,2.17,1.33,LCMS,Plasma,Plasma,0
+INH,4,2.17,2.17,0.839,LCMS,Plasma,Plasma,0
+INH,4,4.9,4.9,1.32,LCMS,Plasma,Plasma,0
+INH,4,4.9,4.9,3.47,LCMS,Plasma,Plasma,0
+INH,4,5.1,5.1,1.86,LCMS,Plasma,Plasma,0
+INH,4,5.1,5.1,1.29,LCMS,Plasma,Plasma,0
+INH,4,5.1,5.1,4.350971818,LCMS,Lung,Lung,0
+INH,4,5.1,5.1,1.03,LCMS,Lung,Lung,0
+INH,4,5.1,5.1,3.48,LCMS,Lung,Lung,0
+INH,4,5.1,5.1,1.51,LCMS,Lung,Lung,0
+INH,4,5.1,5.1,2.8431,LCMS,Lung,Lung,0
+INH,4,5.1,5.1,0.551,LCMS,Lung,Lung,0
+INH,4,5.1,5.1,0.454,LCMS,Lung,Lung,0
+INH,4,5.1,5.1,0.813,LCMS,Lung,Lung,0
+INH,4,5.1,5.1,0.737,LCMS,Lung,Lung,0
+INH,4,5.1,5.1,0.922,LCMS,Lung,Lung,0
+INH,4,5.1,5.1,3.92,LCMS,Small nodule,Cellular,0
+INH,4,5.1,5.1,0.914421053,LCMS,Small nodule,Cellular,0
+INH,4,5.1,5.1,0.578,LCMS,Caseum from cavity,Caseum,0
+INH,4,5.1,5.1,3.464772947,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,0.852923077,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,6.031317365,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,0.412,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,0.93,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,4.21,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,1.144,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,0.642,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,3.433262727,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,3.092251773,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,3.529116,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,0.378294737,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,1.579925926,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,0.43754321,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,4,5.1,5.1,1.617597,LCMS,Unknown,Misc,0
+INH,4,5.1,5.1,0.222519048,LCMS,Unknown,Misc,0
+INH,5,0,0,0,LCMS,Plasma,Plasma,1
+INH,5,2.67,2.67,5.28,LCMS,Plasma,Plasma,0
+INH,5,2.67,2.67,1.67,LCMS,Plasma,Plasma,0
+INH,5,3.3,3.3,4.33,LCMS,Plasma,Plasma,0
+INH,5,3.3,3.3,0.966,LCMS,Plasma,Plasma,0
+INH,5,3.3,3.3,3.9296,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,0.55424,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,5.1,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,0.63,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,0.834,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,4.212136,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,0.3648168,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,3.797972,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,0.5983348,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,4.005054,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,0.678,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,5.53,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,1.02,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,4.987592,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,0.789,LCMS,Lung,Lung,0
+INH,5,3.3,3.3,3.343321751,LCMS,Caseum from cavity,Caseum,0
+INH,5,3.3,3.3,0.413,LCMS,Caseum from cavity,Caseum,0
+INH,5,3.3,3.3,2.969288,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,0.349,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,0.0842,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,0.377,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,3.690095847,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,3.338658147,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,4.06652924,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,3.843818713,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,3.241440407,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,2.992098837,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,4.736455,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,0.565,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,1.740928,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,1.689472,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,4.633061856,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,4.250515464,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,2.152576,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,2.212608,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,4.76,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,5,3.3,3.3,1.058511111,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,6,0,0,0,LCMS,Plasma,Plasma,1
+INH,6,2,2,3.56,LCMS,Plasma,Plasma,0
+INH,6,2,2,0.927,LCMS,Plasma,Plasma,0
+INH,6,6,6,1.59,LCMS,Plasma,Plasma,0
+INH,6,6,6,0.113,LCMS,Plasma,Plasma,0
+INH,6,11,11,0.817,LCMS,Plasma,Plasma,0
+INH,6,11,11,0.0514,LCMS,Plasma,Plasma,0
+INH,6,12.6,12.6,0.621,LCMS,Plasma,Plasma,0
+INH,6,12.6,12.6,0.0359,LCMS,Plasma,Plasma,0
+INH,6,12.6,12.6,0.631,LCMS,Lung,Lung,0
+INH,6,12.6,12.6,0.0241,LCMS,Lung,Lung,0
+INH,6,12.6,12.6,0.682,LCMS,Lung,Lung,0
+INH,6,12.6,12.6,0.0232,LCMS,Lung,Lung,0
+INH,6,12.6,12.6,0.117,LCMS,Small nodule,Cellular,0
+INH,6,12.6,12.6,0.395,LCMS,Small nodule,Cellular,0
+INH,6,12.6,12.6,0,LCMS,Small nodule,Cellular,1
+INH,6,12.6,12.6,0.0136,LCMS,Small nodule,Cellular,0
+INH,6,12.6,12.6,0.726,LCMS,Fibrotic tissue,NA,0
+INH,6,12.6,12.6,0.0315,LCMS,Fibrotic tissue,NA,0
+INH,6,12.6,12.6,0.779,LCMS,Cavity wall,Cavity,0
+INH,6,12.6,12.6,0.0365,LCMS,Cavity wall,Cavity,0
+INH,6,12.6,12.6,0.33,LCMS,Caseum from cavity,Caseum,0
+INH,6,12.6,12.6,0.024,LCMS,Caseum from cavity,Caseum,0
+INH,6,12.6,12.6,0.538,LCMS,Caseum from cavity,Caseum,0
+INH,6,12.6,12.6,0.03,LCMS,Caseum from cavity,Caseum,0
+INH,6,12.6,12.6,0.925,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,6,12.6,12.6,0.905,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,6,12.6,12.6,0.047,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,6,12.6,12.6,0.0305,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,0,0,0,LCMS,Plasma,Plasma,1
+INH,7,2,2,6.23,LCMS,Plasma,Plasma,0
+INH,7,2,2,1.55,LCMS,Plasma,Plasma,0
+INH,7,6,6,2.72,LCMS,Plasma,Plasma,0
+INH,7,6,6,0.119,LCMS,Plasma,Plasma,0
+INH,7,8.5,8.5,1.48,LCMS,Plasma,Plasma,0
+INH,7,8.5,8.5,0.0458,LCMS,Plasma,Plasma,0
+INH,7,11,11,0.745,LCMS,Plasma,Plasma,0
+INH,7,11,11,0.0362,LCMS,Plasma,Plasma,0
+INH,7,11,11,0.713,LCMS,Lung,Lung,0
+INH,7,11,11,0.0311,LCMS,Lung,Lung,0
+INH,7,11,11,0.785,LCMS,Lung,Lung,0
+INH,7,11,11,0.0339,LCMS,Lung,Lung,0
+INH,7,11,11,0.675,LCMS,Lung,Lung,0
+INH,7,11,11,0.0293,LCMS,Lung,Lung,0
+INH,7,11,11,0.678,LCMS,Cavity wall,Cavity,0
+INH,7,11,11,0.0526,LCMS,Cavity wall,Cavity,0
+INH,7,11,11,0.808,LCMS,Cavity wall,Cavity,0
+INH,7,11,11,0.0431,LCMS,Cavity wall,Cavity,0
+INH,7,11,11,0.712,LCMS,Caseum from cavity,Caseum,0
+INH,7,11,11,0.0524,LCMS,Caseum from cavity,Caseum,0
+INH,7,11,11,0.717,LCMS,Caseum from cavity,Caseum,0
+INH,7,11,11,0.0465,LCMS,Caseum from cavity,Caseum,0
+INH,7,11,11,0.969,LCMS,Caseum from cavity,Caseum,0
+INH,7,11,11,0.0784,LCMS,Caseum from cavity,Caseum,0
+INH,7,11,11,0.738,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.31,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.635,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.79,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.742,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.695,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,1.19,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,1.14,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,1.06,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.0397,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.0171,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.0304,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.0401,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.0387,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.111,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.229,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.164,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,7,11,11,0.114,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,8,0,0,0,LCMS,Plasma,Plasma,1
+INH,8,2.42,2.42,5.35,LCMS,Plasma,Plasma,0
+INH,8,2.42,2.42,2.12,LCMS,Plasma,Plasma,0
+INH,8,4.5,4.5,4.67,LCMS,Plasma,Plasma,0
+INH,8,4.5,4.5,0.498,LCMS,Plasma,Plasma,0
+INH,8,5.68,5.68,3.81,LCMS,Plasma,Plasma,0
+INH,8,5.68,5.68,0.274,LCMS,Plasma,Plasma,0
+INH,8,5.68,5.68,3.11,LCMS,Lung,Lung,0
+INH,8,5.68,5.68,0.3,LCMS,Lung,Lung,0
+INH,8,5.68,5.68,3.3,LCMS,Lung,Lung,0
+INH,8,5.68,5.68,0.646,LCMS,Lung,Lung,0
+INH,8,5.68,5.68,3.79,LCMS,Lung,Lung,0
+INH,8,5.68,5.68,0.518,LCMS,Lung,Lung,0
+INH,8,5.68,5.68,3.64,LCMS,Lung,Lung,0
+INH,8,5.68,5.68,0.527,LCMS,Lung,Lung,0
+INH,8,5.68,5.68,2.86,LCMS,Closed nodule caseum,Caseum,0
+INH,8,5.68,5.68,0.212,LCMS,Closed nodule caseum,Caseum,0
+INH,8,5.68,5.68,2.59,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,8,5.68,5.68,3.07,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,8,5.68,5.68,3.68,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,8,5.68,5.68,0.269,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,8,5.68,5.68,0.378,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,8,5.68,5.68,0.528,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,0,0,0,LCMS,Plasma,Plasma,1
+INH,9,1,1,2.95,LCMS,Plasma,Plasma,0
+INH,9,1,1,1.7,LCMS,Plasma,Plasma,0
+INH,9,3.83,3.83,3.94,LCMS,Plasma,Plasma,0
+INH,9,3.83,3.83,0.412,LCMS,Plasma,Plasma,0
+INH,9,3.83,3.83,2.78,LCMS,Lung,Lung,0
+INH,9,3.83,3.83,0.348,LCMS,Lung,Lung,0
+INH,9,3.83,3.83,3.56,LCMS,Lung,Lung,0
+INH,9,3.83,3.83,0.207,LCMS,Lung,Lung,0
+INH,9,3.83,3.83,2.19,LCMS,Lung,Lung,0
+INH,9,3.83,3.83,0.388,LCMS,Lung,Lung,0
+INH,9,3.83,3.83,1.21,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,3.83,3.83,3.17,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,3.83,3.83,3.22,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,3.83,3.83,0.489,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,3.83,3.83,2.61,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,3.83,3.83,2.27,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,3.83,3.83,0.166,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,3.83,3.83,0.356,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,3.83,3.83,0.413,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,3.83,3.83,0.0653,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,3.83,3.83,0.219,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,9,3.83,3.83,0.175,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,10,0,0,0,LCMS,Plasma,Plasma,1
+INH,10,2.083,2.083,4.76,LCMS,Plasma,Plasma,0
+INH,10,2.083,2.083,1.89,LCMS,Plasma,Plasma,0
+INH,10,6.17,6.17,2.83,LCMS,Plasma,Plasma,0
+INH,10,6.17,6.17,0.184,LCMS,Plasma,Plasma,0
+INH,10,7.33,7.33,2.61,LCMS,Plasma,Plasma,0
+INH,10,7.33,7.33,0.0777,LCMS,Plasma,Plasma,0
+INH,10,9.75,9.75,1.69,LCMS,Plasma,Plasma,0
+INH,10,9.75,9.75,0.0452,LCMS,Plasma,Plasma,0
+INH,10,10.25,10.25,1.47,LCMS,Lung,Lung,0
+INH,10,10.25,10.25,0.0608,LCMS,Lung,Lung,0
+INH,10,10.25,10.25,1.49,LCMS,Lung,Lung,0
+INH,10,10.25,10.25,0.0613,LCMS,Lung,Lung,0
+INH,10,10.25,10.25,1.45,LCMS,Lung,Lung,0
+INH,10,10.25,10.25,0.062,LCMS,Lung,Lung,0
+INH,10,10.25,10.25,1.36,LCMS,Lung,Lung,0
+INH,10,10.25,10.25,1.46,LCMS,Cavity wall,Cavity,0
+INH,10,10.25,10.25,0.0547,LCMS,Cavity wall,Cavity,0
+INH,10,10.25,10.25,1.39,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,10,10.25,10.25,1.28,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,10,10.25,10.25,0.0749,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,10,10.25,10.25,0.0626,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,0,0,0,LCMS,Plasma,Plasma,1
+INH,11,2,2,1.54,LCMS,Plasma,Plasma,0
+INH,11,2,2,2.06,LCMS,Plasma,Plasma,0
+INH,11,6,6,1.88,LCMS,Plasma,Plasma,0
+INH,11,6,6,0.706,LCMS,Plasma,Plasma,0
+INH,11,9.5,9.5,1.51,LCMS,Plasma,Plasma,0
+INH,11,9.5,9.5,0.245,LCMS,Plasma,Plasma,0
+INH,11,11.1,11.1,1.18,LCMS,Plasma,Plasma,0
+INH,11,11.1,11.1,0.163,LCMS,Plasma,Plasma,0
+INH,11,11.1,11.1,1.13,LCMS,Lung,Lung,0
+INH,11,11.1,11.1,0.147,LCMS,Lung,Lung,0
+INH,11,11.1,11.1,1.06,LCMS,Lung,Lung,0
+INH,11,11.1,11.1,0.133,LCMS,Lung,Lung,0
+INH,11,11.1,11.1,1.17,LCMS,Lung,Lung,0
+INH,11,11.1,11.1,0.126,LCMS,Lung,Lung,0
+INH,11,11.1,11.1,1.06,LCMS,Lung,Lung,0
+INH,11,11.1,11.1,0.153,LCMS,Lung,Lung,0
+INH,11,11.1,11.1,1.35,LCMS,Lung,Lung,0
+INH,11,11.1,11.1,0.152,LCMS,Lung,Lung,0
+INH,11,11.1,11.1,1.74,LCMS,Cavity wall,Cavity,0
+INH,11,11.1,11.1,0.104,LCMS,Cavity wall,Cavity,0
+INH,11,11.1,11.1,1.45,LCMS,Cavity wall,Cavity,0
+INH,11,11.1,11.1,0.0941,LCMS,Cavity wall,Cavity,0
+INH,11,11.1,11.1,1.3,LCMS,Cavity wall,Cavity,0
+INH,11,11.1,11.1,0.0605,LCMS,Cavity wall,Cavity,0
+INH,11,11.1,11.1,1.48,LCMS,Cavity wall,Cavity,0
+INH,11,11.1,11.1,0.0531,LCMS,Cavity wall,Cavity,0
+INH,11,11.1,11.1,1.55,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,0.192,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,1.43,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,0.155,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,1.52,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,0.222,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,1.58,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,0.296,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,1.71,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,0.0393,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,1.07,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,0.0386,LCMS,Caseum from cavity,Caseum,0
+INH,11,11.1,11.1,1.08,LCMS,Closed nodule caseum,Caseum,0
+INH,11,11.1,11.1,0.0978,LCMS,Closed nodule caseum,Caseum,0
+INH,11,11.1,11.1,1.55,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,1.54,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,1.3,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,1.18,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,2.13,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,1.81,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,2.18,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,1.32,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,1.24,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,1.06,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,1.37,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,0.0739,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,0.0664,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,0.139,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,0.0696,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,0.137,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,0.144,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,0.116,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,0.0701,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,0.0782,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,0.0501,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,11,11.1,11.1,0.0524,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,12,0,0,0,LCMS,Plasma,Plasma,1
+INH,12,2,2,3.27,LCMS,Plasma,Plasma,0
+INH,12,2,2,1.8,LCMS,Plasma,Plasma,0
+INH,12,6,6,1.57,LCMS,Plasma,Plasma,0
+INH,12,6,6,0.327,LCMS,Plasma,Plasma,0
+INH,12,20.5,20.5,0.469,LCMS,Plasma,Plasma,0
+INH,12,20.5,20.5,0.0217,LCMS,Plasma,Plasma,0
+INH,12,22.3,22.3,0.266,LCMS,Plasma,Plasma,0
+INH,12,22.3,22.3,0.0162,LCMS,Plasma,Plasma,0
+INH,12,22.3,22.3,0.155,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.0285,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.137,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.0467,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.153,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.0395,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.162,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.0368,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.151,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.0359,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.147,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.0382,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.172,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.0384,LCMS,Lung,Lung,0
+INH,12,22.3,22.3,0.411,LCMS,Cavity wall,Cavity,0
+INH,12,22.3,22.3,0.0218,LCMS,Cavity wall,Cavity,0
+INH,12,22.3,22.3,0.469,LCMS,Caseum from cavity,Caseum,0
+INH,12,22.3,22.3,0.099,LCMS,Caseum from cavity,Caseum,0
+INH,12,22.3,22.3,0.532,LCMS,Caseum from cavity,Caseum,0
+INH,12,22.3,22.3,0.108,LCMS,Caseum from cavity,Caseum,0
+INH,12,22.3,22.3,0.453,LCMS,Caseum from cavity,Caseum,0
+INH,12,22.3,22.3,0.0965,LCMS,Caseum from cavity,Caseum,0
+INH,12,22.3,22.3,0.137,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,12,22.3,22.3,0.373,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,12,22.3,22.3,0.463,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,12,22.3,22.3,0.248,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,12,22.3,22.3,0.224,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,12,22.3,22.3,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+INH,12,22.3,22.3,0.0212,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,12,22.3,22.3,0.022,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,12,22.3,22.3,0.0957,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,12,22.3,22.3,0.0102,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,0,0,0,LCMS,Plasma,Plasma,1
+INH,13,2,2,2.87,LCMS,Plasma,Plasma,0
+INH,13,2,2,1.18,LCMS,Plasma,Plasma,0
+INH,13,2.5,2.5,3.16,LCMS,Plasma,Plasma,0
+INH,13,2.5,2.5,1.19,LCMS,Plasma,Plasma,0
+INH,13,4.4,4.4,3.48,LCMS,Plasma,Plasma,0
+INH,13,4.4,4.4,0.629,LCMS,Plasma,Plasma,0
+INH,13,4.4,4.4,2.92,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,0.516,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,2.59,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,0.58,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,2.22,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,0.525,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,2.31,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,0.0913,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,2.59,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,0.494,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,2.31,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,0.506,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,2.15,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,0.489,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,2.37,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,0.554,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,0.743,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,0.275,LCMS,Lung,Lung,0
+INH,13,4.4,4.4,3.15,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,0.183,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,3.67,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,0.404,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,3.91,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,0.295,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,1.047930636,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,0.265,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,2.6,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,0.279,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,4.53,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,0.363,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,3.32,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,0.304,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,3.07,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,0.175,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,2.85,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,0.157,LCMS,Cavity wall,Cavity,0
+INH,13,4.4,4.4,1.38,LCMS,Caseum from cavity,Caseum,0
+INH,13,4.4,4.4,0.354,LCMS,Caseum from cavity,Caseum,0
+INH,13,4.4,4.4,1.67,LCMS,Caseum from cavity,Caseum,0
+INH,13,4.4,4.4,0.378,LCMS,Caseum from cavity,Caseum,0
+INH,13,4.4,4.4,1.07,LCMS,Caseum from cavity,Caseum,0
+INH,13,4.4,4.4,0.246,LCMS,Caseum from cavity,Caseum,0
+INH,13,4.4,4.4,1.63,LCMS,Caseum from cavity,Caseum,0
+INH,13,4.4,4.4,0.396,LCMS,Caseum from cavity,Caseum,0
+INH,13,4.4,4.4,1.86,LCMS,Caseum from cavity,Caseum,0
+INH,13,4.4,4.4,0.371,LCMS,Caseum from cavity,Caseum,0
+INH,13,4.4,4.4,2.45,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,4.4,4.4,2.09,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,4.4,4.4,2.09,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,4.4,4.4,1.69,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,4.4,4.4,1.96,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,4.4,4.4,2.23,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,4.4,4.4,0.222,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,4.4,4.4,0.228,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,4.4,4.4,0.237,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,4.4,4.4,0.078,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,4.4,4.4,0.167,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,13,4.4,4.4,0.185,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,14,0,0,0,LCMS,Plasma,Plasma,1
+INH,14,1,1,0.526,LCMS,Plasma,Plasma,0
+INH,14,1,1,2.59,LCMS,Plasma,Plasma,0
+INH,14,8.5,8.5,0.599,LCMS,Plasma,Plasma,0
+INH,14,8.5,8.5,0.914,LCMS,Plasma,Plasma,0
+INH,14,8.5,8.5,0.383,LCMS,Lung,Lung,0
+INH,14,8.5,8.5,0.742,LCMS,Lung,Lung,0
+INH,14,8.5,8.5,0.427,LCMS,Lung,Lung,0
+INH,14,8.5,8.5,0.767,LCMS,Lung,Lung,0
+INH,14,8.5,8.5,0.651,LCMS,Fibrotic tissue,NA,0
+INH,14,8.5,8.5,0.303,LCMS,Fibrotic tissue,NA,0
+INH,14,8.5,8.5,0.724,LCMS,Cavity wall,Cavity,0
+INH,14,8.5,8.5,0.33,LCMS,Cavity wall,Cavity,0
+INH,14,8.5,8.5,0.529,LCMS,Caseum from cavity,Caseum,0
+INH,14,8.5,8.5,0.818,LCMS,Caseum from cavity,Caseum,0
+INH,14,8.5,8.5,0.553,LCMS,Caseum from cavity,Caseum,0
+INH,14,8.5,8.5,0.761,LCMS,Caseum from cavity,Caseum,0
+INH,14,8.5,8.5,0.545,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,14,8.5,8.5,0.505,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,14,8.5,8.5,0.53,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,14,8.5,8.5,0.415,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,14,8.5,8.5,0.544,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,14,8.5,8.5,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+INH,14,8.5,8.5,0.326,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,14,8.5,8.5,0.329,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,14,8.5,8.5,0.412,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,14,8.5,8.5,0.678,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,14,8.5,8.5,0.373,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,14,8.5,8.5,0.342,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,15,0,0,0,LCMS,Plasma,Plasma,1
+INH,15,2,2,2.28,LCMS,Plasma,Plasma,0
+INH,15,2,2,3.46,LCMS,Plasma,Plasma,0
+INH,15,6,6,2.6,LCMS,Plasma,Plasma,0
+INH,15,6,6,2.02,LCMS,Plasma,Plasma,0
+INH,15,16,16,0.853,LCMS,Plasma,Plasma,0
+INH,15,24.3,24.3,0.31,LCMS,Plasma,Plasma,0
+INH,15,24.3,24.3,0.0445,LCMS,Plasma,Plasma,0
+INH,15,24.3,24.3,0.285,LCMS,Lung,Lung,0
+INH,15,24.3,24.3,0.341,LCMS,Lung,Lung,0
+INH,15,24.3,24.3,0.257,LCMS,Lung,Lung,0
+INH,15,24.3,24.3,0.383,LCMS,Lung,Lung,0
+INH,15,24.3,24.3,0.258,LCMS,Lung,Lung,0
+INH,15,24.3,24.3,0.331,LCMS,Lung,Lung,0
+INH,15,24.3,24.3,0.283,LCMS,Fibrotic tissue,NA,0
+INH,15,24.3,24.3,0.0214,LCMS,Fibrotic tissue,NA,0
+INH,15,24.3,24.3,0.308,LCMS,Fibrotic tissue,NA,0
+INH,15,24.3,24.3,0.02,LCMS,Fibrotic tissue,NA,0
+INH,15,24.3,24.3,0.251,LCMS,Cavity wall,Cavity,0
+INH,15,24.3,24.3,0.0634,LCMS,Cavity wall,Cavity,0
+INH,15,24.3,24.3,0.298,LCMS,Cavity wall,Cavity,0
+INH,15,24.3,24.3,0.0564,LCMS,Cavity wall,Cavity,0
+INH,15,24.3,24.3,0.228,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,15,24.3,24.3,0.166,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+INH,15,24.3,24.3,0.243,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,15,24.3,24.3,0.106,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+INH,16,0,0,0,LCMS,Plasma,Plasma,1
+INH,16,2,2,2.19,LCMS,Plasma,Plasma,0
+INH,16,2,2,4.78,LCMS,Plasma,Plasma,0
+INH,16,3,3,2.06,LCMS,Plasma,Plasma,0
+INH,16,3,3,4.83,LCMS,Plasma,Plasma,0
+INH,16,6,6,2.61,LCMS,Plasma,Plasma,0
+INH,16,6,6,2.81,LCMS,Plasma,Plasma,0
+INH,16,8.7,8.7,2.34,LCMS,Plasma,Plasma,0
+INH,16,8.7,8.7,1.78,LCMS,Plasma,Plasma,0
+INH,16,8.7,8.7,1.99,LCMS,Lung,Lung,0
+INH,16,8.7,8.7,1.42,LCMS,Lung,Lung,0
+INH,16,8.7,8.7,1.92,LCMS,Lung,Lung,0
+INH,16,8.7,8.7,1.39,LCMS,Lung,Lung,0
+INH,16,8.7,8.7,1.9,LCMS,Lung,Lung,0
+INH,16,8.7,8.7,1.35,LCMS,Lung,Lung,0
+INH,16,8.7,8.7,2.02,LCMS,Lung,Lung,0
+INH,16,8.7,8.7,1.79,LCMS,Lung,Lung,0
+INH,16,8.7,8.7,1.93,LCMS,Lung,Lung,0
+INH,16,8.7,8.7,1.17,LCMS,Lung,Lung,0
+INH,16,8.7,8.7,1.71,LCMS,Fungal ball,Misc,0
+INH,16,8.7,8.7,1.33,LCMS,Fungal ball,Misc,0
+INH,16,8.7,8.7,1.91,LCMS,Fungal ball,Misc,0
+INH,16,8.7,8.7,1.56,LCMS,Fungal ball,Misc,0
+INH,16,8.7,8.7,1.76,LCMS,Fungal ball,Misc,0
+INH,16,8.7,8.7,1.83,LCMS,Fungal ball,Misc,0
+INH,16,8.7,8.7,1.96,LCMS,Fungal ball,Misc,0
+INH,16,8.7,8.7,1.42,LCMS,Fungal ball,Misc,0
+INH,16,8.7,8.7,1.47,LCMS,Fibrotic tissue,NA,0
+INH,16,8.7,8.7,0.453,LCMS,Fibrotic tissue,NA,0
+KAN,2,2,2,0.167,LCMS,Plasma,Plasma,0
+KAN,2,6.17,6.17,0.136,LCMS,Plasma,Plasma,0
+KAN,2,24,24,32.2,LCMS,Plasma,Plasma,0
+KAN,2,25.3,25.3,1.78,LCMS,Lung,Lung,0
+KAN,2,25.3,25.3,3.48,LCMS,Lung,Lung,0
+KAN,2,25.3,25.3,6.47,LCMS,Lung,Lung,0
+KAN,2,25.3,25.3,5,LCMS,Lung,Lung,0
+KAN,2,25.3,25.3,2.09,LCMS,Lung,Lung,0
+KAN,2,25.3,25.3,1.77,LCMS,Small nodule,Cellular,0
+KAN,2,25.3,25.3,7.21,LCMS,Small nodule,Cellular,0
+KAN,2,25.3,25.3,15.9,LCMS,Small nodule,Cellular,0
+KAN,2,25.3,25.3,7.49,LCMS,Small nodule,Cellular,0
+KAN,2,25.3,25.3,6.61,LCMS,Small nodule,Cellular,0
+KAN,2,25.3,25.3,5.71,LCMS,Cavity wall,Cavity,0
+KAN,2,25.3,25.3,4.82,LCMS,Cavity wall,Cavity,0
+KAN,2,25.3,25.3,2.81,LCMS,Cavity wall,Cavity,0
+KAN,2,25.3,25.3,10.5,LCMS,Cavity wall,Cavity,0
+KAN,2,25.3,25.3,2.51,LCMS,Cavity wall,Cavity,0
+KAN,2,25.3,25.3,11.5,LCMS,Cavity wall,Cavity,0
+KAN,2,25.3,25.3,0.874,LCMS,Caseum from cavity,Caseum,0
+KAN,2,25.3,25.3,0.774,LCMS,Caseum from cavity,Caseum,0
+KAN,3,2.13,2.13,5.32,LCMS,Plasma,Plasma,0
+KAN,3,6,6,2.25,LCMS,Plasma,Plasma,0
+KAN,3,8.5,8.5,36,LCMS,Plasma,Plasma,0
+KAN,3,11.2,11.2,11.2,LCMS,Plasma,Plasma,0
+KAN,3,11.2,11.2,0.299,LCMS,Lung,Lung,0
+KAN,3,11.2,11.2,0.132,LCMS,Lung,Lung,0
+KAN,3,11.2,11.2,2.1,LCMS,Lung,Lung,0
+KAN,3,11.2,11.2,2.69,LCMS,Lung,Lung,0
+KAN,3,11.2,11.2,4.89,LCMS,Fibrotic tissue,NA,0
+KAN,3,11.2,11.2,4.43,LCMS,Fibrotic tissue,NA,0
+KAN,3,11.2,11.2,3.37,LCMS,Fibrotic tissue,NA,0
+KAN,3,11.2,11.2,3.85,LCMS,Cavity wall,Cavity,0
+KAN,3,11.2,11.2,2.55,LCMS,Cavity wall,Cavity,0
+KAN,3,11.2,11.2,1.68,LCMS,Cavity wall,Cavity,0
+KAN,3,11.2,11.2,1.55,LCMS,Cavity wall,Cavity,0
+KAN,3,11.2,11.2,8.9,LCMS,Cavity wall,Cavity,0
+KAN,3,11.2,11.2,6.78,LCMS,Cavity wall,Cavity,0
+KAN,3,11.2,11.2,4.45,LCMS,Cavity wall,Cavity,0
+KAN,3,11.2,11.2,3.66,LCMS,Cavity wall,Cavity,0
+KAN,3,11.2,11.2,3.98,LCMS,Cavity wall,Cavity,0
+KAN,3,11.2,11.2,0.722,LCMS,Caseum from cavity,Caseum,0
+KAN,3,11.2,11.2,6.42,LCMS,Caseum from cavity,Caseum,0
+KAN,3,11.2,11.2,2.86,LCMS,Caseum from cavity,Caseum,0
+KAN,3,11.2,11.2,0.289,LCMS,Caseum from cavity,Caseum,0
+KAN,3,11.2,11.2,5.53,LCMS,Caseum from cavity,Caseum,0
+KAN,3,11.2,11.2,0.468,LCMS,Closed nodule caseum,Caseum,0
+KAN,3,11.2,11.2,2.4,LCMS,Closed nodule caseum,Caseum,0
+KAN,4,2.17,2.17,8.42,LCMS,Plasma,Plasma,0
+KAN,4,4.9,4.9,26,LCMS,Plasma,Plasma,0
+KAN,4,5.1,5.1,11.2,LCMS,Plasma,Plasma,0
+KAN,4,5.1,5.1,5.63,LCMS,Lung,Lung,0
+KAN,4,5.1,5.1,6.64,LCMS,Lung,Lung,0
+KAN,4,5.1,5.1,3.97,LCMS,Lung,Lung,0
+KAN,4,5.1,5.1,3.92,LCMS,Lung,Lung,0
+KAN,4,5.1,5.1,2.77,LCMS,Lung,Lung,0
+KAN,4,5.1,5.1,4.34,LCMS,Lung,Lung,0
+KAN,4,5.1,5.1,4.57,LCMS,Lung,Lung,0
+KAN,4,5.1,5.1,7.202631579,LCMS,Small nodule,Cellular,0
+KAN,4,5.1,5.1,5.32,LCMS,Caseum from cavity,Caseum,0
+KAN,4,5.1,5.1,8.044615385,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+KAN,4,5.1,5.1,4.824,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+KAN,4,5.1,5.1,9.2,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+KAN,4,5.1,5.1,13.2,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+KAN,4,5.1,5.1,7.65,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+KAN,4,5.1,5.1,2.924894737,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,4,5.1,5.1,14.15777778,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,4,5.1,5.1,4.425641975,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,4,5.1,5.1,1.563888889,LCMS,Unknown,Misc,0
+KAN,5,2.67,2.67,43.5,LCMS,Plasma,Plasma,0
+KAN,5,3.3,3.3,36.7,LCMS,Plasma,Plasma,0
+KAN,5,3.3,3.3,12.9,LCMS,Lung,Lung,0
+KAN,5,3.3,3.3,17.8,LCMS,Lung,Lung,0
+KAN,5,3.3,3.3,18,LCMS,Lung,Lung,0
+KAN,5,3.3,3.3,29.5,LCMS,Lung,Lung,0
+KAN,5,3.3,3.3,29.9,LCMS,Lung,Lung,0
+KAN,5,3.3,3.3,7.95,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+KAN,5,3.3,3.3,0.283,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+KAN,5,3.3,3.3,9.54,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+KAN,5,3.3,3.3,13.42721311,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+KAN,5,3.3,3.3,18.77222222,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,6,2,2,11.2,LCMS,Plasma,Plasma,0
+KAN,6,6,6,18,LCMS,Plasma,Plasma,0
+KAN,6,11,11,7.48,LCMS,Plasma,Plasma,0
+KAN,6,12.6,12.6,5.61,LCMS,Plasma,Plasma,0
+KAN,6,12.6,12.6,3.98,LCMS,Lung,Lung,0
+KAN,6,12.6,12.6,3.7,LCMS,Lung,Lung,0
+KAN,6,12.6,12.6,0.441,LCMS,Small nodule,Cellular,0
+KAN,6,12.6,12.6,2.44,LCMS,Small nodule,Cellular,0
+KAN,6,12.6,12.6,4.5,LCMS,Fibrotic tissue,NA,0
+KAN,6,12.6,12.6,4.58,LCMS,Cavity wall,Cavity,0
+KAN,6,12.6,12.6,1.56,LCMS,Caseum from cavity,Caseum,0
+KAN,6,12.6,12.6,2.5,LCMS,Caseum from cavity,Caseum,0
+KAN,6,12.6,12.6,7.58,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,6,12.6,12.6,4.45,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,7,2,2,33,LCMS,Plasma,Plasma,0
+KAN,7,6,6,8.58,LCMS,Plasma,Plasma,0
+KAN,7,8.5,8.5,3.81,LCMS,Plasma,Plasma,0
+KAN,7,11,11,1.89,LCMS,Plasma,Plasma,0
+KAN,7,11,11,2.14,LCMS,Lung,Lung,0
+KAN,7,11,11,1.64,LCMS,Lung,Lung,0
+KAN,7,11,11,2.25,LCMS,Lung,Lung,0
+KAN,7,11,11,2.63,LCMS,Cavity wall,Cavity,0
+KAN,7,11,11,2.3,LCMS,Cavity wall,Cavity,0
+KAN,7,11,11,2.22,LCMS,Caseum from cavity,Caseum,0
+KAN,7,11,11,2.57,LCMS,Caseum from cavity,Caseum,0
+KAN,7,11,11,3.53,LCMS,Caseum from cavity,Caseum,0
+KAN,7,11,11,2.68,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,7,11,11,2.49,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,7,11,11,4.07,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,7,11,11,5.12,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,7,11,11,5.23,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,7,11,11,3.19,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,7,11,11,6.4,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,7,11,11,6.13,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,7,11,11,6.82,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,8,2.42,2.42,37.6,LCMS,Plasma,Plasma,0
+KAN,8,4.5,4.5,17.5,LCMS,Plasma,Plasma,0
+KAN,8,5.68,5.68,10.8,LCMS,Plasma,Plasma,0
+KAN,8,5.68,5.68,6.28,LCMS,Lung,Lung,0
+KAN,8,5.68,5.68,9.05,LCMS,Lung,Lung,0
+KAN,8,5.68,5.68,11,LCMS,Lung,Lung,0
+KAN,8,5.68,5.68,10.3,LCMS,Lung,Lung,0
+KAN,8,5.68,5.68,5.13,LCMS,Closed nodule caseum,Caseum,0
+KAN,8,5.68,5.68,7.26,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,8,5.68,5.68,11.5,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,8,5.68,5.68,10.5,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,9,1,1,27.3,LCMS,Plasma,Plasma,0
+KAN,9,3.83,3.83,26.5,LCMS,Plasma,Plasma,0
+KAN,9,3.83,3.83,13.3,LCMS,Lung,Lung,0
+KAN,9,3.83,3.83,8.96,LCMS,Lung,Lung,0
+KAN,9,3.83,3.83,15.6,LCMS,Lung,Lung,0
+KAN,9,3.83,3.83,6.28,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,9,3.83,3.83,23.2,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,9,3.83,3.83,7.51,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,9,3.83,3.83,1.82,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,9,3.83,3.83,12.5,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,9,3.83,3.83,8.43,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,10,2.083,2.083,38.4,LCMS,Plasma,Plasma,0
+KAN,10,6.17,6.17,12.8,LCMS,Plasma,Plasma,0
+KAN,10,7.33,7.33,6.7,LCMS,Plasma,Plasma,0
+KAN,10,9.75,9.75,4.47,LCMS,Plasma,Plasma,0
+KAN,10,10.25,10.25,6.23,LCMS,Lung,Lung,0
+KAN,10,10.25,10.25,7.75,LCMS,Lung,Lung,0
+KAN,10,10.25,10.25,6.29,LCMS,Lung,Lung,0
+KAN,10,10.25,10.25,6.61,LCMS,Cavity wall,Cavity,0
+KAN,10,10.25,10.25,17,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,10,10.25,10.25,9.62,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,11,2,2,0,LCMS,Plasma,Plasma,1
+KAN,11,6,6,0.0398,LCMS,Plasma,Plasma,0
+KAN,11,9.5,9.5,0,LCMS,Plasma,Plasma,1
+KAN,11,11.1,11.1,0,LCMS,Plasma,Plasma,1
+KAN,11,11.1,11.1,0,LCMS,Lung,Lung,1
+KAN,11,11.1,11.1,0,LCMS,Lung,Lung,1
+KAN,11,11.1,11.1,0,LCMS,Lung,Lung,1
+KAN,11,11.1,11.1,0,LCMS,Lung,Lung,1
+KAN,11,11.1,11.1,0,LCMS,Lung,Lung,1
+KAN,12,2,2,38.5,LCMS,Plasma,Plasma,0
+KAN,12,6,6,21.9,LCMS,Plasma,Plasma,0
+KAN,12,20.5,20.5,0.413,LCMS,Plasma,Plasma,0
+KAN,12,22.3,22.3,0.299,LCMS,Plasma,Plasma,0
+KAN,12,22.3,22.3,0.764,LCMS,Lung,Lung,0
+KAN,12,22.3,22.3,0.909,LCMS,Lung,Lung,0
+KAN,12,22.3,22.3,0.756,LCMS,Lung,Lung,0
+KAN,12,22.3,22.3,0.801,LCMS,Lung,Lung,0
+KAN,12,22.3,22.3,0.716,LCMS,Lung,Lung,0
+KAN,12,22.3,22.3,0.668,LCMS,Lung,Lung,0
+KAN,12,22.3,22.3,0.502,LCMS,Lung,Lung,0
+KAN,12,22.3,22.3,2.62,LCMS,Cavity wall,Cavity,0
+KAN,12,22.3,22.3,3.56,LCMS,Caseum from cavity,Caseum,0
+KAN,12,22.3,22.3,3.765,LCMS,Caseum from cavity,Caseum,0
+KAN,12,22.3,22.3,3.085,LCMS,Caseum from cavity,Caseum,0
+KAN,12,22.3,22.3,0.776,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,12,22.3,22.3,2.99,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,12,22.3,22.3,3.64,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,12,22.3,22.3,1.37,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,12,22.3,22.3,1.47,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,13,2,2,6.26,LCMS,Plasma,Plasma,0
+KAN,13,2.5,2.5,6.94,LCMS,Plasma,Plasma,0
+KAN,13,4.4,4.4,7.7,LCMS,Plasma,Plasma,0
+KAN,13,4.4,4.4,5.6,LCMS,Lung,Lung,0
+KAN,13,4.4,4.4,6.28,LCMS,Lung,Lung,0
+KAN,13,4.4,4.4,6.99,LCMS,Lung,Lung,0
+KAN,13,4.4,4.4,1.14,LCMS,Lung,Lung,0
+KAN,13,4.4,4.4,5.75,LCMS,Lung,Lung,0
+KAN,13,4.4,4.4,7,LCMS,Lung,Lung,0
+KAN,13,4.4,4.4,6.28,LCMS,Lung,Lung,0
+KAN,13,4.4,4.4,6.66,LCMS,Lung,Lung,0
+KAN,13,4.4,4.4,0.608,LCMS,Lung,Lung,0
+KAN,13,4.4,4.4,4.57,LCMS,Cavity wall,Cavity,0
+KAN,13,4.4,4.4,9.11,LCMS,Cavity wall,Cavity,0
+KAN,13,4.4,4.4,7.05,LCMS,Cavity wall,Cavity,0
+KAN,13,4.4,4.4,6.18,LCMS,Cavity wall,Cavity,0
+KAN,13,4.4,4.4,7.97,LCMS,Cavity wall,Cavity,0
+KAN,13,4.4,4.4,7.38,LCMS,Cavity wall,Cavity,0
+KAN,13,4.4,4.4,6.51,LCMS,Cavity wall,Cavity,0
+KAN,13,4.4,4.4,5,LCMS,Cavity wall,Cavity,0
+KAN,13,4.4,4.4,3.23,LCMS,Caseum from cavity,Caseum,0
+KAN,13,4.4,4.4,4.84,LCMS,Caseum from cavity,Caseum,0
+KAN,13,4.4,4.4,2.57,LCMS,Caseum from cavity,Caseum,0
+KAN,13,4.4,4.4,5.41,LCMS,Caseum from cavity,Caseum,0
+KAN,13,4.4,4.4,5.26,LCMS,Caseum from cavity,Caseum,0
+KAN,13,4.4,4.4,7.47,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,13,4.4,4.4,6.11,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,13,4.4,4.4,6.26,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,13,4.4,4.4,3.49,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,13,4.4,4.4,6.27,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,13,4.4,4.4,6.81,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,14,1,1,16.7,LCMS,Plasma,Plasma,0
+KAN,14,8.5,8.5,6.82,LCMS,Plasma,Plasma,0
+KAN,14,8.5,8.5,2.48,LCMS,Lung,Lung,0
+KAN,14,8.5,8.5,2.66,LCMS,Lung,Lung,0
+KAN,14,8.5,8.5,3.36,LCMS,Fibrotic tissue,NA,0
+KAN,14,8.5,8.5,3.81,LCMS,Cavity wall,Cavity,0
+KAN,14,8.5,8.5,7.19,LCMS,Caseum from cavity,Caseum,0
+KAN,14,8.5,8.5,5.78,LCMS,Caseum from cavity,Caseum,0
+KAN,14,8.5,8.5,4.51,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,14,8.5,8.5,3.89,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,14,8.5,8.5,2.78,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,14,8.5,8.5,4.85,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,14,8.5,8.5,7.07,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,14,8.5,8.5,6.43,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,15,2,2,42.3,LCMS,Plasma,Plasma,0
+KAN,15,6,6,21.1,LCMS,Plasma,Plasma,0
+KAN,15,24.3,24.3,0.986,LCMS,Plasma,Plasma,0
+KAN,15,24.3,24.3,0.544,LCMS,Lung,Lung,0
+KAN,15,24.3,24.3,1.01,LCMS,Lung,Lung,0
+KAN,15,24.3,24.3,0.822,LCMS,Lung,Lung,0
+KAN,15,24.3,24.3,1.12,LCMS,Fibrotic tissue,NA,0
+KAN,15,24.3,24.3,1.02,LCMS,Fibrotic tissue,NA,0
+KAN,15,24.3,24.3,1.2,LCMS,Cavity wall,Cavity,0
+KAN,15,24.3,24.3,1.07,LCMS,Cavity wall,Cavity,0
+KAN,15,24.3,24.3,1.27,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+KAN,15,24.3,24.3,0.499,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+KAN,16,2,2,36.5,LCMS,Plasma,Plasma,0
+KAN,16,3,3,38.4,LCMS,Plasma,Plasma,0
+KAN,16,6,6,15.8,LCMS,Plasma,Plasma,0
+KAN,16,8.7,8.7,7.75,LCMS,Plasma,Plasma,0
+KAN,16,8.7,8.7,6.31,LCMS,Lung,Lung,0
+KAN,16,8.7,8.7,10.4,LCMS,Lung,Lung,0
+KAN,16,8.7,8.7,3.29,LCMS,Lung,Lung,0
+KAN,16,8.7,8.7,13.3,LCMS,Lung,Lung,0
+KAN,16,8.7,8.7,6.81,LCMS,Lung,Lung,0
+KAN,16,8.7,8.7,13.5,LCMS,Fungal ball,Misc,0
+KAN,16,8.7,8.7,12.3,LCMS,Fungal ball,Misc,0
+KAN,16,8.7,8.7,13,LCMS,Fungal ball,Misc,0
+KAN,16,8.7,8.7,10.6,LCMS,Fungal ball,Misc,0
+KAN,16,8.7,8.7,4.98,LCMS,Fibrotic tissue,NA,0
+RIF,1,6,6,12.7,LCMS,Plasma,Plasma,0
+RIF,1,11.5,11.5,6.39,LCMS,Plasma,Plasma,0
+RIF,1,23,23,0.232,LCMS,Plasma,Plasma,0
+RIF,1,27,27,0.785,LCMS,Plasma,Plasma,0
+RIF,1,27,27,0.78172043,LCMS,Lung,Lung,0
+RIF,1,27,27,0.702444444,LCMS,Lung,Lung,0
+RIF,1,27,27,0.462534435,LCMS,Lung,Lung,0
+RIF,1,27,27,0.136,LCMS,Lung,Lung,0
+RIF,1,27,27,0.154,LCMS,Lung,Lung,0
+RIF,1,27,27,0.315,LCMS,Lung,Lung,0
+RIF,1,27,27,0.244,LCMS,Lung,Lung,0
+RIF,1,27,27,0.12,LCMS,Lung,Lung,0
+RIF,1,27,27,0.175,LCMS,Small nodule,Cellular,0
+RIF,1,27,27,0.158,LCMS,Small nodule,Cellular,0
+RIF,1,27,27,0.24,LCMS,Small nodule,Cellular,0
+RIF,1,27,27,0.138,LCMS,Small nodule,Cellular,0
+RIF,1,27,27,0,LCMS,Small nodule,Cellular,1
+RIF,1,27,27,0.202,LCMS,Small nodule,Cellular,0
+RIF,1,27,27,0.264,LCMS,Cavity wall,Cavity,0
+RIF,1,27,27,1.37,LCMS,Caseum from cavity,Caseum,0
+RIF,1,27,27,2.079,LCMS,Caseum from cavity,Caseum,0
+RIF,1,27,27,1.572,LCMS,Caseum from cavity,Caseum,0
+RIF,1,27,27,1.53,LCMS,Caseum from cavity,Caseum,0
+RIF,1,27,27,2.862,LCMS,Caseum from cavity,Caseum,0
+RIF,1,27,27,0.445,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,1,27,27,1.57,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,1,27,27,0.462,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,1,27,27,0.366,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,1,27,27,0.295,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,1,27,27,0.2,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,2,2,2,0.186,LCMS,Plasma,Plasma,0
+RIF,2,6.17,6.17,0.115,LCMS,Plasma,Plasma,0
+RIF,2,24,24,9.03,LCMS,Plasma,Plasma,0
+RIF,2,25.3,25.3,0.433,LCMS,Plasma,Plasma,0
+RIF,2,25.3,25.3,0.0505,LCMS,Lung,Lung,0
+RIF,2,25.3,25.3,0.0811,LCMS,Lung,Lung,0
+RIF,2,25.3,25.3,0.0528,LCMS,Lung,Lung,0
+RIF,2,25.3,25.3,0.1038,LCMS,Lung,Lung,0
+RIF,2,25.3,25.3,0.099,LCMS,Lung,Lung,0
+RIF,2,25.3,25.3,0.0713,LCMS,Lung,Lung,0
+RIF,2,25.3,25.3,0.649,LCMS,Small nodule,Cellular,0
+RIF,2,25.3,25.3,0.0551,LCMS,Small nodule,Cellular,0
+RIF,2,25.3,25.3,0.192,LCMS,Small nodule,Cellular,0
+RIF,2,25.3,25.3,0.287,LCMS,Small nodule,Cellular,0
+RIF,2,25.3,25.3,0.0862,LCMS,Small nodule,Cellular,0
+RIF,2,25.3,25.3,0.0296,LCMS,Small nodule,Cellular,0
+RIF,2,25.3,25.3,0.0882,LCMS,Small nodule,Cellular,0
+RIF,2,25.3,25.3,0.125,LCMS,Cavity wall,Cavity,0
+RIF,2,25.3,25.3,0.334,LCMS,Cavity wall,Cavity,0
+RIF,2,25.3,25.3,0.103,LCMS,Cavity wall,Cavity,0
+RIF,2,25.3,25.3,0.0613,LCMS,Cavity wall,Cavity,0
+RIF,2,25.3,25.3,0.1122,LCMS,Cavity wall,Cavity,0
+RIF,2,25.3,25.3,0.137,LCMS,Cavity wall,Cavity,0
+RIF,2,25.3,25.3,0.631,LCMS,Caseum from cavity,Caseum,0
+RIF,2,25.3,25.3,0.1816,LCMS,Caseum from cavity,Caseum,0
+RIF,2,25.3,25.3,0.201,LCMS,Caseum from cavity,Caseum,0
+RIF,3,2.13,2.13,3.66,LCMS,Plasma,Plasma,0
+RIF,3,6,6,2.96,LCMS,Plasma,Plasma,0
+RIF,3,8.5,8.5,7.59,LCMS,Plasma,Plasma,0
+RIF,3,11.2,11.2,5.35,LCMS,Plasma,Plasma,0
+RIF,3,11.2,11.2,0.61,LCMS,Lung,Lung,0
+RIF,3,11.2,11.2,0.318,LCMS,Lung,Lung,0
+RIF,3,11.2,11.2,0.697,LCMS,Lung,Lung,0
+RIF,3,11.2,11.2,2.439,LCMS,Lung,Lung,0
+RIF,3,11.2,11.2,1.62,LCMS,Fibrotic tissue,NA,0
+RIF,3,11.2,11.2,2.02,LCMS,Fibrotic tissue,NA,0
+RIF,3,11.2,11.2,2.16,LCMS,Fibrotic tissue,NA,0
+RIF,3,11.2,11.2,1.51,LCMS,Cavity wall,Cavity,0
+RIF,3,11.2,11.2,1.17,LCMS,Cavity wall,Cavity,0
+RIF,3,11.2,11.2,0.904,LCMS,Cavity wall,Cavity,0
+RIF,3,11.2,11.2,0.56,LCMS,Cavity wall,Cavity,0
+RIF,3,11.2,11.2,0.743,LCMS,Cavity wall,Cavity,0
+RIF,3,11.2,11.2,2.95,LCMS,Cavity wall,Cavity,0
+RIF,3,11.2,11.2,1.83,LCMS,Cavity wall,Cavity,0
+RIF,3,11.2,11.2,1.5,LCMS,Cavity wall,Cavity,0
+RIF,3,11.2,11.2,1.55,LCMS,Cavity wall,Cavity,0
+RIF,3,11.2,11.2,1.68,LCMS,Cavity wall,Cavity,0
+RIF,3,11.2,11.2,1.36,LCMS,Caseum from cavity,Caseum,0
+RIF,3,11.2,11.2,0.582,LCMS,Caseum from cavity,Caseum,0
+RIF,3,11.2,11.2,0.697,LCMS,Caseum from cavity,Caseum,0
+RIF,3,11.2,11.2,0.506,LCMS,Caseum from cavity,Caseum,0
+RIF,3,11.2,11.2,0.446,LCMS,Caseum from cavity,Caseum,0
+RIF,3,11.2,11.2,1.73,LCMS,Caseum from cavity,Caseum,0
+RIF,3,11.2,11.2,0.394,LCMS,Closed nodule caseum,Caseum,0
+RIF,3,11.2,11.2,0.857,LCMS,Closed nodule caseum,Caseum,0
+RIF,4,2.17,2.17,4.34,LCMS,Plasma,Plasma,0
+RIF,4,4.9,4.9,5.11,LCMS,Plasma,Plasma,0
+RIF,4,5.1,5.1,6.14,LCMS,Plasma,Plasma,0
+RIF,4,5.1,5.1,7.898036364,LCMS,Lung,Lung,0
+RIF,4,5.1,5.1,6.11,LCMS,Lung,Lung,0
+RIF,4,5.1,5.1,4.1301,LCMS,Lung,Lung,0
+RIF,4,5.1,5.1,3.97,LCMS,Small nodule,Cellular,0
+RIF,4,5.1,5.1,4.151484702,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,4,5.1,5.1,3.407694311,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,4,5.1,5.1,6.72,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,4,5.1,5.1,1.918755455,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,4,5.1,5.1,3.637943262,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,4,5.1,5.1,2.144727,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,4,5.1,5.1,1.885707,LCMS,Unknown,Misc,0
+RIF,5,2.67,2.67,8.82,LCMS,Plasma,Plasma,0
+RIF,5,3.3,3.3,6.34,LCMS,Plasma,Plasma,0
+RIF,5,3.3,3.3,6.016,LCMS,Lung,Lung,0
+RIF,5,3.3,3.3,6.78,LCMS,Lung,Lung,0
+RIF,5,3.3,3.3,6.027408,LCMS,Lung,Lung,0
+RIF,5,3.3,3.3,7.860304,LCMS,Lung,Lung,0
+RIF,5,3.3,3.3,6.943856,LCMS,Lung,Lung,0
+RIF,5,3.3,3.3,7.94,LCMS,Lung,Lung,0
+RIF,5,3.3,3.3,9.78132,LCMS,Lung,Lung,0
+RIF,5,3.3,3.3,1.123727589,LCMS,Caseum from cavity,Caseum,0
+RIF,5,3.3,3.3,3.078453,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,1.774760383,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,2.512779553,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,5.295561404,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,6.136912281,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,2.478748547,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,3.02143314,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,3.448875,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,1.732352,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,1.869568,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,7.087734536,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,8.671051546,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,1.552256,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,1.380736,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,5,3.3,3.3,2.15,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,6,2,2,10.2,LCMS,Plasma,Plasma,0
+RIF,6,6,6,6.3,LCMS,Plasma,Plasma,0
+RIF,6,11,11,4.24,LCMS,Plasma,Plasma,0
+RIF,6,12.6,12.6,3.62,LCMS,Plasma,Plasma,0
+RIF,6,12.6,12.6,2.76,LCMS,Lung,Lung,0
+RIF,6,12.6,12.6,2.7,LCMS,Lung,Lung,0
+RIF,6,12.6,12.6,0.511,LCMS,Small nodule,Cellular,0
+RIF,6,12.6,12.6,1.42,LCMS,Small nodule,Cellular,0
+RIF,6,12.6,12.6,3.55,LCMS,Fibrotic tissue,NA,0
+RIF,6,12.6,12.6,3.76,LCMS,Cavity wall,Cavity,0
+RIF,6,12.6,12.6,0.794,LCMS,Caseum from cavity,Caseum,0
+RIF,6,12.6,12.6,1.59,LCMS,Caseum from cavity,Caseum,0
+RIF,6,12.6,12.6,2.99,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,6,12.6,12.6,3.79,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,7,2,2,12.2,LCMS,Plasma,Plasma,0
+RIF,7,6,6,9,LCMS,Plasma,Plasma,0
+RIF,7,8.5,8.5,6.61,LCMS,Plasma,Plasma,0
+RIF,7,11,11,3.99,LCMS,Plasma,Plasma,0
+RIF,7,11,11,3.9,LCMS,Lung,Lung,0
+RIF,7,11,11,3.37,LCMS,Lung,Lung,0
+RIF,7,11,11,3.75,LCMS,Lung,Lung,0
+RIF,7,11,11,3.74,LCMS,Cavity wall,Cavity,0
+RIF,7,11,11,3.39,LCMS,Cavity wall,Cavity,0
+RIF,7,11,11,5.81,LCMS,Caseum from cavity,Caseum,0
+RIF,7,11,11,4.2,LCMS,Caseum from cavity,Caseum,0
+RIF,7,11,11,3.78,LCMS,Caseum from cavity,Caseum,0
+RIF,7,11,11,3.6,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,7,11,11,0.473,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,7,11,11,2.32,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,7,11,11,1.3,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,7,11,11,1.68,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,7,11,11,0.162,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,7,11,11,0.912,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,7,11,11,1.49,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,7,11,11,2.62,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,8,2.42,2.42,11,LCMS,Plasma,Plasma,0
+RIF,8,4.5,4.5,7.93,LCMS,Plasma,Plasma,0
+RIF,8,5.68,5.68,7.91,LCMS,Plasma,Plasma,0
+RIF,8,5.68,5.68,4.38,LCMS,Lung,Lung,0
+RIF,8,5.68,5.68,5.21,LCMS,Lung,Lung,0
+RIF,8,5.68,5.68,5.34,LCMS,Lung,Lung,0
+RIF,8,5.68,5.68,5.24,LCMS,Lung,Lung,0
+RIF,8,5.68,5.68,5.44,LCMS,Closed nodule caseum,Caseum,0
+RIF,8,5.68,5.68,5.28,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,8,5.68,5.68,6.45,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,8,5.68,5.68,7.19,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,9,1,1,0.166,LCMS,Plasma,Plasma,0
+RIF,9,3.83,3.83,0.33,LCMS,Plasma,Plasma,0
+RIF,9,3.83,3.83,0.138,LCMS,Lung,Lung,0
+RIF,9,3.83,3.83,0.214,LCMS,Lung,Lung,0
+RIF,9,3.83,3.83,0.0909,LCMS,Lung,Lung,0
+RIF,9,3.83,3.83,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+RIF,9,3.83,3.83,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+RIF,9,3.83,3.83,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+RIF,9,3.83,3.83,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+RIF,9,3.83,3.83,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+RIF,9,3.83,3.83,0.121,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,10,2.083,2.083,4.33,LCMS,Plasma,Plasma,0
+RIF,10,7.33,7.33,5.9,LCMS,Plasma,Plasma,0
+RIF,10,9.75,9.75,5.97,LCMS,Plasma,Plasma,0
+RIF,10,10.25,10.25,4.25,LCMS,Lung,Lung,0
+RIF,10,10.25,10.25,4.24,LCMS,Lung,Lung,0
+RIF,10,10.25,10.25,4.06,LCMS,Lung,Lung,0
+RIF,10,10.25,10.25,4.5,LCMS,Lung,Lung,0
+RIF,10,10.25,10.25,6.14,LCMS,Cavity wall,Cavity,0
+RIF,10,10.25,10.25,4.91,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,10,10.25,10.25,6.44,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,11,2,2,0.112,LCMS,Plasma,Plasma,0
+RIF,11,6,6,12.3,LCMS,Plasma,Plasma,0
+RIF,11,9.5,9.5,8.72,LCMS,Plasma,Plasma,0
+RIF,11,11.1,11.1,7.19,LCMS,Plasma,Plasma,0
+RIF,11,11.1,11.1,4.5,LCMS,Lung,Lung,0
+RIF,11,11.1,11.1,4.75,LCMS,Lung,Lung,0
+RIF,11,11.1,11.1,5.06,LCMS,Lung,Lung,0
+RIF,11,11.1,11.1,5.16,LCMS,Lung,Lung,0
+RIF,11,11.1,11.1,7.11,LCMS,Lung,Lung,0
+RIF,11,11.1,11.1,1.26,LCMS,Cavity wall,Cavity,0
+RIF,11,11.1,11.1,4.58,LCMS,Cavity wall,Cavity,0
+RIF,11,11.1,11.1,6.08,LCMS,Cavity wall,Cavity,0
+RIF,11,11.1,11.1,5.76,LCMS,Cavity wall,Cavity,0
+RIF,11,11.1,11.1,1.52,LCMS,Caseum from cavity,Caseum,0
+RIF,11,11.1,11.1,1.31,LCMS,Caseum from cavity,Caseum,0
+RIF,11,11.1,11.1,0.514,LCMS,Caseum from cavity,Caseum,0
+RIF,11,11.1,11.1,0.357,LCMS,Caseum from cavity,Caseum,0
+RIF,11,11.1,11.1,6.4,LCMS,Caseum from cavity,Caseum,0
+RIF,11,11.1,11.1,5.76,LCMS,Caseum from cavity,Caseum,0
+RIF,11,11.1,11.1,5.58,LCMS,Closed nodule caseum,Caseum,0
+RIF,11,11.1,11.1,4.86,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,11,11.1,11.1,5.38,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,11,11.1,11.1,5.68,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,11,11.1,11.1,3.79,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,11,11.1,11.1,2.21,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,11,11.1,11.1,2.72,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,11,11.1,11.1,2.31,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,11,11.1,11.1,6.18,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,11,11.1,11.1,3.18,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,11,11.1,11.1,4.78,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,11,11.1,11.1,3.76,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,12,2,2,8.3,LCMS,Plasma,Plasma,0
+RIF,12,6,6,7.41,LCMS,Plasma,Plasma,0
+RIF,12,20.5,20.5,1.54,LCMS,Plasma,Plasma,0
+RIF,12,22.3,22.3,0.826,LCMS,Plasma,Plasma,0
+RIF,12,22.3,22.3,0.879,LCMS,Lung,Lung,0
+RIF,12,22.3,22.3,0.569,LCMS,Lung,Lung,0
+RIF,12,22.3,22.3,0.647,LCMS,Lung,Lung,0
+RIF,12,22.3,22.3,0.817,LCMS,Lung,Lung,0
+RIF,12,22.3,22.3,1.25,LCMS,Lung,Lung,0
+RIF,12,22.3,22.3,0.591,LCMS,Lung,Lung,0
+RIF,12,22.3,22.3,0.604,LCMS,Lung,Lung,0
+RIF,12,22.3,22.3,0.606,LCMS,Cavity wall,Cavity,0
+RIF,12,22.3,22.3,0.185,LCMS,Caseum from cavity,Caseum,0
+RIF,12,22.3,22.3,0.322,LCMS,Caseum from cavity,Caseum,0
+RIF,12,22.3,22.3,0.56,LCMS,Caseum from cavity,Caseum,0
+RIF,12,22.3,22.3,1.02,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,12,22.3,22.3,0.868,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,12,22.3,22.3,0.854,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,12,22.3,22.3,0.719,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,12,22.3,22.3,0.938,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,13,2,2,0.252,LCMS,Plasma,Plasma,0
+RIF,13,2.5,2.5,0.309,LCMS,Plasma,Plasma,0
+RIF,13,4.4,4.4,0.385,LCMS,Plasma,Plasma,0
+RIF,13,4.4,4.4,0.335,LCMS,Lung,Lung,0
+RIF,13,4.4,4.4,0.254,LCMS,Lung,Lung,0
+RIF,13,4.4,4.4,0.198,LCMS,Lung,Lung,0
+RIF,13,4.4,4.4,0.291,LCMS,Lung,Lung,0
+RIF,13,4.4,4.4,0.239,LCMS,Lung,Lung,0
+RIF,13,4.4,4.4,0.267,LCMS,Lung,Lung,0
+RIF,13,4.4,4.4,0.29,LCMS,Lung,Lung,0
+RIF,13,4.4,4.4,0.323,LCMS,Lung,Lung,0
+RIF,13,4.4,4.4,0.0385,LCMS,Lung,Lung,0
+RIF,13,4.4,4.4,0.248,LCMS,Cavity wall,Cavity,0
+RIF,13,4.4,4.4,0.236,LCMS,Cavity wall,Cavity,0
+RIF,13,4.4,4.4,0.246,LCMS,Cavity wall,Cavity,0
+RIF,13,4.4,4.4,0.054300578,LCMS,Cavity wall,Cavity,0
+RIF,13,4.4,4.4,0.189,LCMS,Cavity wall,Cavity,0
+RIF,13,4.4,4.4,0.281,LCMS,Cavity wall,Cavity,0
+RIF,13,4.4,4.4,0.178,LCMS,Cavity wall,Cavity,0
+RIF,13,4.4,4.4,0.324,LCMS,Cavity wall,Cavity,0
+RIF,13,4.4,4.4,0.428,LCMS,Cavity wall,Cavity,0
+RIF,13,4.4,4.4,0.0865,LCMS,Caseum from cavity,Caseum,0
+RIF,13,4.4,4.4,0.102,LCMS,Caseum from cavity,Caseum,0
+RIF,13,4.4,4.4,0.0184,LCMS,Caseum from cavity,Caseum,0
+RIF,13,4.4,4.4,0.0745,LCMS,Caseum from cavity,Caseum,0
+RIF,13,4.4,4.4,0.0918,LCMS,Caseum from cavity,Caseum,0
+RIF,13,4.4,4.4,0.195,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,13,4.4,4.4,0.143,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,13,4.4,4.4,0.0833,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,13,4.4,4.4,0.183,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,13,4.4,4.4,0.0881,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,13,4.4,4.4,0.079,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,14,1,1,2.78,LCMS,Plasma,Plasma,0
+RIF,14,8.5,8.5,1.79,LCMS,Plasma,Plasma,0
+RIF,14,8.5,8.5,1.15,LCMS,Lung,Lung,0
+RIF,14,8.5,8.5,1.23,LCMS,Lung,Lung,0
+RIF,14,8.5,8.5,0.819,LCMS,Fibrotic tissue,NA,0
+RIF,14,8.5,8.5,1.5,LCMS,Cavity wall,Cavity,0
+RIF,14,8.5,8.5,2.26,LCMS,Caseum from cavity,Caseum,0
+RIF,14,8.5,8.5,1.91,LCMS,Caseum from cavity,Caseum,0
+RIF,14,8.5,8.5,1.6,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,14,8.5,8.5,1.01,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,14,8.5,8.5,1.23,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,14,8.5,8.5,0.929,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,14,8.5,8.5,0.368,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,14,8.5,8.5,0.963,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,15,2,2,0.507,LCMS,Plasma,Plasma,0
+RIF,15,6,6,9.23,LCMS,Plasma,Plasma,0
+RIF,15,16,16,1.54,LCMS,Plasma,Plasma,0
+RIF,15,24.3,24.3,0.458,LCMS,Plasma,Plasma,0
+RIF,15,24.3,24.3,0.515,LCMS,Lung,Lung,0
+RIF,15,24.3,24.3,0.516,LCMS,Lung,Lung,0
+RIF,15,24.3,24.3,0.503,LCMS,Lung,Lung,0
+RIF,15,24.3,24.3,0.134,LCMS,Fibrotic tissue,NA,0
+RIF,15,24.3,24.3,0.126,LCMS,Fibrotic tissue,NA,0
+RIF,15,24.3,24.3,0.274,LCMS,Cavity wall,Cavity,0
+RIF,15,24.3,24.3,0.214,LCMS,Cavity wall,Cavity,0
+RIF,15,24.3,24.3,0.123,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+RIF,15,24.3,24.3,1.1,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+RIF,16,2,2,8.51,LCMS,Plasma,Plasma,0
+RIF,16,3,3,8.91,LCMS,Plasma,Plasma,0
+RIF,16,6,6,5.95,LCMS,Plasma,Plasma,0
+RIF,16,8.7,8.7,4.32,LCMS,Plasma,Plasma,0
+RIF,16,8.7,8.7,3.59,LCMS,Lung,Lung,0
+RIF,16,8.7,8.7,2.74,LCMS,Lung,Lung,0
+RIF,16,8.7,8.7,2.76,LCMS,Lung,Lung,0
+RIF,16,8.7,8.7,3.98,LCMS,Lung,Lung,0
+RIF,16,8.7,8.7,3.27,LCMS,Lung,Lung,0
+RIF,16,8.7,8.7,1.8,LCMS,Fungal ball,Misc,0
+RIF,16,8.7,8.7,2.35,LCMS,Fungal ball,Misc,0
+RIF,16,8.7,8.7,2.34,LCMS,Fungal ball,Misc,0
+RIF,16,8.7,8.7,2.54,LCMS,Fungal ball,Misc,0
+RIF,16,8.7,8.7,3.97,LCMS,Fibrotic tissue,NA,0
+MXF,1,6,6,0,LCMS,Plasma,Plasma,1
+MXF,1,11.5,11.5,0,LCMS,Plasma,Plasma,1
+MXF,1,27,27,0,LCMS,Plasma,Plasma,1
+MXF,1,27,27,0,LCMS,Lung,Lung,1
+MXF,1,27,27,0,LCMS,Lung,Lung,1
+MXF,1,27,27,0,LCMS,Lung,Lung,1
+MXF,1,27,27,0,LCMS,Lung,Lung,1
+MXF,2,2,2,0.699,LCMS,Plasma,Plasma,0
+MXF,2,6.17,6.17,0.666,LCMS,Plasma,Plasma,0
+MXF,2,24,24,3.16,LCMS,Plasma,Plasma,0
+MXF,2,25.3,25.3,1.34,LCMS,Plasma,Plasma,0
+MXF,2,25.3,25.3,2.07,LCMS,Lung,Lung,0
+MXF,2,25.3,25.3,3.9,LCMS,Lung,Lung,0
+MXF,2,25.3,25.3,6.46,LCMS,Lung,Lung,0
+MXF,2,25.3,25.3,10.22,LCMS,Lung,Lung,0
+MXF,2,25.3,25.3,7.31,LCMS,Lung,Lung,0
+MXF,2,25.3,25.3,3.93,LCMS,Lung,Lung,0
+MXF,2,25.3,25.3,4.35,LCMS,Small nodule,Cellular,0
+MXF,2,25.3,25.3,6.35,LCMS,Small nodule,Cellular,0
+MXF,2,25.3,25.3,19,LCMS,Small nodule,Cellular,0
+MXF,2,25.3,25.3,16.2,LCMS,Small nodule,Cellular,0
+MXF,2,25.3,25.3,12,LCMS,Small nodule,Cellular,0
+MXF,2,25.3,25.3,4.51,LCMS,Small nodule,Cellular,0
+MXF,2,25.3,25.3,8.41,LCMS,Small nodule,Cellular,0
+MXF,2,25.3,25.3,4.88,LCMS,Cavity wall,Cavity,0
+MXF,2,25.3,25.3,7.83,LCMS,Cavity wall,Cavity,0
+MXF,2,25.3,25.3,15.4,LCMS,Cavity wall,Cavity,0
+MXF,2,25.3,25.3,8.59,LCMS,Cavity wall,Cavity,0
+MXF,2,25.3,25.3,13.14,LCMS,Cavity wall,Cavity,0
+MXF,2,25.3,25.3,13.4,LCMS,Cavity wall,Cavity,0
+MXF,2,25.3,25.3,3.42,LCMS,Caseum from cavity,Caseum,0
+MXF,2,25.3,25.3,1.376,LCMS,Caseum from cavity,Caseum,0
+MXF,2,25.3,25.3,2.81,LCMS,Caseum from cavity,Caseum,0
+MXF,3,2.13,2.13,1.94,LCMS,Plasma,Plasma,0
+MXF,3,6,6,1.47,LCMS,Plasma,Plasma,0
+MXF,3,8.5,8.5,3.15,LCMS,Plasma,Plasma,0
+MXF,3,11.2,11.2,2.47,LCMS,Plasma,Plasma,0
+MXF,3,11.2,11.2,1.79,LCMS,Lung,Lung,0
+MXF,3,11.2,11.2,0.133,LCMS,Lung,Lung,0
+MXF,3,11.2,11.2,3.07,LCMS,Lung,Lung,0
+MXF,3,11.2,11.2,6.466,LCMS,Lung,Lung,0
+MXF,3,11.2,11.2,3.13,LCMS,Fibrotic tissue,NA,0
+MXF,3,11.2,11.2,2.61,LCMS,Fibrotic tissue,NA,0
+MXF,3,11.2,11.2,2.97,LCMS,Fibrotic tissue,NA,0
+MXF,3,11.2,11.2,5.13,LCMS,Cavity wall,Cavity,0
+MXF,3,11.2,11.2,2.05,LCMS,Cavity wall,Cavity,0
+MXF,3,11.2,11.2,1.34,LCMS,Cavity wall,Cavity,0
+MXF,3,11.2,11.2,1.55,LCMS,Cavity wall,Cavity,0
+MXF,3,11.2,11.2,1.92,LCMS,Cavity wall,Cavity,0
+MXF,3,11.2,11.2,6.65,LCMS,Cavity wall,Cavity,0
+MXF,3,11.2,11.2,3.75,LCMS,Cavity wall,Cavity,0
+MXF,3,11.2,11.2,3.72,LCMS,Cavity wall,Cavity,0
+MXF,3,11.2,11.2,3.52,LCMS,Cavity wall,Cavity,0
+MXF,3,11.2,11.2,2.67,LCMS,Cavity wall,Cavity,0
+MXF,3,11.2,11.2,1.81,LCMS,Caseum from cavity,Caseum,0
+MXF,3,11.2,11.2,1.99,LCMS,Caseum from cavity,Caseum,0
+MXF,3,11.2,11.2,1.54,LCMS,Caseum from cavity,Caseum,0
+MXF,3,11.2,11.2,1.01,LCMS,Caseum from cavity,Caseum,0
+MXF,3,11.2,11.2,0.617,LCMS,Caseum from cavity,Caseum,0
+MXF,3,11.2,11.2,2.88,LCMS,Caseum from cavity,Caseum,0
+MXF,3,11.2,11.2,0.95,LCMS,Closed nodule caseum,Caseum,0
+MXF,3,11.2,11.2,1.24,LCMS,Closed nodule caseum,Caseum,0
+MXF,4,2.17,2.17,2.12,LCMS,Plasma,Plasma,0
+MXF,4,4.9,4.9,2.81,LCMS,Plasma,Plasma,0
+MXF,4,5.1,5.1,3.31,LCMS,Plasma,Plasma,0
+MXF,4,5.1,5.1,11.91757273,LCMS,Lung,Lung,0
+MXF,4,5.1,5.1,9.96,LCMS,Lung,Lung,0
+MXF,4,5.1,5.1,5.9085,LCMS,Lung,Lung,0
+MXF,4,5.1,5.1,7.58,LCMS,Small nodule,Cellular,0
+MXF,4,5.1,5.1,9.364251208,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,4,5.1,5.1,9.736269461,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,4,5.1,5.1,13,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,4,5.1,5.1,5.602538182,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,4,5.1,5.1,7.033356974,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,4,5.1,5.1,5.09283,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,4,5.1,5.1,3.440745,LCMS,Unknown,Misc,0
+MXF,5,2.67,2.67,5.8,LCMS,Plasma,Plasma,0
+MXF,5,3.3,3.3,4.91,LCMS,Plasma,Plasma,0
+MXF,5,3.3,3.3,8.4096,LCMS,Lung,Lung,0
+MXF,5,3.3,3.3,8.64,LCMS,Lung,Lung,0
+MXF,5,3.3,3.3,11.10312,LCMS,Lung,Lung,0
+MXF,5,3.3,3.3,11.27936,LCMS,Lung,Lung,0
+MXF,5,3.3,3.3,11.19124,LCMS,Lung,Lung,0
+MXF,5,3.3,3.3,12,LCMS,Lung,Lung,0
+MXF,5,3.3,3.3,11.71996,LCMS,Lung,Lung,0
+MXF,5,3.3,3.3,3.041494093,LCMS,Caseum from cavity,Caseum,0
+MXF,5,3.3,3.3,5.196254,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,3.672523962,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,3.900958466,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,7.291707602,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,7.118488304,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,4.297475291,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,4.326809593,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,4.736455,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,2.624256,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,2.547072,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,9.531780928,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,9.212992268,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,3.095936,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,2.332672,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,5,3.3,3.3,4.13,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,6,2,2,2.32,LCMS,Plasma,Plasma,0
+MXF,6,6,6,2.06,LCMS,Plasma,Plasma,0
+MXF,6,11,11,1.21,LCMS,Plasma,Plasma,0
+MXF,6,12.6,12.6,1.04,LCMS,Plasma,Plasma,0
+MXF,6,12.6,12.6,7.64,LCMS,Lung,Lung,0
+MXF,6,12.6,12.6,5.09,LCMS,Lung,Lung,0
+MXF,6,12.6,12.6,0.462,LCMS,Small nodule,Cellular,0
+MXF,6,12.6,12.6,1.66,LCMS,Small nodule,Cellular,0
+MXF,6,12.6,12.6,5.69,LCMS,Fibrotic tissue,NA,0
+MXF,6,12.6,12.6,8.9,LCMS,Cavity wall,Cavity,0
+MXF,6,12.6,12.6,1.13,LCMS,Caseum from cavity,Caseum,0
+MXF,6,12.6,12.6,1.8,LCMS,Caseum from cavity,Caseum,0
+MXF,6,12.6,12.6,3.56,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,6,12.6,12.6,5.41,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,7,2,2,4.19,LCMS,Plasma,Plasma,0
+MXF,7,6,6,2.71,LCMS,Plasma,Plasma,0
+MXF,7,8.5,8.5,2,LCMS,Plasma,Plasma,0
+MXF,7,11,11,1.38,LCMS,Plasma,Plasma,0
+MXF,7,11,11,6.41,LCMS,Lung,Lung,0
+MXF,7,11,11,5.85,LCMS,Lung,Lung,0
+MXF,7,11,11,7.43,LCMS,Lung,Lung,0
+MXF,7,11,11,5.87,LCMS,Cavity wall,Cavity,0
+MXF,7,11,11,5.87,LCMS,Cavity wall,Cavity,0
+MXF,7,11,11,5.37,LCMS,Caseum from cavity,Caseum,0
+MXF,7,11,11,4.7,LCMS,Caseum from cavity,Caseum,0
+MXF,7,11,11,4.53,LCMS,Caseum from cavity,Caseum,0
+MXF,7,11,11,5.08,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,7,11,11,1.83,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,7,11,11,4.16,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,7,11,11,3.83,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,7,11,11,3.67,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,7,11,11,1.79,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,7,11,11,3.28,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,7,11,11,3.9,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,7,11,11,4.58,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,8,2.42,2.42,2.5,LCMS,Plasma,Plasma,0
+MXF,8,4.5,4.5,2.28,LCMS,Plasma,Plasma,0
+MXF,8,5.68,5.68,1.97,LCMS,Plasma,Plasma,0
+MXF,8,5.68,5.68,9.14,LCMS,Lung,Lung,0
+MXF,8,5.68,5.68,11.2,LCMS,Lung,Lung,0
+MXF,8,5.68,5.68,8.86,LCMS,Lung,Lung,0
+MXF,8,5.68,5.68,8.89,LCMS,Lung,Lung,0
+MXF,8,5.68,5.68,10.1,LCMS,Closed nodule caseum,Caseum,0
+MXF,8,5.68,5.68,10.9,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,8,5.68,5.68,13.1,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,8,5.68,5.68,11.9,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,9,1,1,1.11,LCMS,Plasma,Plasma,0
+MXF,9,3.83,3.83,0.897,LCMS,Plasma,Plasma,0
+MXF,9,3.83,3.83,2.99,LCMS,Lung,Lung,0
+MXF,9,3.83,3.83,4.39,LCMS,Lung,Lung,0
+MXF,9,3.83,3.83,2.43,LCMS,Lung,Lung,0
+MXF,9,3.83,3.83,0.451,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,9,3.83,3.83,0.803,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,9,3.83,3.83,1.67,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,9,3.83,3.83,0.288,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,9,3.83,3.83,2.8,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,9,3.83,3.83,3.49,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,10,2.083,2.083,2.95,LCMS,Plasma,Plasma,0
+MXF,10,7.33,7.33,2,LCMS,Plasma,Plasma,0
+MXF,10,9.75,9.75,1.59,LCMS,Plasma,Plasma,0
+MXF,10,10.25,10.25,5.61,LCMS,Lung,Lung,0
+MXF,10,10.25,10.25,4.74,LCMS,Lung,Lung,0
+MXF,10,10.25,10.25,4.91,LCMS,Lung,Lung,0
+MXF,10,10.25,10.25,6.76,LCMS,Lung,Lung,0
+MXF,10,10.25,10.25,7.9,LCMS,Cavity wall,Cavity,0
+MXF,10,10.25,10.25,7.63,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,10,10.25,10.25,11.2,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,11,2,2,2.27,LCMS,Plasma,Plasma,0
+MXF,11,6,6,3.22,LCMS,Plasma,Plasma,0
+MXF,11,9.5,9.5,2.25,LCMS,Plasma,Plasma,0
+MXF,11,11.1,11.1,2.05,LCMS,Plasma,Plasma,0
+MXF,11,11.1,11.1,10.2,LCMS,Lung,Lung,0
+MXF,11,11.1,11.1,10.2,LCMS,Lung,Lung,0
+MXF,11,11.1,11.1,9.62,LCMS,Lung,Lung,0
+MXF,11,11.1,11.1,10.3,LCMS,Lung,Lung,0
+MXF,11,11.1,11.1,11.5,LCMS,Lung,Lung,0
+MXF,11,11.1,11.1,2.14,LCMS,Cavity wall,Cavity,0
+MXF,11,11.1,11.1,5.56,LCMS,Cavity wall,Cavity,0
+MXF,11,11.1,11.1,7,LCMS,Cavity wall,Cavity,0
+MXF,11,11.1,11.1,5.5,LCMS,Cavity wall,Cavity,0
+MXF,11,11.1,11.1,2.78,LCMS,Caseum from cavity,Caseum,0
+MXF,11,11.1,11.1,2.47,LCMS,Caseum from cavity,Caseum,0
+MXF,11,11.1,11.1,1.58,LCMS,Caseum from cavity,Caseum,0
+MXF,11,11.1,11.1,1.51,LCMS,Caseum from cavity,Caseum,0
+MXF,11,11.1,11.1,6.54,LCMS,Caseum from cavity,Caseum,0
+MXF,11,11.1,11.1,5.29,LCMS,Caseum from cavity,Caseum,0
+MXF,11,11.1,11.1,5.37,LCMS,Closed nodule caseum,Caseum,0
+MXF,11,11.1,11.1,6,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,11,11.1,11.1,7.84,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,11,11.1,11.1,7.68,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,11,11.1,11.1,4.53,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,11,11.1,11.1,2.82,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,11,11.1,11.1,3,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,11,11.1,11.1,2.87,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,11,11.1,11.1,7.43,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,11,11.1,11.1,3.92,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,11,11.1,11.1,6.51,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,11,11.1,11.1,4.25,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,12,2,2,4.69,LCMS,Plasma,Plasma,0
+MXF,12,6,6,2.92,LCMS,Plasma,Plasma,0
+MXF,12,20.5,20.5,1.79,LCMS,Plasma,Plasma,0
+MXF,12,22.3,22.3,1.16,LCMS,Plasma,Plasma,0
+MXF,12,22.3,22.3,15.3,LCMS,Lung,Lung,0
+MXF,12,22.3,22.3,12.2,LCMS,Lung,Lung,0
+MXF,12,22.3,22.3,12.2,LCMS,Lung,Lung,0
+MXF,12,22.3,22.3,12.3,LCMS,Lung,Lung,0
+MXF,12,22.3,22.3,14.3,LCMS,Lung,Lung,0
+MXF,12,22.3,22.3,7.36,LCMS,Lung,Lung,0
+MXF,12,22.3,22.3,9.58,LCMS,Lung,Lung,0
+MXF,12,22.3,22.3,1.7,LCMS,Cavity wall,Cavity,0
+MXF,12,22.3,22.3,1.7,LCMS,Caseum from cavity,Caseum,0
+MXF,12,22.3,22.3,2.1,LCMS,Caseum from cavity,Caseum,0
+MXF,12,22.3,22.3,2.35,LCMS,Caseum from cavity,Caseum,0
+MXF,12,22.3,22.3,2.92,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,12,22.3,22.3,2.69,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,12,22.3,22.3,2.73,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,12,22.3,22.3,6.37,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,12,22.3,22.3,2.09,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,13,2,2,1.54,LCMS,Plasma,Plasma,0
+MXF,13,2.5,2.5,1.73,LCMS,Plasma,Plasma,0
+MXF,13,4.4,4.4,1.4,LCMS,Plasma,Plasma,0
+MXF,13,4.4,4.4,11.8,LCMS,Lung,Lung,0
+MXF,13,4.4,4.4,9.11,LCMS,Lung,Lung,0
+MXF,13,4.4,4.4,10.9,LCMS,Lung,Lung,0
+MXF,13,4.4,4.4,8.58,LCMS,Lung,Lung,0
+MXF,13,4.4,4.4,6.86,LCMS,Lung,Lung,0
+MXF,13,4.4,4.4,11.8,LCMS,Lung,Lung,0
+MXF,13,4.4,4.4,9.91,LCMS,Lung,Lung,0
+MXF,13,4.4,4.4,13.4,LCMS,Lung,Lung,0
+MXF,13,4.4,4.4,0.996,LCMS,Lung,Lung,0
+MXF,13,4.4,4.4,2.59,LCMS,Cavity wall,Cavity,0
+MXF,13,4.4,4.4,2.23,LCMS,Cavity wall,Cavity,0
+MXF,13,4.4,4.4,2.6,LCMS,Cavity wall,Cavity,0
+MXF,13,4.4,4.4,1.404763006,LCMS,Cavity wall,Cavity,0
+MXF,13,4.4,4.4,2.16,LCMS,Cavity wall,Cavity,0
+MXF,13,4.4,4.4,3.66,LCMS,Cavity wall,Cavity,0
+MXF,13,4.4,4.4,1.91,LCMS,Cavity wall,Cavity,0
+MXF,13,4.4,4.4,4.61,LCMS,Cavity wall,Cavity,0
+MXF,13,4.4,4.4,6.93,LCMS,Cavity wall,Cavity,0
+MXF,13,4.4,4.4,1.41,LCMS,Caseum from cavity,Caseum,0
+MXF,13,4.4,4.4,1.31,LCMS,Caseum from cavity,Caseum,0
+MXF,13,4.4,4.4,0.336,LCMS,Caseum from cavity,Caseum,0
+MXF,13,4.4,4.4,1.17,LCMS,Caseum from cavity,Caseum,0
+MXF,13,4.4,4.4,1.15,LCMS,Caseum from cavity,Caseum,0
+MXF,13,4.4,4.4,3.1,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,13,4.4,4.4,2.07,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,13,4.4,4.4,1.16,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,13,4.4,4.4,2.21,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,13,4.4,4.4,1.59,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,13,4.4,4.4,1.81,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,14,1,1,1.42,LCMS,Plasma,Plasma,0
+MXF,14,8.5,8.5,0.427,LCMS,Plasma,Plasma,0
+MXF,14,8.5,8.5,2.19,LCMS,Lung,Lung,0
+MXF,14,8.5,8.5,2.21,LCMS,Lung,Lung,0
+MXF,14,8.5,8.5,0.793,LCMS,Fibrotic tissue,NA,0
+MXF,14,8.5,8.5,2.31,LCMS,Cavity wall,Cavity,0
+MXF,14,8.5,8.5,1.17,LCMS,Caseum from cavity,Caseum,0
+MXF,14,8.5,8.5,1.09,LCMS,Caseum from cavity,Caseum,0
+MXF,14,8.5,8.5,1.45,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,14,8.5,8.5,0.976,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,14,8.5,8.5,1.23,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,14,8.5,8.5,0.912,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,14,8.5,8.5,0.668,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,14,8.5,8.5,0.842,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,15,2,2,2.97,LCMS,Plasma,Plasma,0
+MXF,15,6,6,2.93,LCMS,Plasma,Plasma,0
+MXF,15,16,16,0.994,LCMS,Plasma,Plasma,0
+MXF,15,24.3,24.3,0.423,LCMS,Plasma,Plasma,0
+MXF,15,24.3,24.3,4.99,LCMS,Lung,Lung,0
+MXF,15,24.3,24.3,5.06,LCMS,Lung,Lung,0
+MXF,15,24.3,24.3,4.49,LCMS,Lung,Lung,0
+MXF,15,24.3,24.3,0.673,LCMS,Fibrotic tissue,NA,0
+MXF,15,24.3,24.3,0.664,LCMS,Fibrotic tissue,NA,0
+MXF,15,24.3,24.3,1.19,LCMS,Cavity wall,Cavity,0
+MXF,15,24.3,24.3,1.19,LCMS,Cavity wall,Cavity,0
+MXF,15,24.3,24.3,1.36,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+MXF,15,24.3,24.3,1.5,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+MXF,16,2,2,2.48,LCMS,Plasma,Plasma,0
+MXF,16,3,3,2.44,LCMS,Plasma,Plasma,0
+MXF,16,6,6,1.57,LCMS,Plasma,Plasma,0
+MXF,16,8.7,8.7,1.16,LCMS,Plasma,Plasma,0
+MXF,16,8.7,8.7,17.2,LCMS,Lung,Lung,0
+MXF,16,8.7,8.7,8.8,LCMS,Lung,Lung,0
+MXF,16,8.7,8.7,10.5,LCMS,Lung,Lung,0
+MXF,16,8.7,8.7,21.5,LCMS,Lung,Lung,0
+MXF,16,8.7,8.7,16.9,LCMS,Lung,Lung,0
+MXF,16,8.7,8.7,2.91,LCMS,Fungal ball,Misc,0
+MXF,16,8.7,8.7,3.53,LCMS,Fungal ball,Misc,0
+MXF,16,8.7,8.7,3.72,LCMS,Fungal ball,Misc,0
+MXF,16,8.7,8.7,4,LCMS,Fungal ball,Misc,0
+MXF,16,8.7,8.7,4.32,LCMS,Fibrotic tissue,NA,0
+PZA,1,0,0,0,LCMS,Plasma,Plasma,1
+PZA,2,0,0,0,LCMS,Plasma,Plasma,1
+PZA,2,2,2,1.72,LCMS,Plasma,Plasma,0
+PZA,2,2,2,8.68,LCMS,Plasma,Plasma,0
+PZA,2,6.17,6.17,1.5,LCMS,Plasma,Plasma,0
+PZA,2,6.17,6.17,8.6,LCMS,Plasma,Plasma,0
+PZA,2,24,24,2.56,LCMS,Plasma,Plasma,0
+PZA,2,24,24,33.3,LCMS,Plasma,Plasma,0
+PZA,2,25.3,25.3,1.68,LCMS,Plasma,Plasma,0
+PZA,2,25.3,25.3,13.3,LCMS,Plasma,Plasma,0
+PZA,2,25.3,25.3,0.625,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,5.11,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,0.998,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,6.8,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,0.671,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,5.91,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,1.13,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,7.78,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,0.836,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,7.98,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,1.09,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,6.67,LCMS,Lung,Lung,0
+PZA,2,25.3,25.3,0,LCMS,Small nodule,Cellular,1
+PZA,2,25.3,25.3,0,LCMS,Small nodule,Cellular,1
+PZA,2,25.3,25.3,0,LCMS,Small nodule,Cellular,1
+PZA,2,25.3,25.3,0,LCMS,Small nodule,Cellular,1
+PZA,2,25.3,25.3,0,LCMS,Small nodule,Cellular,1
+PZA,2,25.3,25.3,0,LCMS,Small nodule,Cellular,1
+PZA,2,25.3,25.3,0,LCMS,Small nodule,Cellular,1
+PZA,2,25.3,25.3,13.5,LCMS,Small nodule,Cellular,0
+PZA,2,25.3,25.3,7.59,LCMS,Small nodule,Cellular,0
+PZA,2,25.3,25.3,11.1,LCMS,Small nodule,Cellular,0
+PZA,2,25.3,25.3,23,LCMS,Small nodule,Cellular,0
+PZA,2,25.3,25.3,6.61,LCMS,Small nodule,Cellular,0
+PZA,2,25.3,25.3,6.64,LCMS,Small nodule,Cellular,0
+PZA,2,25.3,25.3,9.1,LCMS,Small nodule,Cellular,0
+PZA,2,25.3,25.3,1.27,LCMS,Cavity wall,Cavity,0
+PZA,2,25.3,25.3,7.07,LCMS,Cavity wall,Cavity,0
+PZA,2,25.3,25.3,1.95,LCMS,Cavity wall,Cavity,0
+PZA,2,25.3,25.3,14.8,LCMS,Cavity wall,Cavity,0
+PZA,2,25.3,25.3,1.31,LCMS,Cavity wall,Cavity,0
+PZA,2,25.3,25.3,7.78,LCMS,Cavity wall,Cavity,0
+PZA,2,25.3,25.3,1.49,LCMS,Cavity wall,Cavity,0
+PZA,2,25.3,25.3,7.75,LCMS,Cavity wall,Cavity,0
+PZA,2,25.3,25.3,0,LCMS,Cavity wall,Cavity,1
+PZA,2,25.3,25.3,7.55,LCMS,Cavity wall,Cavity,0
+PZA,2,25.3,25.3,1.9,LCMS,Cavity wall,Cavity,0
+PZA,2,25.3,25.3,12.2,LCMS,Cavity wall,Cavity,0
+PZA,2,25.3,25.3,0,LCMS,Caseum from cavity,Caseum,1
+PZA,2,25.3,25.3,15.7,LCMS,Caseum from cavity,Caseum,0
+PZA,2,25.3,25.3,0,LCMS,Caseum from cavity,Caseum,1
+PZA,2,25.3,25.3,8.32,LCMS,Caseum from cavity,Caseum,0
+PZA,2,25.3,25.3,1.11,LCMS,Caseum from cavity,Caseum,0
+PZA,2,25.3,25.3,8.23,LCMS,Caseum from cavity,Caseum,0
+PZA,3,0,0,0,LCMS,Plasma,Plasma,1
+PZA,3,2.13,2.13,4.01,LCMS,Plasma,Plasma,0
+PZA,3,2.13,2.13,23.4,LCMS,Plasma,Plasma,0
+PZA,3,6,6,3.58,LCMS,Plasma,Plasma,0
+PZA,3,6,6,19,LCMS,Plasma,Plasma,0
+PZA,3,8.5,8.5,5,LCMS,Plasma,Plasma,0
+PZA,3,8.5,8.5,35.7,LCMS,Plasma,Plasma,0
+PZA,3,11.2,11.2,5.1,LCMS,Plasma,Plasma,0
+PZA,3,11.2,11.2,28.3,LCMS,Plasma,Plasma,0
+PZA,3,11.2,11.2,0.1,LCMS,Lung,Lung,0
+PZA,3,11.2,11.2,14.3,LCMS,Lung,Lung,0
+PZA,3,11.2,11.2,0.1,LCMS,Lung,Lung,0
+PZA,3,11.2,11.2,9.14,LCMS,Lung,Lung,0
+PZA,3,11.2,11.2,0.1,LCMS,Lung,Lung,0
+PZA,3,11.2,11.2,5.99,LCMS,Lung,Lung,0
+PZA,3,11.2,11.2,0.1,LCMS,Lung,Lung,0
+PZA,3,11.2,11.2,12.285,LCMS,Lung,Lung,0
+PZA,3,11.2,11.2,2.23,LCMS,Fibrotic tissue,NA,0
+PZA,3,11.2,11.2,11.3,LCMS,Fibrotic tissue,NA,0
+PZA,3,11.2,11.2,2.65,LCMS,Fibrotic tissue,NA,0
+PZA,3,11.2,11.2,15.8,LCMS,Fibrotic tissue,NA,0
+PZA,3,11.2,11.2,3.12,LCMS,Fibrotic tissue,NA,0
+PZA,3,11.2,11.2,17.1,LCMS,Fibrotic tissue,NA,0
+PZA,3,11.2,11.2,2.33,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,15.2,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,3.16,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,17.5,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,1.6,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,8.61,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,0.988,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,5.23,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,1.16,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,6.19,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,3.89,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,25.1,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,2.32,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,13.6,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,2.46,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,14.9,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,2.42,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,14.3,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,2.06,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,13.2,LCMS,Cavity wall,Cavity,0
+PZA,3,11.2,11.2,1.32,LCMS,Caseum from cavity,Caseum,0
+PZA,3,11.2,11.2,5.83,LCMS,Caseum from cavity,Caseum,0
+PZA,3,11.2,11.2,1.21,LCMS,Caseum from cavity,Caseum,0
+PZA,3,11.2,11.2,6.21,LCMS,Caseum from cavity,Caseum,0
+PZA,3,11.2,11.2,1.09,LCMS,Caseum from cavity,Caseum,0
+PZA,3,11.2,11.2,6.21,LCMS,Caseum from cavity,Caseum,0
+PZA,3,11.2,11.2,1.04,LCMS,Caseum from cavity,Caseum,0
+PZA,3,11.2,11.2,5.14,LCMS,Caseum from cavity,Caseum,0
+PZA,3,11.2,11.2,0,LCMS,Caseum from cavity,Caseum,1
+PZA,3,11.2,11.2,3.27,LCMS,Caseum from cavity,Caseum,0
+PZA,3,11.2,11.2,2.78,LCMS,Caseum from cavity,Caseum,0
+PZA,3,11.2,11.2,13.9,LCMS,Caseum from cavity,Caseum,0
+PZA,3,11.2,11.2,0,LCMS,Closed nodule caseum,Caseum,1
+PZA,3,11.2,11.2,3.34,LCMS,Closed nodule caseum,Caseum,0
+PZA,3,11.2,11.2,0,LCMS,Closed nodule caseum,Caseum,1
+PZA,3,11.2,11.2,4.32,LCMS,Closed nodule caseum,Caseum,0
+PZA,4,0,0,0,LCMS,Plasma,Plasma,1
+PZA,4,2.17,2.17,4.21,LCMS,Plasma,Plasma,0
+PZA,4,2.17,2.17,29.7,LCMS,Plasma,Plasma,0
+PZA,4,4.9,4.9,4.46,LCMS,Plasma,Plasma,0
+PZA,4,4.9,4.9,47.6,LCMS,Plasma,Plasma,0
+PZA,4,5.1,5.1,5.04,LCMS,Plasma,Plasma,0
+PZA,4,5.1,5.1,39.5,LCMS,Plasma,Plasma,0
+PZA,4,5.1,5.1,4.42149,LCMS,Lung,Lung,0
+PZA,4,5.1,5.1,43.15712727,LCMS,Lung,Lung,0
+PZA,4,5.1,5.1,3.47,LCMS,Lung,Lung,0
+PZA,4,5.1,5.1,29.6,LCMS,Lung,Lung,0
+PZA,4,5.1,5.1,3.82005,LCMS,Lung,Lung,0
+PZA,4,5.1,5.1,30.9465,LCMS,Lung,Lung,0
+PZA,4,5.1,5.1,4.26,LCMS,Small nodule,Cellular,0
+PZA,4,5.1,5.1,34.8,LCMS,Small nodule,Cellular,0
+PZA,4,5.1,5.1,3.293095008,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,4,5.1,5.1,28.24882448,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,4,5.1,5.1,0,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,1
+PZA,4,5.1,5.1,66.7752994,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,4,5.1,5.1,4.52,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,4,5.1,5.1,36.5,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,4,5.1,5.1,3.922915455,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,4,5.1,5.1,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,4,5.1,5.1,4.031226,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,4,5.1,5.1,34.61730909,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,4,5.1,5.1,33.34781324,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,4,5.1,5.1,39.81015,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,4,5.1,5.1,1.760589,LCMS,Unknown,Misc,0
+PZA,4,5.1,5.1,14.20983,LCMS,Unknown,Misc,0
+PZA,5,0,0,0,LCMS,Plasma,Plasma,1
+PZA,5,2.67,2.67,19,LCMS,Plasma,Plasma,0
+PZA,5,2.67,2.67,86.4,LCMS,Plasma,Plasma,0
+PZA,5,3.3,3.3,16.2,LCMS,Plasma,Plasma,0
+PZA,5,3.3,3.3,90.5,LCMS,Plasma,Plasma,0
+PZA,5,3.3,3.3,7.4624,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,35.2,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,11.34,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,49.62,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,7.331584,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,32.78064,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,8.001296,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,35.95296,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,7.66644,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,34.3668,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,8.52,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,39.5,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,9.51696,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,44.85308,LCMS,Lung,Lung,0
+PZA,5,3.3,3.3,5.80437804,LCMS,Caseum from cavity,Caseum,0
+PZA,5,3.3,3.3,29.71841557,LCMS,Caseum from cavity,Caseum,0
+PZA,5,3.3,3.3,7.292222,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,26.41793,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,6.817891374,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,35.14376997,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,6.730031949,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,35.31948882,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,6.095669591,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,31.17947368,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,7.893850877,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,35.22125731,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,6.482880814,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,33.73444767,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,6.966896802,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,32.70774709,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,10.1167,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,46.9047,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,3.464704,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,15.4368,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,3.627648,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,15.69408,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,8.08660567,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,41.01747423,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,8.458525773,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,42.61141753,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,3.51616,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,18.0096,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,4.305152,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,19.03872,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,9.78,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,5,3.3,3.3,43.8,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,6,0,0,0,LCMS,Plasma,Plasma,1
+PZA,6,2,2,4.5,LCMS,Plasma,Plasma,0
+PZA,6,2,2,28.9,LCMS,Plasma,Plasma,0
+PZA,6,6,6,5.74,LCMS,Plasma,Plasma,0
+PZA,6,6,6,23.8,LCMS,Plasma,Plasma,0
+PZA,6,11,11,4.49,LCMS,Plasma,Plasma,0
+PZA,6,11,11,16.3,LCMS,Plasma,Plasma,0
+PZA,6,12.6,12.6,3.73,LCMS,Plasma,Plasma,0
+PZA,6,12.6,12.6,14.4,LCMS,Plasma,Plasma,0
+PZA,6,12.6,12.6,0.1,LCMS,Lung,Lung,0
+PZA,6,12.6,12.6,7.88,LCMS,Lung,Lung,0
+PZA,6,12.6,12.6,5.59,LCMS,Lung,Lung,0
+PZA,6,12.6,12.6,8.5,LCMS,Lung,Lung,0
+PZA,6,12.6,12.6,0,LCMS,Small nodule,Cellular,1
+PZA,6,12.6,12.6,0,LCMS,Small nodule,Cellular,1
+PZA,6,12.6,12.6,4.83,LCMS,Small nodule,Cellular,0
+PZA,6,12.6,12.6,5.98,LCMS,Small nodule,Cellular,0
+PZA,6,12.6,12.6,0,LCMS,Fibrotic tissue,NA,1
+PZA,6,12.6,12.6,11,LCMS,Fibrotic tissue,NA,0
+PZA,6,12.6,12.6,0,LCMS,Cavity wall,Cavity,1
+PZA,6,12.6,12.6,12,LCMS,Cavity wall,Cavity,0
+PZA,6,12.6,12.6,1.3,LCMS,Caseum from cavity,Caseum,0
+PZA,6,12.6,12.6,4.45,LCMS,Caseum from cavity,Caseum,0
+PZA,6,12.6,12.6,2,LCMS,Caseum from cavity,Caseum,0
+PZA,6,12.6,12.6,7.01,LCMS,Caseum from cavity,Caseum,0
+PZA,6,12.6,12.6,2.68,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,6,12.6,12.6,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,6,12.6,12.6,13.6,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,6,12.6,12.6,15.7,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,0,0,0,LCMS,Plasma,Plasma,1
+PZA,7,2,2,6.8,LCMS,Plasma,Plasma,0
+PZA,7,2,2,49.5,LCMS,Plasma,Plasma,0
+PZA,7,6,6,9.78,LCMS,Plasma,Plasma,0
+PZA,7,6,6,36,LCMS,Plasma,Plasma,0
+PZA,7,8.5,8.5,9.34,LCMS,Plasma,Plasma,0
+PZA,7,8.5,8.5,28.1,LCMS,Plasma,Plasma,0
+PZA,7,11,11,8.76,LCMS,Plasma,Plasma,0
+PZA,7,11,11,22.8,LCMS,Plasma,Plasma,0
+PZA,7,11,11,10.3,LCMS,Lung,Lung,0
+PZA,7,11,11,15.3,LCMS,Lung,Lung,0
+PZA,7,11,11,9.77,LCMS,Lung,Lung,0
+PZA,7,11,11,15.9,LCMS,Lung,Lung,0
+PZA,7,11,11,10.5,LCMS,Lung,Lung,0
+PZA,7,11,11,15.8,LCMS,Lung,Lung,0
+PZA,7,11,11,4.44,LCMS,Cavity wall,Cavity,0
+PZA,7,11,11,16.4,LCMS,Cavity wall,Cavity,0
+PZA,7,11,11,4.94,LCMS,Cavity wall,Cavity,0
+PZA,7,11,11,19.9,LCMS,Cavity wall,Cavity,0
+PZA,7,11,11,5.26,LCMS,Caseum from cavity,Caseum,0
+PZA,7,11,11,16.7,LCMS,Caseum from cavity,Caseum,0
+PZA,7,11,11,4.81,LCMS,Caseum from cavity,Caseum,0
+PZA,7,11,11,16.2,LCMS,Caseum from cavity,Caseum,0
+PZA,7,11,11,6.21,LCMS,Caseum from cavity,Caseum,0
+PZA,7,11,11,20.7,LCMS,Caseum from cavity,Caseum,0
+PZA,7,11,11,5.37,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,7,11,11,3.88,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,7,11,11,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,7,11,11,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,7,11,11,5.83,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,5.89,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,6.12,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,19.3,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,6.15,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,14.9,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,15,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,14.9,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,12.6,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,24.9,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,23.7,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,7,11,11,22.2,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,8,0,0,0,LCMS,Plasma,Plasma,1
+PZA,8,2.42,2.42,2.89,LCMS,Plasma,Plasma,0
+PZA,8,2.42,2.42,38.8,LCMS,Plasma,Plasma,0
+PZA,8,4.5,4.5,3.65,LCMS,Plasma,Plasma,0
+PZA,8,4.5,4.5,38.3,LCMS,Plasma,Plasma,0
+PZA,8,5.68,5.68,3.46,LCMS,Plasma,Plasma,0
+PZA,8,5.68,5.68,34.1,LCMS,Plasma,Plasma,0
+PZA,8,5.68,5.68,1.35,LCMS,Lung,Lung,0
+PZA,8,5.68,5.68,25.9,LCMS,Lung,Lung,0
+PZA,8,5.68,5.68,2.51,LCMS,Lung,Lung,0
+PZA,8,5.68,5.68,26.2,LCMS,Lung,Lung,0
+PZA,8,5.68,5.68,2.8,LCMS,Lung,Lung,0
+PZA,8,5.68,5.68,39.6,LCMS,Lung,Lung,0
+PZA,8,5.68,5.68,2.57,LCMS,Lung,Lung,0
+PZA,8,5.68,5.68,32.7,LCMS,Lung,Lung,0
+PZA,8,5.68,5.68,2.39,LCMS,Closed nodule caseum,Caseum,0
+PZA,8,5.68,5.68,25.5,LCMS,Closed nodule caseum,Caseum,0
+PZA,8,5.68,5.68,2.05,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,8,5.68,5.68,2.63,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,8,5.68,5.68,3.29,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,8,5.68,5.68,22.3,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,8,5.68,5.68,23.8,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,8,5.68,5.68,31.9,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,9,0,0,0,LCMS,Plasma,Plasma,1
+PZA,9,1,1,0.91,LCMS,Plasma,Plasma,0
+PZA,9,1,1,18.4,LCMS,Plasma,Plasma,0
+PZA,9,3.83,3.83,6.37,LCMS,Plasma,Plasma,0
+PZA,9,3.83,3.83,40.7,LCMS,Plasma,Plasma,0
+PZA,9,3.83,3.83,2.24,LCMS,Lung,Lung,0
+PZA,9,3.83,3.83,21.8,LCMS,Lung,Lung,0
+PZA,9,3.83,3.83,3.81,LCMS,Lung,Lung,0
+PZA,9,3.83,3.83,35.7,LCMS,Lung,Lung,0
+PZA,9,3.83,3.83,1.91,LCMS,Lung,Lung,0
+PZA,9,3.83,3.83,17.5,LCMS,Lung,Lung,0
+PZA,9,3.83,3.83,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,9,3.83,3.83,4.53,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,9,3.83,3.83,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,9,3.83,3.83,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,9,3.83,3.83,3.01,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,9,3.83,3.83,2.19,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,9,3.83,3.83,12.2,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,9,3.83,3.83,36.8,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,9,3.83,3.83,33.5,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,9,3.83,3.83,4.91,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,9,3.83,3.83,23.4,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,9,3.83,3.83,17.7,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,10,0,0,0,LCMS,Plasma,Plasma,1
+PZA,10,2.083,2.083,12.3,LCMS,Plasma,Plasma,0
+PZA,10,2.083,2.083,38.7,LCMS,Plasma,Plasma,0
+PZA,10,6.17,6.17,14.4,LCMS,Plasma,Plasma,0
+PZA,10,6.17,6.17,27.9,LCMS,Plasma,Plasma,0
+PZA,10,7.33,7.33,16,LCMS,Plasma,Plasma,0
+PZA,10,7.33,7.33,28.2,LCMS,Plasma,Plasma,0
+PZA,10,9.75,9.75,9.39,LCMS,Plasma,Plasma,0
+PZA,10,9.75,9.75,20.8,LCMS,Plasma,Plasma,0
+PZA,10,10.25,10.25,7.61,LCMS,Lung,Lung,0
+PZA,10,10.25,10.25,18.7,LCMS,Lung,Lung,0
+PZA,10,10.25,10.25,7.17,LCMS,Lung,Lung,0
+PZA,10,10.25,10.25,19,LCMS,Lung,Lung,0
+PZA,10,10.25,10.25,7.01,LCMS,Lung,Lung,0
+PZA,10,10.25,10.25,18.1,LCMS,Lung,Lung,0
+PZA,10,10.25,10.25,6.81,LCMS,Lung,Lung,0
+PZA,10,10.25,10.25,17.7,LCMS,Lung,Lung,0
+PZA,10,10.25,10.25,7.46,LCMS,Cavity wall,Cavity,0
+PZA,10,10.25,10.25,17.6,LCMS,Cavity wall,Cavity,0
+PZA,10,10.25,10.25,7.29,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,10,10.25,10.25,6.43,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,10,10.25,10.25,17.8,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,10,10.25,10.25,16.7,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,0,0,0,LCMS,Plasma,Plasma,1
+PZA,11,2,2,4.57,LCMS,Plasma,Plasma,0
+PZA,11,2,2,34.3,LCMS,Plasma,Plasma,0
+PZA,11,6,6,10.5,LCMS,Plasma,Plasma,0
+PZA,11,6,6,38.5,LCMS,Plasma,Plasma,0
+PZA,11,9.5,9.5,8.89,LCMS,Plasma,Plasma,0
+PZA,11,9.5,9.5,26,LCMS,Plasma,Plasma,0
+PZA,11,11.1,11.1,5.85,LCMS,Plasma,Plasma,0
+PZA,11,11.1,11.1,25.4,LCMS,Plasma,Plasma,0
+PZA,11,11.1,11.1,5.85,LCMS,Lung,Lung,0
+PZA,11,11.1,11.1,17.8,LCMS,Lung,Lung,0
+PZA,11,11.1,11.1,0.1,LCMS,Lung,Lung,0
+PZA,11,11.1,11.1,14.6,LCMS,Lung,Lung,0
+PZA,11,11.1,11.1,4.66,LCMS,Lung,Lung,0
+PZA,11,11.1,11.1,12.4,LCMS,Lung,Lung,0
+PZA,11,11.1,11.1,6.8,LCMS,Lung,Lung,0
+PZA,11,11.1,11.1,15.1,LCMS,Lung,Lung,0
+PZA,11,11.1,11.1,6.86,LCMS,Lung,Lung,0
+PZA,11,11.1,11.1,17.4,LCMS,Lung,Lung,0
+PZA,11,11.1,11.1,4.88,LCMS,Cavity wall,Cavity,0
+PZA,11,11.1,11.1,24.5,LCMS,Cavity wall,Cavity,0
+PZA,11,11.1,11.1,4.19,LCMS,Cavity wall,Cavity,0
+PZA,11,11.1,11.1,20.6,LCMS,Cavity wall,Cavity,0
+PZA,11,11.1,11.1,3.32,LCMS,Cavity wall,Cavity,0
+PZA,11,11.1,11.1,18.5,LCMS,Cavity wall,Cavity,0
+PZA,11,11.1,11.1,3.8,LCMS,Cavity wall,Cavity,0
+PZA,11,11.1,11.1,21.3,LCMS,Cavity wall,Cavity,0
+PZA,11,11.1,11.1,5.57,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,20.8,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,4.44,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,19.5,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,4.29,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,20.4,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,4.6,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,21.9,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,4.92,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,22.7,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,2.88,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,16.1,LCMS,Caseum from cavity,Caseum,0
+PZA,11,11.1,11.1,3.89,LCMS,Closed nodule caseum,Caseum,0
+PZA,11,11.1,11.1,15.8,LCMS,Closed nodule caseum,Caseum,0
+PZA,11,11.1,11.1,4.38,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,5.09,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,3.16,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,3.13,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,7.23,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,5.94,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,6.18,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,3.78,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,3.33,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,3.02,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,3.44,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,20.4,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,23.5,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,19.2,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,15.3,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,24.9,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,22.8,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,25.7,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,19.9,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,18.8,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,15.8,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,11,11.1,11.1,18,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,12,0,0,0,LCMS,Plasma,Plasma,1
+PZA,12,2,2,6.98,LCMS,Plasma,Plasma,0
+PZA,12,2,2,53.8,LCMS,Plasma,Plasma,0
+PZA,12,6,6,6.49,LCMS,Plasma,Plasma,0
+PZA,12,6,6,37.1,LCMS,Plasma,Plasma,0
+PZA,12,20.5,20.5,3.95,LCMS,Plasma,Plasma,0
+PZA,12,20.5,20.5,21.9,LCMS,Plasma,Plasma,0
+PZA,12,22.3,22.3,2.38,LCMS,Plasma,Plasma,0
+PZA,12,22.3,22.3,16.8,LCMS,Plasma,Plasma,0
+PZA,12,22.3,22.3,0.1,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,6.91,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,0.1,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,6.7,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,0.1,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,7,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,0.1,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,6.6,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,0.1,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,7.69,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,0.1,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,7.38,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,0.1,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,8.61,LCMS,Lung,Lung,0
+PZA,12,22.3,22.3,1.6,LCMS,Cavity wall,Cavity,0
+PZA,12,22.3,22.3,10.6,LCMS,Cavity wall,Cavity,0
+PZA,12,22.3,22.3,1.95,LCMS,Caseum from cavity,Caseum,0
+PZA,12,22.3,22.3,10,LCMS,Caseum from cavity,Caseum,0
+PZA,12,22.3,22.3,1.87,LCMS,Caseum from cavity,Caseum,0
+PZA,12,22.3,22.3,10.5,LCMS,Caseum from cavity,Caseum,0
+PZA,12,22.3,22.3,1.9,LCMS,Caseum from cavity,Caseum,0
+PZA,12,22.3,22.3,10.8,LCMS,Caseum from cavity,Caseum,0
+PZA,12,22.3,22.3,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,12,22.3,22.3,1.56,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,12,22.3,22.3,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,12,22.3,22.3,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,12,22.3,22.3,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,12,22.3,22.3,5.77,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,12,22.3,22.3,8.87,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,12,22.3,22.3,11.3,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,12,22.3,22.3,9.42,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,12,22.3,22.3,7.36,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,13,0,0,0,LCMS,Plasma,Plasma,1
+PZA,13,2,2,1.42,LCMS,Plasma,Plasma,0
+PZA,13,2,2,21.2,LCMS,Plasma,Plasma,0
+PZA,13,2.5,2.5,1.7,LCMS,Plasma,Plasma,0
+PZA,13,2.5,2.5,23.3,LCMS,Plasma,Plasma,0
+PZA,13,4.4,4.4,2.52,LCMS,Plasma,Plasma,0
+PZA,13,4.4,4.4,30.7,LCMS,Plasma,Plasma,0
+PZA,13,4.4,4.4,0.1,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,20,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,0.1,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,20.1,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,0.1,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,21.7,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,0.1,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,19.4,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,0.1,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,14.5,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,0.1,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,19.2,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,0.1,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,18.9,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,0.1,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,18.7,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,0.1,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,7.89,LCMS,Lung,Lung,0
+PZA,13,4.4,4.4,2.07,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,20.6,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,2.37,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,23.8,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,2.38,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,24.9,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,0,LCMS,Cavity wall,Cavity,1
+PZA,13,4.4,4.4,11.12809249,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,1.17,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,16,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,2.56,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,28.7,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,1.31,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,20.4,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,2.92,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,18,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,2.58,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,20.8,LCMS,Cavity wall,Cavity,0
+PZA,13,4.4,4.4,1.78,LCMS,Caseum from cavity,Caseum,0
+PZA,13,4.4,4.4,13.3,LCMS,Caseum from cavity,Caseum,0
+PZA,13,4.4,4.4,1.56,LCMS,Caseum from cavity,Caseum,0
+PZA,13,4.4,4.4,15,LCMS,Caseum from cavity,Caseum,0
+PZA,13,4.4,4.4,1.37,LCMS,Caseum from cavity,Caseum,0
+PZA,13,4.4,4.4,11.3,LCMS,Caseum from cavity,Caseum,0
+PZA,13,4.4,4.4,1.89,LCMS,Caseum from cavity,Caseum,0
+PZA,13,4.4,4.4,13.4,LCMS,Caseum from cavity,Caseum,0
+PZA,13,4.4,4.4,1.82,LCMS,Caseum from cavity,Caseum,0
+PZA,13,4.4,4.4,15,LCMS,Caseum from cavity,Caseum,0
+PZA,13,4.4,4.4,3.46,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,13,4.4,4.4,3.18,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,13,4.4,4.4,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,13,4.4,4.4,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,13,4.4,4.4,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,13,4.4,4.4,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,13,4.4,4.4,19,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,13,4.4,4.4,15.5,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,13,4.4,4.4,17.6,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,13,4.4,4.4,11.5,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,13,4.4,4.4,14.6,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,13,4.4,4.4,15.6,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,0,0,0,LCMS,Plasma,Plasma,1
+PZA,14,1,1,1.77,LCMS,Plasma,Plasma,0
+PZA,14,1,1,17.5,LCMS,Plasma,Plasma,0
+PZA,14,8.5,8.5,4.55,LCMS,Plasma,Plasma,0
+PZA,14,8.5,8.5,37,LCMS,Plasma,Plasma,0
+PZA,14,8.5,8.5,4.74,LCMS,Lung,Lung,0
+PZA,14,8.5,8.5,19.8,LCMS,Lung,Lung,0
+PZA,14,8.5,8.5,5.38,LCMS,Lung,Lung,0
+PZA,14,8.5,8.5,21.6,LCMS,Lung,Lung,0
+PZA,14,8.5,8.5,3.13,LCMS,Fibrotic tissue,NA,0
+PZA,14,8.5,8.5,27.4,LCMS,Fibrotic tissue,NA,0
+PZA,14,8.5,8.5,3.12,LCMS,Cavity wall,Cavity,0
+PZA,14,8.5,8.5,28.5,LCMS,Cavity wall,Cavity,0
+PZA,14,8.5,8.5,3,LCMS,Caseum from cavity,Caseum,0
+PZA,14,8.5,8.5,23.8,LCMS,Caseum from cavity,Caseum,0
+PZA,14,8.5,8.5,3.02,LCMS,Caseum from cavity,Caseum,0
+PZA,14,8.5,8.5,24.9,LCMS,Caseum from cavity,Caseum,0
+PZA,14,8.5,8.5,2.67,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,8.5,8.5,2.16,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,8.5,8.5,2.58,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,8.5,8.5,2.43,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,8.5,8.5,2.48,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,8.5,8.5,2.92,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,8.5,8.5,24.3,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,8.5,8.5,21.2,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,8.5,8.5,21.1,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,8.5,8.5,18,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,8.5,8.5,23.6,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,14,8.5,8.5,20.8,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,15,0,0,0,LCMS,Plasma,Plasma,1
+PZA,15,2,2,1.54,LCMS,Plasma,Plasma,0
+PZA,15,2,2,21.2,LCMS,Plasma,Plasma,0
+PZA,15,6,6,7.09,LCMS,Plasma,Plasma,0
+PZA,15,6,6,32.7,LCMS,Plasma,Plasma,0
+PZA,15,16,16,3.18,LCMS,Plasma,Plasma,0
+PZA,15,16,16,15,LCMS,Plasma,Plasma,0
+PZA,15,24.3,24.3,2.34,LCMS,Plasma,Plasma,0
+PZA,15,24.3,24.3,9.56,LCMS,Plasma,Plasma,0
+PZA,15,24.3,24.3,0.1,LCMS,Lung,Lung,0
+PZA,15,24.3,24.3,6.86,LCMS,Lung,Lung,0
+PZA,15,24.3,24.3,0.1,LCMS,Lung,Lung,0
+PZA,15,24.3,24.3,6.17,LCMS,Lung,Lung,0
+PZA,15,24.3,24.3,0.1,LCMS,Lung,Lung,0
+PZA,15,24.3,24.3,5.33,LCMS,Lung,Lung,0
+PZA,15,24.3,24.3,0,LCMS,Fibrotic tissue,NA,1
+PZA,15,24.3,24.3,7.14,LCMS,Fibrotic tissue,NA,0
+PZA,15,24.3,24.3,0,LCMS,Fibrotic tissue,NA,1
+PZA,15,24.3,24.3,7.37,LCMS,Fibrotic tissue,NA,0
+PZA,15,24.3,24.3,0,LCMS,Cavity wall,Cavity,1
+PZA,15,24.3,24.3,6.72,LCMS,Cavity wall,Cavity,0
+PZA,15,24.3,24.3,0,LCMS,Cavity wall,Cavity,1
+PZA,15,24.3,24.3,7.23,LCMS,Cavity wall,Cavity,0
+PZA,15,24.3,24.3,0,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,1
+PZA,15,24.3,24.3,6.73,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+PZA,15,24.3,24.3,0,LCMS,Necrotic nodule,Caseous/Fibrotic,1
+PZA,15,24.3,24.3,6.19,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+PZA,16,0,0,0,LCMS,Plasma,Plasma,1
+PZA,16,2,2,4.17,LCMS,Plasma,Plasma,0
+PZA,16,2,2,40.7,LCMS,Plasma,Plasma,0
+PZA,16,3,3,3.76,LCMS,Plasma,Plasma,0
+PZA,16,3,3,39.4,LCMS,Plasma,Plasma,0
+PZA,16,6,6,4.1,LCMS,Plasma,Plasma,0
+PZA,16,6,6,30.6,LCMS,Plasma,Plasma,0
+PZA,16,8.7,8.7,4.07,LCMS,Plasma,Plasma,0
+PZA,16,8.7,8.7,26.1,LCMS,Plasma,Plasma,0
+PZA,16,8.7,8.7,2.5,LCMS,Lung,Lung,0
+PZA,16,8.7,8.7,19,LCMS,Lung,Lung,0
+PZA,16,8.7,8.7,2.52,LCMS,Lung,Lung,0
+PZA,16,8.7,8.7,17.3,LCMS,Lung,Lung,0
+PZA,16,8.7,8.7,3.06,LCMS,Lung,Lung,0
+PZA,16,8.7,8.7,18.5,LCMS,Lung,Lung,0
+PZA,16,8.7,8.7,2.77,LCMS,Lung,Lung,0
+PZA,16,8.7,8.7,18.7,LCMS,Lung,Lung,0
+PZA,16,8.7,8.7,2.5,LCMS,Lung,Lung,0
+PZA,16,8.7,8.7,17.1,LCMS,Lung,Lung,0
+PZA,16,8.7,8.7,14.6,LCMS,Fungal ball,Misc,0
+PZA,16,8.7,8.7,10.1,LCMS,Fungal ball,Misc,0
+PZA,16,8.7,8.7,13.5,LCMS,Fungal ball,Misc,0
+PZA,16,8.7,8.7,13.9,LCMS,Fungal ball,Misc,0
+PZA,16,8.7,8.7,13.4,LCMS,Fungal ball,Misc,0
+PZA,16,8.7,8.7,12,LCMS,Fungal ball,Misc,0
+PZA,16,8.7,8.7,15.7,LCMS,Fungal ball,Misc,0
+PZA,16,8.7,8.7,13.4,LCMS,Fungal ball,Misc,0
+PZA,16,8.7,8.7,2.76,LCMS,Fibrotic tissue,NA,0
+PZA,16,8.7,8.7,15.5,LCMS,Fibrotic tissue,NA,0
+LZD,2,6,6,3.73,LCMS,Plasma,Plasma,0
+LZD,2,8,8,1.38,LCMS,Plasma,Plasma,0
+LZD,2,12.17,12.17,1.17,LCMS,Plasma,Plasma,0
+LZD,2,30,30,5.59,LCMS,Plasma,Plasma,0
+LZD,2,31.3,31.3,0.743,LCMS,Lung,Lung,0
+LZD,2,31.3,31.3,0.887,LCMS,Lung,Lung,0
+LZD,2,31.3,31.3,1.8,LCMS,Lung,Lung,0
+LZD,2,31.3,31.3,1.27,LCMS,Lung,Lung,0
+LZD,2,31.3,31.3,0.937,LCMS,Lung,Lung,0
+LZD,2,31.3,31.3,2.45,LCMS,Small nodule,Cellular,0
+LZD,2,31.3,31.3,1.97,LCMS,Small nodule,Cellular,0
+LZD,2,31.3,31.3,3.97,LCMS,Small nodule,Cellular,0
+LZD,2,31.3,31.3,1.1,LCMS,Small nodule,Cellular,0
+LZD,2,31.3,31.3,1.29,LCMS,Small nodule,Cellular,0
+LZD,2,31.3,31.3,1.16,LCMS,Cavity wall,Cavity,0
+LZD,2,31.3,31.3,2.29,LCMS,Cavity wall,Cavity,0
+LZD,2,31.3,31.3,1.11,LCMS,Cavity wall,Cavity,0
+LZD,2,31.3,31.3,2.47,LCMS,Cavity wall,Cavity,0
+LZD,2,31.3,31.3,1.25,LCMS,Cavity wall,Cavity,0
+LZD,2,31.3,31.3,1.97,LCMS,Cavity wall,Cavity,0
+LZD,2,31.3,31.3,2.58,LCMS,Caseum from cavity,Caseum,0
+LZD,2,31.3,31.3,4.37,LCMS,Caseum from cavity,Caseum,0
+LZD,3,8,8,6.65,LCMS,Plasma,Plasma,0
+LZD,3,10.13,10.13,1.89,LCMS,Plasma,Plasma,0
+LZD,3,14,14,1.5,LCMS,Plasma,Plasma,0
+LZD,3,16.5,16.5,2.87,LCMS,Plasma,Plasma,0
+LZD,3,19.2,19.2,2.26,LCMS,Plasma,Plasma,0
+LZD,3,19.2,19.2,0.865,LCMS,Lung,Lung,0
+LZD,3,19.2,19.2,0.218,LCMS,Lung,Lung,0
+LZD,3,19.2,19.2,0.445,LCMS,Lung,Lung,0
+LZD,3,19.2,19.2,1.28,LCMS,Lung,Lung,0
+LZD,3,19.2,19.2,0.837,LCMS,Fibrotic tissue,NA,0
+LZD,3,19.2,19.2,1.21,LCMS,Fibrotic tissue,NA,0
+LZD,3,19.2,19.2,1.34,LCMS,Fibrotic tissue,NA,0
+LZD,3,19.2,19.2,1.23,LCMS,Cavity wall,Cavity,0
+LZD,3,19.2,19.2,1.2,LCMS,Cavity wall,Cavity,0
+LZD,3,19.2,19.2,0.731,LCMS,Cavity wall,Cavity,0
+LZD,3,19.2,19.2,0.419,LCMS,Cavity wall,Cavity,0
+LZD,3,19.2,19.2,2.04,LCMS,Cavity wall,Cavity,0
+LZD,3,19.2,19.2,1.21,LCMS,Cavity wall,Cavity,0
+LZD,3,19.2,19.2,1.36,LCMS,Cavity wall,Cavity,0
+LZD,3,19.2,19.2,1.14,LCMS,Cavity wall,Cavity,0
+LZD,3,19.2,19.2,0.981,LCMS,Cavity wall,Cavity,0
+LZD,3,19.2,19.2,0.164,LCMS,Caseum from cavity,Caseum,0
+LZD,3,19.2,19.2,1.87,LCMS,Caseum from cavity,Caseum,0
+LZD,3,19.2,19.2,1.08,LCMS,Caseum from cavity,Caseum,0
+LZD,3,19.2,19.2,0.425,LCMS,Caseum from cavity,Caseum,0
+LZD,3,19.2,19.2,1.08,LCMS,Caseum from cavity,Caseum,0
+LZD,3,19.2,19.2,0.147,LCMS,Closed nodule caseum,Caseum,0
+LZD,3,19.2,19.2,0.474,LCMS,Closed nodule caseum,Caseum,0
+LZD,4,17.15,17.15,3.8,LCMS,Plasma,Plasma,0
+LZD,4,19.32,19.32,2.07,LCMS,Plasma,Plasma,0
+LZD,4,22.05,22.05,2.91,LCMS,Plasma,Plasma,0
+LZD,4,22.25,22.25,2.22,LCMS,Plasma,Plasma,0
+LZD,4,22.25,22.25,2.09,LCMS,Lung,Lung,0
+LZD,4,22.25,22.25,2.08,LCMS,Lung,Lung,0
+LZD,4,22.25,22.25,1,LCMS,Lung,Lung,0
+LZD,4,22.25,22.25,1.43,LCMS,Lung,Lung,0
+LZD,4,22.25,22.25,1.88,LCMS,Lung,Lung,0
+LZD,4,22.25,22.25,1.88,LCMS,Lung,Lung,0
+LZD,4,22.25,22.25,1.8,LCMS,Lung,Lung,0
+LZD,4,22.25,22.25,2.179578947,LCMS,Small nodule,Cellular,0
+LZD,4,22.25,22.25,1.8,LCMS,Caseum from cavity,Caseum,0
+LZD,4,22.25,22.25,2.457,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+LZD,4,22.25,22.25,1.336,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+LZD,4,22.25,22.25,3.06,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+LZD,4,22.25,22.25,3.707,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+LZD,4,22.25,22.25,2.49,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+LZD,4,22.25,22.25,1.064736842,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,4,22.25,22.25,4.02162963,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,4,22.25,22.25,1.355666667,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,4,22.25,22.25,0.746198413,LCMS,Unknown,Misc,0
+LZD,5,19.45,19.45,0.317,LCMS,Plasma,Plasma,0
+LZD,5,22.12,22.12,0.191,LCMS,Plasma,Plasma,0
+LZD,5,22.75,22.75,0.177,LCMS,Plasma,Plasma,0
+LZD,5,22.75,22.75,0.129,LCMS,Lung,Lung,0
+LZD,5,22.75,22.75,0.115,LCMS,Lung,Lung,0
+LZD,5,22.75,22.75,0.107,LCMS,Lung,Lung,0
+LZD,5,22.75,22.75,0.181,LCMS,Lung,Lung,0
+LZD,5,22.75,22.75,0.162,LCMS,Lung,Lung,0
+LZD,5,22.75,22.75,0.635,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+LZD,5,22.75,22.75,0.0568,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+LZD,5,22.75,22.75,0.166,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+LZD,5,22.75,22.75,0.214,LCMS,Caseous fibrotic nodule,Caseous/Fibrotic,0
+LZD,5,22.75,22.75,0.748,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,6,8.15,8.15,9.77,LCMS,Plasma,Plasma,0
+LZD,6,10.15,10.15,8.85,LCMS,Plasma,Plasma,0
+LZD,6,14.15,14.15,6.23,LCMS,Plasma,Plasma,0
+LZD,6,19.15,19.15,5.05,LCMS,Plasma,Plasma,0
+LZD,6,20.75,20.75,3.99,LCMS,Plasma,Plasma,0
+LZD,6,20.75,20.75,3.03,LCMS,Lung,Lung,0
+LZD,6,20.75,20.75,3.08,LCMS,Lung,Lung,0
+LZD,6,20.75,20.75,0.34,LCMS,Small nodule,Cellular,0
+LZD,6,20.75,20.75,1.77,LCMS,Small nodule,Cellular,0
+LZD,6,20.75,20.75,3.41,LCMS,Fibrotic tissue,NA,0
+LZD,6,20.75,20.75,3.74,LCMS,Cavity wall,Cavity,0
+LZD,6,20.75,20.75,1.54,LCMS,Caseum from cavity,Caseum,0
+LZD,6,20.75,20.75,2.1025,LCMS,Caseum from cavity,Caseum,0
+LZD,6,20.75,20.75,4.63,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,6,20.75,20.75,3.86,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,7,12,12,0.955,LCMS,Plasma,Plasma,0
+LZD,7,14,14,0.78,LCMS,Plasma,Plasma,0
+LZD,7,18,18,0.463,LCMS,Plasma,Plasma,0
+LZD,7,20.5,20.5,0.36,LCMS,Plasma,Plasma,0
+LZD,7,23,23,0.237,LCMS,Plasma,Plasma,0
+LZD,7,23,23,0.255,LCMS,Lung,Lung,0
+LZD,7,23,23,0.221,LCMS,Lung,Lung,0
+LZD,7,23,23,0.242,LCMS,Lung,Lung,0
+LZD,7,23,23,0.225,LCMS,Cavity wall,Cavity,0
+LZD,7,23,23,0.292,LCMS,Cavity wall,Cavity,0
+LZD,7,23,23,0.247,LCMS,Caseum from cavity,Caseum,0
+LZD,7,23,23,0.24,LCMS,Caseum from cavity,Caseum,0
+LZD,7,23,23,0.417,LCMS,Caseum from cavity,Caseum,0
+LZD,7,23,23,0.254,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,7,23,23,0.181,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,7,23,23,0.233,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,7,23,23,0.326,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,7,23,23,0.263,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,7,23,23,0.693,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,7,23,23,1.07,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,7,23,23,0.708,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,7,23,23,0.456,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,8,15.5,15.5,1.8,LCMS,Plasma,Plasma,0
+LZD,8,17.92,17.92,1.45,LCMS,Plasma,Plasma,0
+LZD,8,20,20,1.15,LCMS,Plasma,Plasma,0
+LZD,8,21.18,21.18,1.01,LCMS,Plasma,Plasma,0
+LZD,8,21.2,21.2,0.955,LCMS,Lung,Lung,0
+LZD,8,21.2,21.2,0.989,LCMS,Lung,Lung,0
+LZD,8,21.2,21.2,1.02,LCMS,Lung,Lung,0
+LZD,8,21.2,21.2,1.09,LCMS,Lung,Lung,0
+LZD,8,21.2,21.2,0.987,LCMS,Closed nodule caseum,Caseum,0
+LZD,8,21.2,21.2,0.87,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,8,21.2,21.2,1.08,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,8,21.2,21.2,0.87,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,9,18.1,18.1,0.405,LCMS,Plasma,Plasma,0
+LZD,9,18.1,18.1,0.345,LCMS,Plasma,Plasma,0
+LZD,9,19.1,19.1,0.232,LCMS,Plasma,Plasma,0
+LZD,9,21.93,21.93,0.184,LCMS,Plasma,Plasma,0
+LZD,9,21.93,21.93,0.252,LCMS,Lung,Lung,0
+LZD,9,21.93,21.93,0.142,LCMS,Lung,Lung,0
+LZD,9,21.93,21.93,0.337,LCMS,Lung,Lung,0
+LZD,9,21.93,21.93,0.109,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,9,21.93,21.93,0.299,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,9,21.93,21.93,0.317,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,9,21.93,21.93,0.0476,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,9,21.93,21.93,0.196,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,9,21.93,21.93,0.193,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,10,13.75,13.75,1.82,LCMS,Plasma,Plasma,0
+LZD,10,15.75,15.75,1.74,LCMS,Plasma,Plasma,0
+LZD,10,19.75,19.75,1.36,LCMS,Plasma,Plasma,0
+LZD,10,21.08,21.08,1.07,LCMS,Plasma,Plasma,0
+LZD,10,23.5,23.5,0.92,LCMS,Plasma,Plasma,0
+LZD,10,23.5,23.5,0.948,LCMS,Lung,Lung,0
+LZD,10,23.5,23.5,0.907,LCMS,Lung,Lung,0
+LZD,10,23.5,23.5,1.09,LCMS,Lung,Lung,0
+LZD,10,23.5,23.5,0.924,LCMS,Cavity wall,Cavity,0
+LZD,10,23.5,23.5,1,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,10,23.5,23.5,0.932,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,11,13.95,13.95,7.32,LCMS,Plasma,Plasma,0
+LZD,11,15.95,15.95,11.9,LCMS,Plasma,Plasma,0
+LZD,11,19.95,19.95,12.2,LCMS,Plasma,Plasma,0
+LZD,11,23.45,23.45,11.2,LCMS,Plasma,Plasma,0
+LZD,11,25.05,25.05,8.64,LCMS,Plasma,Plasma,0
+LZD,11,25.1,25.1,6.9,LCMS,Lung,Lung,0
+LZD,11,25.1,25.1,7.76,LCMS,Lung,Lung,0
+LZD,11,25.1,25.1,6.18,LCMS,Lung,Lung,0
+LZD,11,25.1,25.1,8.18,LCMS,Lung,Lung,0
+LZD,11,25.1,25.1,7.87,LCMS,Lung,Lung,0
+LZD,11,25.1,25.1,10.3,LCMS,Cavity wall,Cavity,0
+LZD,11,25.1,25.1,10.1,LCMS,Cavity wall,Cavity,0
+LZD,11,25.1,25.1,9.85,LCMS,Cavity wall,Cavity,0
+LZD,11,25.1,25.1,9.88,LCMS,Cavity wall,Cavity,0
+LZD,11,25.1,25.1,8.77,LCMS,Caseum from cavity,Caseum,0
+LZD,11,25.1,25.1,7.73,LCMS,Caseum from cavity,Caseum,0
+LZD,11,25.1,25.1,8.305,LCMS,Caseum from cavity,Caseum,0
+LZD,11,25.1,25.1,9.62,LCMS,Caseum from cavity,Caseum,0
+LZD,11,25.1,25.1,7.04,LCMS,Caseum from cavity,Caseum,0
+LZD,11,25.1,25.1,6.82,LCMS,Caseum from cavity,Caseum,0
+LZD,11,25.1,25.1,5.65,LCMS,Closed nodule caseum,Caseum,0
+LZD,11,25.1,25.1,10.4,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,11,25.1,25.1,10.2,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,11,25.1,25.1,15,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,11,25.1,25.1,8.99,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,11,25.1,25.1,10.9,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,11,25.1,25.1,11.8,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,11,25.1,25.1,10.2,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,11,25.1,25.1,8.15,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,11,25.1,25.1,10.3,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,11,25.1,25.1,6.43,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,11,25.1,25.1,7.82,LCMS,Necrotic nodule,Caseous/Fibrotic,0
+LZD,12,25.1,25.1,0,LCMS,Cavity wall,Cavity,1
+LZD,12,25.1,25.1,0,LCMS,Caseum from cavity,Caseum,1
+LZD,12,25.1,25.1,0,LCMS,Caseum from cavity,Caseum,1
+LZD,12,25.1,25.1,0,LCMS,Caseum from cavity,Caseum,1
+LZD,13,25.1,25.1,0,LCMS,Caseum from cavity,Caseum,1
+LZD,13,25.1,25.1,0,LCMS,Caseum from cavity,Caseum,1
+LZD,13,25.1,25.1,0,LCMS,Caseum from cavity,Caseum,1
+LZD,13,25.1,25.1,0,LCMS,Caseum from cavity,Caseum,1
+LZD,13,25.1,25.1,0,LCMS,Caseum from cavity,Caseum,1
+LZD,14,25.1,25.1,0,LCMS,Caseum from cavity,Caseum,1
+LZD,14,25.1,25.1,0,LCMS,Caseum from cavity,Caseum,1
+CFZ,1,26,26,0.238,LCM,Plasma,Plasma,0
+CFZ,1,26,26,0.892,LCM,Inner Caseum,Caseum,0
+CFZ,1,26,26,1.44,LCM,Outer Caseum,Caseum,0
+CFZ,1,26,26,3.78,LCM,Cellular,Cellular,0
+CFZ,1,26,26,9.78,LCM,Normal,Lung,0
+CFZ,1,26,26,0.619,LCM,Inner Caseum,Caseum,0
+CFZ,1,26,26,0.461,LCM,Outer Caseum,Caseum,0
+CFZ,1,26,26,2.12,LCM,Cellular,Cellular,0
+CFZ,1,26,26,0.925,LCM,White Area,Misc,0
+CFZ,1,26,26,4.91,LCM,Normal,Lung,0
+INH,1,26,26,0,LCM,Inner Caseum,Caseum,1
+INH,1,26,26,0,LCM,Outer Caseum,Caseum,1
+INH,1,26,26,0,LCM,Cellular,Cellular,1
+INH,1,26,26,0,LCM,Normal,Lung,1
+INH,1,26,26,0,LCM,Inner Caseum,Caseum,1
+INH,1,26,26,0,LCM,Outer Caseum,Caseum,1
+INH,1,26,26,0,LCM,Cellular,Cellular,1
+INH,1,26,26,0,LCM,White Area,Misc,1
+INH,1,26,26,0,LCM,Normal,Lung,1
+RIF,1,26,26,0.785,LCM,Plasma,Plasma,0
+RIF,1,26,26,0.219,LCM,Inner Caseum,Caseum,0
+RIF,1,26,26,0.196,LCM,Outer Caseum,Caseum,0
+RIF,1,26,26,0.112,LCM,Cellular,Cellular,0
+RIF,1,26,26,0.162,LCM,Normal,Lung,0
+RIF,1,26,26,1.18,LCM,Inner Caseum,Caseum,0
+RIF,1,26,26,0.4,LCM,Outer Caseum,Caseum,0
+RIF,1,26,26,0.205,LCM,Cellular,Cellular,0
+RIF,1,26,26,0.084,LCM,White Area,Misc,0
+RIF,1,26,26,0.137,LCM,Normal,Lung,0
+INH,2,25.33,25.33,0.006,LCM,Plasma,Plasma,0
+INH,2,25.33,25.33,0,LCM,Inner Caseum,Caseum,1
+INH,2,25.33,25.33,0,LCM,Outer Caseum,Caseum,1
+INH,2,25.33,25.33,0,LCM,Cellular,Cellular,1
+INH,2,25.33,25.33,0,LCM,Normal,Lung,1
+INH,2,25.33,25.33,0,LCM,Inner Caseum,Caseum,1
+INH,2,25.33,25.33,0,LCM,Outer Caseum,Caseum,1
+INH,2,25.33,25.33,0,LCM,Cellular,Cellular,1
+INH,2,25.33,25.33,0,LCM,Normal,Lung,1
+KAN,2,25.33,25.33,0.136,LCM,Plasma,Plasma,0
+KAN,2,25.33,25.33,4.2,LCM,Inner Caseum,Caseum,0
+KAN,2,25.33,25.33,3.39,LCM,Outer Caseum,Caseum,0
+KAN,2,25.33,25.33,6.57,LCM,Cellular,Cellular,0
+KAN,2,25.33,25.33,2.75,LCM,Normal,Lung,0
+KAN,2,25.33,25.33,1.42,LCM,Inner Caseum,Caseum,0
+KAN,2,25.33,25.33,4.03,LCM,Outer Caseum,Caseum,0
+KAN,2,25.33,25.33,7.54,LCM,Cellular,Cellular,0
+KAN,2,25.33,25.33,4.47,LCM,Normal,Lung,0
+LZD,2,25.33,25.33,1.17,LCM,Plasma,Plasma,0
+LZD,2,25.33,25.33,1.36,LCM,Inner Caseum,Caseum,0
+LZD,2,25.33,25.33,1.76,LCM,Outer Caseum,Caseum,0
+LZD,2,25.33,25.33,1.58,LCM,Cellular,Cellular,0
+LZD,2,25.33,25.33,0.707,LCM,Normal,Lung,0
+LZD,2,25.33,25.33,1.62,LCM,Inner Caseum,Caseum,0
+LZD,2,25.33,25.33,1.09,LCM,Outer Caseum,Caseum,0
+LZD,2,25.33,25.33,1.04,LCM,Cellular,Cellular,0
+LZD,2,25.33,25.33,1.26,LCM,Normal,Lung,0
+MXF,2,25.33,25.33,0.666,LCM,Plasma,Plasma,0
+MXF,2,25.33,25.33,3.44,LCM,Inner Caseum,Caseum,0
+MXF,2,25.33,25.33,2.06,LCM,Outer Caseum,Caseum,0
+MXF,2,25.33,25.33,2.04,LCM,Cellular,Cellular,0
+MXF,2,25.33,25.33,2,LCM,Normal,Lung,0
+MXF,2,25.33,25.33,2.15,LCM,Inner Caseum,Caseum,0
+MXF,2,25.33,25.33,2.68,LCM,Outer Caseum,Caseum,0
+MXF,2,25.33,25.33,2.92,LCM,Cellular,Cellular,0
+MXF,2,25.33,25.33,6.88,LCM,Normal,Lung,0
+PZA,2,25.33,25.33,8.6,LCM,Plasma,Plasma,0
+PZA,2,25.33,25.33,3.45,LCM,Inner Caseum,Caseum,0
+PZA,2,25.33,25.33,4.05,LCM,Outer Caseum,Caseum,0
+PZA,2,25.33,25.33,4.56,LCM,Cellular,Cellular,0
+PZA,2,25.33,25.33,2.41,LCM,Normal,Lung,0
+PZA,2,25.33,25.33,3.26,LCM,Inner Caseum,Caseum,0
+PZA,2,25.33,25.33,2.93,LCM,Outer Caseum,Caseum,0
+PZA,2,25.33,25.33,3.18,LCM,Cellular,Cellular,0
+PZA,2,25.33,25.33,5.58,LCM,Normal,Lung,0
+RIF,2,25.33,25.33,0.115,LCM,Plasma,Plasma,0
+RIF,2,25.33,25.33,0.607,LCM,Inner Caseum,Caseum,0
+RIF,2,25.33,25.33,1.49,LCM,Outer Caseum,Caseum,0
+RIF,2,25.33,25.33,0.254,LCM,Cellular,Cellular,0
+RIF,2,25.33,25.33,0.0554,LCM,Normal,Lung,0
+RIF,2,25.33,25.33,1.28,LCM,Inner Caseum,Caseum,0
+RIF,2,25.33,25.33,0.515,LCM,Outer Caseum,Caseum,0
+RIF,2,25.33,25.33,0.175,LCM,Cellular,Cellular,0
+RIF,2,25.33,25.33,0.146,LCM,Normal,Lung,0
+INH,3,11.2,11.2,0.191,LCM,Plasma,Plasma,0
+INH,3,11.2,11.2,0,LCM,Inner Caseum,Caseum,1
+INH,3,11.2,11.2,0,LCM,Outer Caseum,Caseum,1
+INH,3,11.2,11.2,0,LCM,Cellular,Cellular,1
+INH,3,11.2,11.2,0,LCM,Normal,Lung,1
+INH,3,11.2,11.2,0,LCM,Inner Caseum,Caseum,1
+INH,3,11.2,11.2,0,LCM,Outer Caseum,Caseum,1
+INH,3,11.2,11.2,0,LCM,Cellular,Cellular,1
+INH,3,11.2,11.2,0,LCM,Normal,Lung,1
+KAN,3,11.2,11.2,11.2,LCM,Plasma,Plasma,0
+KAN,3,11.2,11.2,4.73,LCM,Inner Caseum,Caseum,0
+KAN,3,11.2,11.2,3.41,LCM,Outer Caseum,Caseum,0
+KAN,3,11.2,11.2,10.4,LCM,Cellular,Cellular,0
+KAN,3,11.2,11.2,7.73,LCM,Normal,Lung,0
+KAN,3,11.2,11.2,3.28,LCM,Inner Caseum,Caseum,0
+KAN,3,11.2,11.2,3.63,LCM,Outer Caseum,Caseum,0
+KAN,3,11.2,11.2,8.8,LCM,Cellular,Cellular,0
+KAN,3,11.2,11.2,4.87,LCM,Normal,Lung,0
+LZD,3,11.2,11.2,2.26,LCM,Plasma,Plasma,0
+LZD,3,11.2,11.2,2.85,LCM,Inner Caseum,Caseum,0
+LZD,3,11.2,11.2,2.02,LCM,Outer Caseum,Caseum,0
+LZD,3,11.2,11.2,1.49,LCM,Cellular,Cellular,0
+LZD,3,11.2,11.2,1.88,LCM,Normal,Lung,0
+LZD,3,11.2,11.2,2.44,LCM,Inner Caseum,Caseum,0
+LZD,3,11.2,11.2,2.92,LCM,Outer Caseum,Caseum,0
+LZD,3,11.2,11.2,1.63,LCM,Cellular,Cellular,0
+LZD,3,11.2,11.2,2.31,LCM,Normal,Lung,0
+MXF,3,11.2,11.2,2.47,LCM,Plasma,Plasma,0
+MXF,3,11.2,11.2,5.52,LCM,Inner Caseum,Caseum,0
+MXF,3,11.2,11.2,4.94,LCM,Outer Caseum,Caseum,0
+MXF,3,11.2,11.2,3.3,LCM,Cellular,Cellular,0
+MXF,3,11.2,11.2,4.36,LCM,Normal,Lung,0
+MXF,3,11.2,11.2,6.12,LCM,Inner Caseum,Caseum,0
+MXF,3,11.2,11.2,4.69,LCM,Outer Caseum,Caseum,0
+MXF,3,11.2,11.2,2.85,LCM,Cellular,Cellular,0
+MXF,3,11.2,11.2,5.48,LCM,Normal,Lung,0
+PZA,3,11.2,11.2,28.3,LCM,Plasma,Plasma,0
+PZA,3,11.2,11.2,22.8,LCM,Inner Caseum,Caseum,0
+PZA,3,11.2,11.2,16.5,LCM,Outer Caseum,Caseum,0
+PZA,3,11.2,11.2,16.2,LCM,Cellular,Cellular,0
+PZA,3,11.2,11.2,18.6,LCM,Normal,Lung,0
+PZA,3,11.2,11.2,15.3,LCM,Inner Caseum,Caseum,0
+PZA,3,11.2,11.2,17.6,LCM,Outer Caseum,Caseum,0
+PZA,3,11.2,11.2,13.2,LCM,Cellular,Cellular,0
+PZA,3,11.2,11.2,17.6,LCM,Normal,Lung,0
+RIF,3,11.2,11.2,5.35,LCM,Plasma,Plasma,0
+RIF,3,11.2,11.2,5.66,LCM,Inner Caseum,Caseum,0
+RIF,3,11.2,11.2,5.83,LCM,Outer Caseum,Caseum,0
+RIF,3,11.2,11.2,2.99,LCM,Cellular,Cellular,0
+RIF,3,11.2,11.2,3.75,LCM,Normal,Lung,0
+RIF,3,11.2,11.2,7.53,LCM,Inner Caseum,Caseum,0
+RIF,3,11.2,11.2,7.57,LCM,Outer Caseum,Caseum,0
+RIF,3,11.2,11.2,3.03,LCM,Cellular,Cellular,0
+RIF,3,11.2,11.2,4.69,LCM,Normal,Lung,0
+CFZ,4,4.93,4.93,0.497,LCM,Plasma,Plasma,0
+CFZ,4,4.93,4.93,0.251,LCM,Inner Caseum,Caseum,0
+CFZ,4,4.93,4.93,0.881,LCM,Outer Caseum,Caseum,0
+CFZ,4,4.93,4.93,9.1,LCM,Cellular,Cellular,0
+CFZ,4,4.93,4.93,0.169,LCM,Inner Caseum,Caseum,0
+CFZ,4,4.93,4.93,3.26,LCM,Outer Caseum,Caseum,0
+CFZ,4,4.93,4.93,18.5,LCM,Cellular,Cellular,0
+CFZ,4,4.93,4.93,41.7,LCM,Normal,Lung,0
+INH,4,4.93,4.93,3.47,LCM,Plasma,Plasma,0
+INH,4,4.93,4.93,1.21,LCM,Inner Caseum,Caseum,0
+INH,4,4.93,4.93,0.842,LCM,Outer Caseum,Caseum,0
+INH,4,4.93,4.93,0.594,LCM,Cellular,Cellular,0
+INH,4,4.93,4.93,0.759,LCM,Inner Caseum,Caseum,0
+INH,4,4.93,4.93,0.665,LCM,Outer Caseum,Caseum,0
+INH,4,4.93,4.93,0.57,LCM,Cellular,Cellular,0
+INH,4,4.93,4.93,0.477,LCM,Normal,Lung,0
+KAN,4,4.93,4.93,26,LCM,Plasma,Plasma,0
+KAN,4,4.93,4.93,9.28,LCM,Inner Caseum,Caseum,0
+KAN,4,4.93,4.93,7.96,LCM,Outer Caseum,Caseum,0
+KAN,4,4.93,4.93,7.19,LCM,Cellular,Cellular,0
+KAN,4,4.93,4.93,8.64,LCM,Inner Caseum,Caseum,0
+KAN,4,4.93,4.93,7.36,LCM,Outer Caseum,Caseum,0
+KAN,4,4.93,4.93,13.3,LCM,Cellular,Cellular,0
+KAN,4,4.93,4.93,5.77,LCM,Normal,Lung,0
+LZD,4,4.93,4.93,2.91,LCM,Plasma,Plasma,0
+LZD,4,4.93,4.93,5.13,LCM,Inner Caseum,Caseum,0
+LZD,4,4.93,4.93,3.47,LCM,Outer Caseum,Caseum,0
+LZD,4,4.93,4.93,2.54,LCM,Cellular,Cellular,0
+LZD,4,4.93,4.93,3.12,LCM,Inner Caseum,Caseum,0
+LZD,4,4.93,4.93,2.88,LCM,Outer Caseum,Caseum,0
+LZD,4,4.93,4.93,2.17,LCM,Cellular,Cellular,0
+LZD,4,4.93,4.93,2.59,LCM,Normal,Lung,0
+MXF,4,4.93,4.93,2.81,LCM,Plasma,Plasma,0
+MXF,4,4.93,4.93,2.77,LCM,Inner Caseum,Caseum,0
+MXF,4,4.93,4.93,6.98,LCM,Outer Caseum,Caseum,0
+MXF,4,4.93,4.93,10.1,LCM,Cellular,Cellular,0
+MXF,4,4.93,4.93,7.89,LCM,Inner Caseum,Caseum,0
+MXF,4,4.93,4.93,6.5,LCM,Outer Caseum,Caseum,0
+MXF,4,4.93,4.93,7.49,LCM,Cellular,Cellular,0
+MXF,4,4.93,4.93,15.4,LCM,Normal,Lung,0
+PZA,4,4.93,4.93,47.6,LCM,Plasma,Plasma,0
+PZA,4,4.93,4.93,30,LCM,Inner Caseum,Caseum,0
+PZA,4,4.93,4.93,27.3,LCM,Outer Caseum,Caseum,0
+PZA,4,4.93,4.93,24.9,LCM,Cellular,Cellular,0
+PZA,4,4.93,4.93,41.3,LCM,Inner Caseum,Caseum,0
+PZA,4,4.93,4.93,38.3,LCM,Outer Caseum,Caseum,0
+PZA,4,4.93,4.93,33.3,LCM,Cellular,Cellular,0
+PZA,4,4.93,4.93,33.8,LCM,Normal,Lung,0
+RIF,4,4.93,4.93,5.11,LCM,Plasma,Plasma,0
+RIF,4,4.93,4.93,0.786,LCM,Inner Caseum,Caseum,0
+RIF,4,4.93,4.93,4.37,LCM,Outer Caseum,Caseum,0
+RIF,4,4.93,4.93,5.68,LCM,Cellular,Cellular,0
+RIF,4,4.93,4.93,7.5,LCM,Inner Caseum,Caseum,0
+RIF,4,4.93,4.93,8.57,LCM,Outer Caseum,Caseum,0
+RIF,4,4.93,4.93,5.1,LCM,Cellular,Cellular,0
+RIF,4,4.93,4.93,8.38,LCM,Normal,Lung,0
+INH,5,3.3,3.3,0.966,LCM,Plasma,Plasma,0
+INH,5,3.3,3.3,0.955,LCM,Inner Caseum,Caseum,0
+INH,5,3.3,3.3,0.655,LCM,Outer Caseum,Caseum,0
+INH,5,3.3,3.3,0.514,LCM,Cellular,Cellular,0
+INH,5,3.3,3.3,0.677,LCM,Normal,Lung,0
+INH,5,3.3,3.3,0.794,LCM,Inner Caseum,Caseum,0
+INH,5,3.3,3.3,0.503,LCM,Outer Caseum,Caseum,0
+INH,5,3.3,3.3,0.628,LCM,Cellular,Cellular,0
+KAN,5,3.3,3.3,36.7,LCM,Plasma,Plasma,0
+KAN,5,3.3,3.3,19.8,LCM,Inner Caseum,Caseum,0
+KAN,5,3.3,3.3,21.1,LCM,Outer Caseum,Caseum,0
+KAN,5,3.3,3.3,25.5,LCM,Cellular,Cellular,0
+KAN,5,3.3,3.3,33.1,LCM,Normal,Lung,0
+KAN,5,3.3,3.3,28.2,LCM,Inner Caseum,Caseum,0
+KAN,5,3.3,3.3,19.6,LCM,Outer Caseum,Caseum,0
+KAN,5,3.3,3.3,35.5,LCM,Cellular,Cellular,0
+LZD,5,3.3,3.3,0.177,LCM,Plasma,Plasma,0
+LZD,5,3.3,3.3,0.4,LCM,Inner Caseum,Caseum,0
+LZD,5,3.3,3.3,0.24,LCM,Outer Caseum,Caseum,0
+LZD,5,3.3,3.3,0.157,LCM,Cellular,Cellular,0
+LZD,5,3.3,3.3,0.392,LCM,Normal,Lung,0
+LZD,5,3.3,3.3,0.338,LCM,Inner Caseum,Caseum,0
+LZD,5,3.3,3.3,0.23,LCM,Outer Caseum,Caseum,0
+LZD,5,3.3,3.3,0.382,LCM,Cellular,Cellular,0
+MXF,5,3.3,3.3,4.91,LCM,Plasma,Plasma,0
+MXF,5,3.3,3.3,2.73,LCM,Inner Caseum,Caseum,0
+MXF,5,3.3,3.3,5.04,LCM,Outer Caseum,Caseum,0
+MXF,5,3.3,3.3,4.8,LCM,Cellular,Cellular,0
+MXF,5,3.3,3.3,14.1,LCM,Normal,Lung,0
+MXF,5,3.3,3.3,5.95,LCM,Inner Caseum,Caseum,0
+MXF,5,3.3,3.3,3.89,LCM,Outer Caseum,Caseum,0
+MXF,5,3.3,3.3,6.13,LCM,Cellular,Cellular,0
+PZA,5,3.3,3.3,16.2,LCM,Plasma,Plasma,0
+PZA,5,3.3,3.3,29.9,LCM,Inner Caseum,Caseum,0
+PZA,5,3.3,3.3,26.4,LCM,Outer Caseum,Caseum,0
+PZA,5,3.3,3.3,22.1,LCM,Cellular,Cellular,0
+PZA,5,3.3,3.3,37.4,LCM,Normal,Lung,0
+PZA,5,3.3,3.3,29.6,LCM,Inner Caseum,Caseum,0
+PZA,5,3.3,3.3,20.3,LCM,Outer Caseum,Caseum,0
+PZA,5,3.3,3.3,28.3,LCM,Cellular,Cellular,0
+RIF,5,3.3,3.3,6.34,LCM,Plasma,Plasma,0
+RIF,5,3.3,3.3,0.932,LCM,Inner Caseum,Caseum,0
+RIF,5,3.3,3.3,3.86,LCM,Outer Caseum,Caseum,0
+RIF,5,3.3,3.3,3.62,LCM,Cellular,Cellular,0
+RIF,5,3.3,3.3,11.3,LCM,Normal,Lung,0
+RIF,5,3.3,3.3,2.55,LCM,Inner Caseum,Caseum,0
+RIF,5,3.3,3.3,3.84,LCM,Outer Caseum,Caseum,0
+RIF,5,3.3,3.3,5.01,LCM,Cellular,Cellular,0
+INH,6,11,11,0.0362,LCM,Plasma,Plasma,0
+INH,6,11,11,0,LCM,Inner Caseum,Caseum,1
+INH,6,11,11,0,LCM,Outer Caseum,Caseum,1
+INH,6,11,11,0,LCM,Cellular,Cellular,1
+INH,6,11,11,0,LCM,Normal,Lung,1
+INH,6,11,11,0,LCM,Inner Caseum,Caseum,1
+INH,6,11,11,0,LCM,Outer Caseum,Caseum,1
+INH,6,11,11,0,LCM,Cellular,Cellular,1
+INH,6,11,11,0,LCM,Normal,Lung,1
+KAN,6,11,11,1.89,LCM,Plasma,Plasma,0
+KAN,6,11,11,3.62,LCM,Inner Caseum,Caseum,0
+KAN,6,11,11,2.5,LCM,Outer Caseum,Caseum,0
+KAN,6,11,11,3.89,LCM,Cellular,Cellular,0
+KAN,6,11,11,3.24,LCM,Normal,Lung,0
+KAN,6,11,11,2.07,LCM,Inner Caseum,Caseum,0
+KAN,6,11,11,2.04,LCM,Outer Caseum,Caseum,0
+KAN,6,11,11,1.88,LCM,Cellular,Cellular,0
+KAN,6,11,11,2.85,LCM,Normal,Lung,0
+LZD,6,11,11,0.237,LCM,Plasma,Plasma,0
+LZD,6,11,11,0.408,LCM,Inner Caseum,Caseum,0
+LZD,6,11,11,0.39,LCM,Outer Caseum,Caseum,0
+LZD,6,11,11,0.257,LCM,Cellular,Cellular,0
+LZD,6,11,11,0.144,LCM,Normal,Lung,0
+LZD,6,11,11,0.528,LCM,Inner Caseum,Caseum,0
+LZD,6,11,11,0.532,LCM,Outer Caseum,Caseum,0
+LZD,6,11,11,0.408,LCM,Cellular,Cellular,0
+LZD,6,11,11,0.24,LCM,Normal,Lung,0
+MXF,6,11,11,1.38,LCM,Plasma,Plasma,0
+MXF,6,11,11,5.35,LCM,Inner Caseum,Caseum,0
+MXF,6,11,11,4.37,LCM,Outer Caseum,Caseum,0
+MXF,6,11,11,3.66,LCM,Cellular,Cellular,0
+MXF,6,11,11,2.27,LCM,Normal,Lung,0
+MXF,6,11,11,5.42,LCM,Inner Caseum,Caseum,0
+MXF,6,11,11,5.09,LCM,Outer Caseum,Caseum,0
+MXF,6,11,11,2.24,LCM,Cellular,Cellular,0
+MXF,6,11,11,5.24,LCM,Normal,Lung,0
+PZA,6,11,11,22.8,LCM,Plasma,Plasma,0
+PZA,6,11,11,14.7,LCM,Inner Caseum,Caseum,0
+PZA,6,11,11,14.9,LCM,Outer Caseum,Caseum,0
+PZA,6,11,11,10,LCM,Cellular,Cellular,0
+PZA,6,11,11,7.14,LCM,Normal,Lung,0
+PZA,6,11,11,25.7,LCM,Inner Caseum,Caseum,0
+PZA,6,11,11,28.6,LCM,Outer Caseum,Caseum,0
+PZA,6,11,11,24,LCM,Cellular,Cellular,0
+PZA,6,11,11,18.6,LCM,Normal,Lung,0
+RIF,6,11,11,3.99,LCM,Plasma,Plasma,0
+RIF,6,11,11,6.17,LCM,Inner Caseum,Caseum,0
+RIF,6,11,11,7.52,LCM,Outer Caseum,Caseum,0
+RIF,6,11,11,3.34,LCM,Cellular,Cellular,0
+RIF,6,11,11,1.71,LCM,Normal,Lung,0
+RIF,6,11,11,6.65,LCM,Inner Caseum,Caseum,0
+RIF,6,11,11,8.48,LCM,Outer Caseum,Caseum,0
+RIF,6,11,11,2.55,LCM,Cellular,Cellular,0
+RIF,6,11,11,4.05,LCM,Normal,Lung,0
+INH,7,5.68,5.68,0.274,LCM,Plasma,Plasma,0
+INH,7,5.68,5.68,0.3,LCM,Inner Caseum,Caseum,0
+INH,7,5.68,5.68,0.264,LCM,Outer Caseum,Caseum,0
+INH,7,5.68,5.68,0.172,LCM,Cellular,Cellular,0
+INH,7,5.68,5.68,0.181,LCM,Normal,Lung,0
+INH,7,5.68,5.68,0.718,LCM,Inner Caseum,Caseum,0
+INH,7,5.68,5.68,0.66,LCM,Outer Caseum,Caseum,0
+INH,7,5.68,5.68,0.43,LCM,Cellular,Cellular,0
+INH,7,5.68,5.68,0.204,LCM,Normal,Lung,0
+KAN,7,5.68,5.68,10.8,LCM,Plasma,Plasma,0
+KAN,7,5.68,5.68,16.2,LCM,Inner Caseum,Caseum,0
+KAN,7,5.68,5.68,13,LCM,Outer Caseum,Caseum,0
+KAN,7,5.68,5.68,10.2,LCM,Cellular,Cellular,0
+KAN,7,5.68,5.68,10.6,LCM,Normal,Lung,0
+KAN,7,5.68,5.68,14.3,LCM,Inner Caseum,Caseum,0
+KAN,7,5.68,5.68,15.4,LCM,Outer Caseum,Caseum,0
+KAN,7,5.68,5.68,14.1,LCM,Cellular,Cellular,0
+KAN,7,5.68,5.68,7.58,LCM,Normal,Lung,0
+LZD,7,5.68,5.68,1.01,LCM,Plasma,Plasma,0
+LZD,7,5.68,5.68,1.6,LCM,Inner Caseum,Caseum,0
+LZD,7,5.68,5.68,1.19,LCM,Outer Caseum,Caseum,0
+LZD,7,5.68,5.68,0.845,LCM,Cellular,Cellular,0
+LZD,7,5.68,5.68,1.35,LCM,Normal,Lung,0
+LZD,7,5.68,5.68,1.68,LCM,Inner Caseum,Caseum,0
+LZD,7,5.68,5.68,2.53,LCM,Outer Caseum,Caseum,0
+LZD,7,5.68,5.68,1.79,LCM,Cellular,Cellular,0
+LZD,7,5.68,5.68,1.44,LCM,Normal,Lung,0
+MXF,7,5.68,5.68,1.97,LCM,Plasma,Plasma,0
+MXF,7,5.68,5.68,6.1,LCM,Inner Caseum,Caseum,0
+MXF,7,5.68,5.68,6.42,LCM,Outer Caseum,Caseum,0
+MXF,7,5.68,5.68,5.43,LCM,Cellular,Cellular,0
+MXF,7,5.68,5.68,8.35,LCM,Normal,Lung,0
+MXF,7,5.68,5.68,2.18,LCM,Inner Caseum,Caseum,0
+MXF,7,5.68,5.68,7.67,LCM,Outer Caseum,Caseum,0
+MXF,7,5.68,5.68,7.22,LCM,Cellular,Cellular,0
+MXF,7,5.68,5.68,22.1,LCM,Normal,Lung,0
+PZA,7,5.68,5.68,34.1,LCM,Plasma,Plasma,0
+PZA,7,5.68,5.68,20.1,LCM,Inner Caseum,Caseum,0
+PZA,7,5.68,5.68,20.4,LCM,Outer Caseum,Caseum,0
+PZA,7,5.68,5.68,15.3,LCM,Cellular,Cellular,0
+PZA,7,5.68,5.68,28.3,LCM,Normal,Lung,0
+PZA,7,5.68,5.68,24.9,LCM,Inner Caseum,Caseum,0
+PZA,7,5.68,5.68,42.9,LCM,Outer Caseum,Caseum,0
+PZA,7,5.68,5.68,35.7,LCM,Cellular,Cellular,0
+PZA,7,5.68,5.68,33.3,LCM,Normal,Lung,0
+RIF,7,5.68,5.68,7.91,LCM,Plasma,Plasma,0
+RIF,7,5.68,5.68,2.6,LCM,Inner Caseum,Caseum,0
+RIF,7,5.68,5.68,5.42,LCM,Outer Caseum,Caseum,0
+RIF,7,5.68,5.68,4.13,LCM,Cellular,Cellular,0
+RIF,7,5.68,5.68,5.66,LCM,Normal,Lung,0
+RIF,7,5.68,5.68,0.154,LCM,Inner Caseum,Caseum,0
+RIF,7,5.68,5.68,7.16,LCM,Outer Caseum,Caseum,0
+RIF,7,5.68,5.68,5.02,LCM,Cellular,Cellular,0
+RIF,7,5.68,5.68,7.8,LCM,Normal,Lung,0
+INH,8,3.83,3.83,0.184,LCM,Plasma,Plasma,0
+INH,8,3.83,3.83,0.553,LCM,Inner Caseum,Caseum,0
+INH,8,3.83,3.83,0.33,LCM,Outer Caseum,Caseum,0
+INH,8,3.83,3.83,0.483,LCM,Cellular,Cellular,0
+INH,8,3.83,3.83,0.422,LCM,Normal,Lung,0
+INH,8,3.83,3.83,0.574,LCM,Inner Caseum,Caseum,0
+INH,8,3.83,3.83,0.364,LCM,Outer Caseum,Caseum,0
+INH,8,3.83,3.83,0.394,LCM,Cellular,Cellular,0
+INH,8,3.83,3.83,0.328,LCM,Normal,Lung,0
+KAN,8,3.83,3.83,26.5,LCM,Plasma,Plasma,0
+KAN,8,3.83,3.83,12.2,LCM,Inner Caseum,Caseum,0
+KAN,8,3.83,3.83,18.1,LCM,Outer Caseum,Caseum,0
+KAN,8,3.83,3.83,25.2,LCM,Cellular,Cellular,0
+KAN,8,3.83,3.83,23.9,LCM,Normal,Lung,0
+KAN,8,3.83,3.83,25.9,LCM,Inner Caseum,Caseum,0
+KAN,8,3.83,3.83,35.1,LCM,Outer Caseum,Caseum,0
+KAN,8,3.83,3.83,34.1,LCM,Cellular,Cellular,0
+KAN,8,3.83,3.83,29.7,LCM,Normal,Lung,0
+LZD,8,3.83,3.83,0.184,LCM,Plasma,Plasma,0
+LZD,8,3.83,3.83,0.315,LCM,Inner Caseum,Caseum,0
+LZD,8,3.83,3.83,0.227,LCM,Outer Caseum,Caseum,0
+LZD,8,3.83,3.83,0.315,LCM,Cellular,Cellular,0
+LZD,8,3.83,3.83,0.363,LCM,Normal,Lung,0
+LZD,8,3.83,3.83,0.513,LCM,Inner Caseum,Caseum,0
+LZD,8,3.83,3.83,0.247,LCM,Outer Caseum,Caseum,0
+LZD,8,3.83,3.83,0.181,LCM,Cellular,Cellular,0
+LZD,8,3.83,3.83,0.217,LCM,Normal,Lung,0
+MXF,8,3.83,3.83,0.897,LCM,Plasma,Plasma,0
+MXF,8,3.83,3.83,1.21,LCM,Inner Caseum,Caseum,0
+MXF,8,3.83,3.83,1.12,LCM,Outer Caseum,Caseum,0
+MXF,8,3.83,3.83,2.12,LCM,Cellular,Cellular,0
+MXF,8,3.83,3.83,3.24,LCM,Normal,Lung,0
+MXF,8,3.83,3.83,0.847,LCM,Inner Caseum,Caseum,0
+MXF,8,3.83,3.83,0.977,LCM,Outer Caseum,Caseum,0
+MXF,8,3.83,3.83,1.16,LCM,Cellular,Cellular,0
+MXF,8,3.83,3.83,1.57,LCM,Normal,Lung,0
+PZA,8,3.83,3.83,40.7,LCM,Plasma,Plasma,0
+PZA,8,3.83,3.83,37.5,LCM,Inner Caseum,Caseum,0
+PZA,8,3.83,3.83,26.3,LCM,Outer Caseum,Caseum,0
+PZA,8,3.83,3.83,36.7,LCM,Cellular,Cellular,0
+PZA,8,3.83,3.83,37.7,LCM,Normal,Lung,0
+PZA,8,3.83,3.83,34.6,LCM,Inner Caseum,Caseum,0
+PZA,8,3.83,3.83,24.2,LCM,Outer Caseum,Caseum,0
+PZA,8,3.83,3.83,22.6,LCM,Cellular,Cellular,0
+PZA,8,3.83,3.83,32.7,LCM,Normal,Lung,0
+RIF,8,3.83,3.83,0.33,LCM,Plasma,Plasma,0
+RIF,8,3.83,3.83,0,LCM,Inner Caseum,Caseum,1
+RIF,8,3.83,3.83,0.0682,LCM,Outer Caseum,Caseum,0
+RIF,8,3.83,3.83,0.155,LCM,Cellular,Cellular,0
+RIF,8,3.83,3.83,0.252,LCM,Normal,Lung,0
+RIF,8,3.83,3.83,0,LCM,Inner Caseum,Caseum,1
+RIF,8,3.83,3.83,0.0417,LCM,Outer Caseum,Caseum,0
+RIF,8,3.83,3.83,0.0883,LCM,Cellular,Cellular,0
+RIF,8,3.83,3.83,0.198,LCM,Normal,Lung,0
+INH,9,11.05,11.05,0.163,LCM,Plasma,Plasma,0
+INH,9,11.05,11.05,0.225,LCM,Inner Caseum,Caseum,0
+INH,9,11.05,11.05,0.175,LCM,Outer Caseum,Caseum,0
+INH,9,11.05,11.05,0.176,LCM,Cellular,Cellular,0
+INH,9,11.05,11.05,0.12,LCM,Normal,Lung,0
+INH,9,11.05,11.05,0.278,LCM,Inner Caseum,Caseum,0
+INH,9,11.05,11.05,0.0866,LCM,Outer Caseum,Caseum,0
+INH,9,11.05,11.05,0.128,LCM,Inner Cellular,Cellular,0
+INH,9,11.05,11.05,0.146,LCM,Outer Cellular,Cellular,0
+INH,9,11.05,11.05,0.107,LCM,Normal,Lung,0
+KAN,9,11.05,11.05,0,LCM,Plasma,Plasma,1
+KAN,9,11.05,11.05,0,LCM,Inner Caseum,Caseum,1
+KAN,9,11.05,11.05,0,LCM,Outer Caseum,Caseum,1
+KAN,9,11.05,11.05,0,LCM,Cellular,Cellular,1
+KAN,9,11.05,11.05,0,LCM,Normal,Lung,1
+KAN,9,11.05,11.05,0,LCM,Inner Caseum,Caseum,1
+KAN,9,11.05,11.05,0,LCM,Outer Caseum,Caseum,1
+KAN,9,11.05,11.05,0,LCM,Inner Cellular,Cellular,1
+KAN,9,11.05,11.05,0,LCM,Outer Cellular,Cellular,1
+KAN,9,11.05,11.05,0,LCM,Normal,Lung,1
+LZD,9,11.05,11.05,8.64,LCM,Plasma,Plasma,0
+LZD,9,11.05,11.05,12,LCM,Inner Caseum,Caseum,0
+LZD,9,11.05,11.05,12.6,LCM,Outer Caseum,Caseum,0
+LZD,9,11.05,11.05,8.48,LCM,Cellular,Cellular,0
+LZD,9,11.05,11.05,9.46,LCM,Normal,Lung,0
+LZD,9,11.05,11.05,16.2,LCM,Inner Caseum,Caseum,0
+LZD,9,11.05,11.05,12.3,LCM,Outer Caseum,Caseum,0
+LZD,9,11.05,11.05,12,LCM,Inner Cellular,Cellular,0
+LZD,9,11.05,11.05,13.3,LCM,Outer Cellular,Cellular,0
+LZD,9,11.05,11.05,11.9,LCM,Normal,Lung,0
+MXF,9,11.05,11.05,2.05,LCM,Plasma,Plasma,0
+MXF,9,11.05,11.05,4.01,LCM,Inner Caseum,Caseum,0
+MXF,9,11.05,11.05,4.55,LCM,Outer Caseum,Caseum,0
+MXF,9,11.05,11.05,3.16,LCM,Cellular,Cellular,0
+MXF,9,11.05,11.05,6.59,LCM,Normal,Lung,0
+MXF,9,11.05,11.05,4.98,LCM,Inner Caseum,Caseum,0
+MXF,9,11.05,11.05,2.1,LCM,Outer Caseum,Caseum,0
+MXF,9,11.05,11.05,2.85,LCM,Inner Cellular,Cellular,0
+MXF,9,11.05,11.05,5.14,LCM,Outer Cellular,Cellular,0
+MXF,9,11.05,11.05,8.71,LCM,Normal,Lung,0
+PZA,9,11.05,11.05,25.4,LCM,Plasma,Plasma,0
+PZA,9,11.05,11.05,23,LCM,Inner Caseum,Caseum,0
+PZA,9,11.05,11.05,23.6,LCM,Outer Caseum,Caseum,0
+PZA,9,11.05,11.05,17.3,LCM,Cellular,Cellular,0
+PZA,9,11.05,11.05,23.1,LCM,Normal,Lung,0
+PZA,9,11.05,11.05,32.2,LCM,Inner Caseum,Caseum,0
+PZA,9,11.05,11.05,22,LCM,Outer Caseum,Caseum,0
+PZA,9,11.05,11.05,24.9,LCM,Inner Cellular,Cellular,0
+PZA,9,11.05,11.05,25.7,LCM,Outer Cellular,Cellular,0
+PZA,9,11.05,11.05,29.5,LCM,Normal,Lung,0
+RIF,9,11.05,11.05,7.19,LCM,Plasma,Plasma,0
+RIF,9,11.05,11.05,2.93,LCM,Inner Caseum,Caseum,0
+RIF,9,11.05,11.05,4.85,LCM,Outer Caseum,Caseum,0
+RIF,9,11.05,11.05,2.01,LCM,Cellular,Cellular,0
+RIF,9,11.05,11.05,5.52,LCM,Normal,Lung,0
+RIF,9,11.05,11.05,6.54,LCM,Inner Caseum,Caseum,0
+RIF,9,11.05,11.05,5.95,LCM,Outer Caseum,Caseum,0
+RIF,9,11.05,11.05,3.6,LCM,Inner Cellular,Cellular,0
+RIF,9,11.05,11.05,7.76,LCM,Outer Cellular,Cellular,0
+RIF,9,11.05,11.05,8.01,LCM,Normal,Lung,0
+INH,10,4.38,4.38,0.629,LCM,Plasma,Plasma,0
+INH,10,4.38,4.38,0.396,LCM,Inner Caseum,Caseum,0
+INH,10,4.38,4.38,0.386,LCM,Outer Caseum,Caseum,0
+INH,10,4.38,4.38,0.33,LCM,Cellular,Cellular,0
+INH,10,4.38,4.38,0.408,LCM,Normal,Lung,0
+KAN,10,4.38,4.38,7.7,LCM,Plasma,Plasma,0
+KAN,10,4.38,4.38,15.5,LCM,Inner Caseum,Caseum,0
+KAN,10,4.38,4.38,11.9,LCM,Outer Caseum,Caseum,0
+KAN,10,4.38,4.38,12,LCM,Cellular,Cellular,0
+KAN,10,4.38,4.38,9.52,LCM,Normal,Lung,0
+MXF,10,4.38,4.38,1.4,LCM,Plasma,Plasma,0
+MXF,10,4.38,4.38,2.3,LCM,Inner Caseum,Caseum,0
+MXF,10,4.38,4.38,2.31,LCM,Outer Caseum,Caseum,0
+MXF,10,4.38,4.38,2.01,LCM,Cellular,Cellular,0
+MXF,10,4.38,4.38,3.92,LCM,Normal,Lung,0
+PZA,10,4.38,4.38,30.7,LCM,Plasma,Plasma,0
+PZA,10,4.38,4.38,14.4,LCM,Inner Caseum,Caseum,0
+PZA,10,4.38,4.38,14.7,LCM,Outer Caseum,Caseum,0
+PZA,10,4.38,4.38,14.9,LCM,Cellular,Cellular,0
+PZA,10,4.38,4.38,19,LCM,Normal,Lung,0
+RIF,10,4.38,4.38,0.385,LCM,Plasma,Plasma,0
+RIF,10,4.38,4.38,0.123,LCM,Inner Caseum,Caseum,0
+RIF,10,4.38,4.38,0.236,LCM,Outer Caseum,Caseum,0
+RIF,10,4.38,4.38,0.136,LCM,Cellular,Cellular,0
+RIF,10,4.38,4.38,0.332,LCM,Normal,Lung,0
+INH,11,8.5,8.5,0.914,LCM,Plasma,Plasma,0
+INH,11,8.5,8.5,0.805,LCM,Inner Caseum,Caseum,0
+INH,11,8.5,8.5,0.645,LCM,Outer Caseum,Caseum,0
+INH,11,8.5,8.5,0.363,LCM,Cellular,Cellular,0
+INH,11,8.5,8.5,0.414,LCM,Normal,Lung,0
+INH,11,8.5,8.5,0.857,LCM,Inner Caseum,Caseum,0
+INH,11,8.5,8.5,0.796,LCM,Outer Caseum,Caseum,0
+INH,11,8.5,8.5,0.401,LCM,Cellular,Cellular,0
+INH,11,8.5,8.5,0.837,LCM,Inner Caseum,Caseum,0
+INH,11,8.5,8.5,0.677,LCM,Outer Caseum,Caseum,0
+INH,11,8.5,8.5,0.401,LCM,Cellular,Cellular,0
+KAN,11,8.5,8.5,6.82,LCM,Plasma,Plasma,0
+KAN,11,8.5,8.5,5.88,LCM,Inner Caseum,Caseum,0
+KAN,11,8.5,8.5,4.48,LCM,Outer Caseum,Caseum,0
+KAN,11,8.5,8.5,4.16,LCM,Cellular,Cellular,0
+KAN,11,8.5,8.5,2.72,LCM,Normal,Lung,0
+KAN,11,8.5,8.5,11.6,LCM,Inner Caseum,Caseum,0
+KAN,11,8.5,8.5,6.86,LCM,Outer Caseum,Caseum,0
+KAN,11,8.5,8.5,5.09,LCM,Cellular,Cellular,0
+KAN,11,8.5,8.5,9.85,LCM,Inner Caseum,Caseum,0
+KAN,11,8.5,8.5,7.38,LCM,Outer Caseum,Caseum,0
+KAN,11,8.5,8.5,6.2,LCM,Cellular,Cellular,0
+MXF,11,8.5,8.5,0.427,LCM,Plasma,Plasma,0
+MXF,11,8.5,8.5,1.36,LCM,Inner Caseum,Caseum,0
+MXF,11,8.5,8.5,1,LCM,Outer Caseum,Caseum,0
+MXF,11,8.5,8.5,1.14,LCM,Cellular,Cellular,0
+MXF,11,8.5,8.5,1.29,LCM,Normal,Lung,0
+MXF,11,8.5,8.5,0.959,LCM,Inner Caseum,Caseum,0
+MXF,11,8.5,8.5,0.924,LCM,Outer Caseum,Caseum,0
+MXF,11,8.5,8.5,0.757,LCM,Cellular,Cellular,0
+MXF,11,8.5,8.5,0.955,LCM,Inner Caseum,Caseum,0
+MXF,11,8.5,8.5,1.16,LCM,Outer Caseum,Caseum,0
+MXF,11,8.5,8.5,0.918,LCM,Cellular,Cellular,0
+PZA,11,8.5,8.5,37,LCM,Plasma,Plasma,0
+PZA,11,8.5,8.5,20.5,LCM,Inner Caseum,Caseum,0
+PZA,11,8.5,8.5,19.8,LCM,Outer Caseum,Caseum,0
+PZA,11,8.5,8.5,16.3,LCM,Cellular,Cellular,0
+PZA,11,8.5,8.5,15.2,LCM,Normal,Lung,0
+PZA,11,8.5,8.5,20.7,LCM,Inner Caseum,Caseum,0
+PZA,11,8.5,8.5,24.4,LCM,Outer Caseum,Caseum,0
+PZA,11,8.5,8.5,14.4,LCM,Cellular,Cellular,0
+PZA,11,8.5,8.5,17.9,LCM,Inner Caseum,Caseum,0
+PZA,11,8.5,8.5,20.3,LCM,Outer Caseum,Caseum,0
+PZA,11,8.5,8.5,16.2,LCM,Cellular,Cellular,0
+RIF,11,8.5,8.5,1.79,LCM,Plasma,Plasma,0
+RIF,11,8.5,8.5,1.36,LCM,Inner Caseum,Caseum,0
+RIF,11,8.5,8.5,2.53,LCM,Outer Caseum,Caseum,0
+RIF,11,8.5,8.5,1.17,LCM,Cellular,Cellular,0
+RIF,11,8.5,8.5,1.02,LCM,Normal,Lung,0
+RIF,11,8.5,8.5,0.717,LCM,Inner Caseum,Caseum,0
+RIF,11,8.5,8.5,2.09,LCM,Outer Caseum,Caseum,0
+RIF,11,8.5,8.5,0.68,LCM,Cellular,Cellular,0
+RIF,11,8.5,8.5,1.11,LCM,Inner Caseum,Caseum,0
+RIF,11,8.5,8.5,2.25,LCM,Outer Caseum,Caseum,0
+RIF,11,8.5,8.5,1.52,LCM,Cellular,Cellular,0
+INH,12,24.33,24.33,0.0445,LCM,Plasma,Plasma,0
+INH,12,24.33,24.33,0,LCM,Inner Caseum,Caseum,1
+INH,12,24.33,24.33,0,LCM,Outer Caseum,Caseum,1
+INH,12,24.33,24.33,0,LCM,Cellular,Cellular,1
+INH,12,24.33,24.33,0,LCM,Normal,Lung,1
+INH,12,24.33,24.33,0,LCM,Inner Caseum,Caseum,1
+INH,12,24.33,24.33,0,LCM,Outer Caseum,Caseum,1
+INH,12,24.33,24.33,0,LCM,Cellular,Cellular,1
+KAN,12,24.33,24.33,0.986,LCM,Plasma,Plasma,0
+KAN,12,24.33,24.33,0.341,LCM,Inner Caseum,Caseum,0
+KAN,12,24.33,24.33,0.252,LCM,Outer Caseum,Caseum,0
+KAN,12,24.33,24.33,0.903,LCM,Cellular,Cellular,0
+KAN,12,24.33,24.33,0.786,LCM,Normal,Lung,0
+KAN,12,24.33,24.33,0.455,LCM,Inner Caseum,Caseum,0
+KAN,12,24.33,24.33,0.53,LCM,Outer Caseum,Caseum,0
+KAN,12,24.33,24.33,1.44,LCM,Cellular,Cellular,0
+MXF,12,24.33,24.33,0.423,LCM,Plasma,Plasma,0
+MXF,12,24.33,24.33,1.17,LCM,Inner Caseum,Caseum,0
+MXF,12,24.33,24.33,0.778,LCM,Outer Caseum,Caseum,0
+MXF,12,24.33,24.33,1.01,LCM,Cellular,Cellular,0
+MXF,12,24.33,24.33,1.49,LCM,Normal,Lung,0
+MXF,12,24.33,24.33,1.19,LCM,Inner Caseum,Caseum,0
+MXF,12,24.33,24.33,0.87,LCM,Outer Caseum,Caseum,0
+MXF,12,24.33,24.33,1.04,LCM,Cellular,Cellular,0
+PZA,12,24.33,24.33,9.56,LCM,Plasma,Plasma,0
+PZA,12,24.33,24.33,5.46,LCM,Inner Caseum,Caseum,0
+PZA,12,24.33,24.33,4.33,LCM,Outer Caseum,Caseum,0
+PZA,12,24.33,24.33,4.96,LCM,Cellular,Cellular,0
+PZA,12,24.33,24.33,7.66,LCM,Normal,Lung,0
+PZA,12,24.33,24.33,3.24,LCM,Inner Caseum,Caseum,0
+PZA,12,24.33,24.33,3.79,LCM,Outer Caseum,Caseum,0
+PZA,12,24.33,24.33,4.05,LCM,Cellular,Cellular,0
+RIF,12,24.33,24.33,0.458,LCM,Plasma,Plasma,0
+RIF,12,24.33,24.33,2.8,LCM,Inner Caseum,Caseum,0
+RIF,12,24.33,24.33,1.5,LCM,Outer Caseum,Caseum,0
+RIF,12,24.33,24.33,0.407,LCM,Cellular,Cellular,0
+RIF,12,24.33,24.33,0.323,LCM,Normal,Lung,0
+RIF,12,24.33,24.33,2.57,LCM,Inner Caseum,Caseum,0
+RIF,12,24.33,24.33,1.66,LCM,Outer Caseum,Caseum,0
+RIF,12,24.33,24.33,0.424,LCM,Cellular,Cellular,0
